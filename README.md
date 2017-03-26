@@ -17,6 +17,14 @@ Hacker News readers as Progressive Web Apps. A loosely spiritual successor to [T
 * Time to interactive (beta): 2.7s
 * Lighthouse: 100/100
 
+## Svelte
+
+* Live: https://svelte-hn.now.sh/
+* Repo: https://github.com/sveltejs/svelte-hackernews
+* WPT: https://www.webpagetest.org/result/170326_WA_W1F/
+* Time to interactive (beta): 
+* Lighthouse: 100/100
+
 ## Vue.js
 
 * Live: https://vue-hn.now.sh/
