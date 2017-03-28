@@ -12,7 +12,7 @@ Hacker News readers as Progressive Web Apps. A loosely spiritual successor to [T
 ## Preact
 
 * Live: https://hn.kristoferbaxter.com/
-* Repo: TBD
+* Repo: https://github.com/kristoferbaxter/preact-hn
 * WPT: https://www.webpagetest.org/result/170326_NG_6TV/
 * Time to interactive (beta): 2.7s
 * Lighthouse: 100/100
