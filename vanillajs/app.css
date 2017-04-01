@@ -1,0 +1,40 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Roboto, Noto, sans-serif;
+}
+
+#stories {
+  list-style: none;
+  margin: 10px;
+}
+
+.headline, .sub-info {
+  display: flex;
+}
+
+.secondary {
+  color: #8e8e8e;
+  font-weight: lighter;
+}
+
+.primary {
+  color: #404040;
+}
+
+.headline > *, .sub-info > * {
+  margin-right: 4px;
+}
+
+.sub-info {
+  margin-top: 4px;
+  font-size: 13px;
+}
+
+.host {
+  font-size: 13px;
+}
+
+.story {
+  margin: 18px 0;
+}
