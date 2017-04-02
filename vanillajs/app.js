@@ -159,15 +159,13 @@ function showTopStories(offset) {
   });
 }
 
-window.onpopstate =
-    e => {
-      if (e.state.offset !== undefined) {
-        showTopStories(e.state.offset);
-      } else {
-        renderDetail(e.state.storyId);
-        ;
-      }
-    }
+window.onpopstate = e => {
+  if (e.state.offset !== undefined) {
+    showTopStories(e.state.offset);
+  } else {
+    renderDetail(e.state.storyId);
+  }
+};
 
-         history.replaceState({offset: 0}, '', '/');
+history.replaceState({offset: 0}, '', '/');
 showTopStories(0);
