@@ -1,7 +1,9 @@
 # hacker-news-pwas
 Hacker News readers as Progressive Web Apps. A loosely spiritual successor to [TodoMVC](https://github.com/tastejs/todomvc).
 
-## React
+## Implementations
+
+### React
 
 * Live: https://react-hn.appspot.com
 * Repo: https://github.com/insin/react-hn
@@ -9,7 +11,7 @@ Hacker News readers as Progressive Web Apps. A loosely spiritual successor to [T
 * Time to interactive: 4.2s
 * Lighthouse: 100/100
 
-## Preact
+### Preact
 
 * Live: https://hn.kristoferbaxter.com/
 * Repo: https://github.com/kristoferbaxter/preact-hn
@@ -17,7 +19,7 @@ Hacker News readers as Progressive Web Apps. A loosely spiritual successor to [T
 * Time to interactive (beta): 1.78s
 * Lighthouse: 100/100
 
-## Svelte
+### Svelte
 
 * Live: https://svelte-hn.now.sh/
 * Repo: https://github.com/sveltejs/svelte-hackernews
@@ -25,7 +27,7 @@ Hacker News readers as Progressive Web Apps. A loosely spiritual successor to [T
 * Time to interactive (beta): 4.5s
 * Lighthouse: 100/100
 
-## Vue.js
+### Vue.js
 
 * Live: https://vue-hn.now.sh/
 * Repo: https://github.com/vuejs/vue-hackernews-2.0
@@ -33,7 +35,7 @@ Hacker News readers as Progressive Web Apps. A loosely spiritual successor to [T
 * Time to interactive: 2.48s
 * Lighthouse: 93/100
 
-## Angular
+### Angular
 
 * Live: https://angular2-hn.firebaseapp.com/
 * Repo: https://github.com/housseindjirdeh/angular2-hn
@@ -41,4 +43,23 @@ Hacker News readers as Progressive Web Apps. A loosely spiritual successor to [T
 * Time to interactive: 3.48s
 * Lighthouse: 100/100
 
+## Specification
+
+Each implementation must include:
+
+* Views: Top Stories, New, Show, Ask, Jobs & threaded Comments
+* App must be a [Progressive Web App](g.co/ProgressiveWebApps)
+* App must score over a 90/100 using [Lighthouse](https://github.com/GoogleChrome/lighthouse)
+* App must become interactive in under 5 seconds on a Moto G4 over 3G. Use [WebPageTest](https://www.webpagetest.org/easy) to check.
+* App must use the [Application Shell](https://developers.google.com/web/fundamentals/architecture/app-shell) pattern to instantly load the skeleton of the UI on repeat visits
+* App must do its best to work cross-browser 
+
+Optionally:
+
+* App supports offline caching of HN data (e.g similar to the 'Offline Mode' in ReactHN)
+* App may use server-side rendering so displaying content is resilient to JS not loading on the network
+
+## License
+
+Each implementation preserves the license noted in the linked to applications.
 
