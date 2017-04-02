@@ -4,8 +4,15 @@
   font-family: Roboto, Noto, sans-serif;
 }
 
-#stories {
+.story-root {
+  margin: 10px;
+}
+
+ul {
   list-style: none;
+}
+
+#stories {
   margin: 10px;
 }
 
@@ -38,3 +45,35 @@
 .story {
   margin: 18px 0;
 }
+
+.title {
+  text-decoration: none;
+}
+
+.comments {
+  cursor: pointer;
+}
+
+.comments:hover {
+  text-decoration: underline;
+}
+
+.comment-text {
+  margin: 10px 0;
+  font-size: 14px;
+  color: #404040;
+}
+
+.comment-text p {
+  margin: 10px 0;
+}
+
+.comment-text a {
+  color: #404040;
+  font-size: 13px;
+}
+
+ul.kid-root > ul.kid-root {
+  margin-left: 25px;
+}
+
