@@ -3,7 +3,10 @@ const API_BASE = 'https://hacker-news.firebaseio.com/v0'
 
 app.addEventListener('click', (e) => {
   if (e.target.classList.contains('comments')) {
-    renderDetail(e.target.getAttribute('story-id'));
+    e.preventDefault();
+    const storyId = e.target.getAttribute('story-id');
+    history.pushState({storyId}, '', `/story/${storyId}`);
+    renderDetail(storyId);
   }
 });
 
@@ -70,7 +73,7 @@ function renderDetail(storyId) {
   });
 }
 
-function fetchFetchTop(offset = 0, num = 30) {
+function fetchTopStories(offset = 0, num = 30) {
   return fetch(`${API_BASE}/topstories.json`).then(v => v.json()).then(ids => {
     return Promise.all(ids.slice(offset, num).map((id, idx) => {
       return fetch(`${API_BASE}/item/${id}.json`)
@@ -132,20 +135,39 @@ function renderStory(story, rootTag = 'li') {
   subInfo.appendChild(_createElm(
       'div', {className: ['author', 'secondary']}, `by ${story.by} |`));
   subInfo.appendChild(_createElm(
-      'div', {'story-id': story.id, className: ['comments', 'secondary']},
+      'a', {
+        'story-id': story.id,
+        className: ['comments', 'secondary'],
+        href: `/story/${story.id}`
+      },
       `${story.descendants} comments`));
 
   return item;
 }
 
+function showTopStories(offset) {
+  app.innerHTML = '';
+  fetchTopStories(offset).then(stories => {
+    const list = document.createElement('ul');
+    list.id = 'stories';
 
-fetchFetchTop().then(stories => {
-  const list = document.createElement('ul');
-  list.id = 'stories';
+    for (let story of stories) {
+      list.appendChild(renderStory(story));
+    }
 
-  for (let story of stories) {
-    list.appendChild(renderStory(story));
-  }
+    app.appendChild(list);
+  });
+}
 
-  app.appendChild(list);
-});
+window.onpopstate =
+    e => {
+      if (e.state.offset !== undefined) {
+        showTopStories(e.state.offset);
+      } else {
+        renderDetail(e.state.storyId);
+        ;
+      }
+    }
+
+         history.replaceState({offset: 0}, '', '/');
+showTopStories(0);
