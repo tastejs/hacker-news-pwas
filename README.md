@@ -59,6 +59,11 @@ Optionally:
 * App supports offline caching of HN data (e.g similar to the 'Offline Mode' in ReactHN)
 * App may use server-side rendering so displaying content is resilient to JS not loading on the network
 
+### Data sources
+
+* [Official real-time Hacker News API powered by Firebase](https://github.com/HackerNews/API)
+* [Unofficial Hacker News API](https://github.com/cheeaun/node-hnapi) by cheeaun
+
 ## License
 
 Each implementation preserves the license noted in the linked to applications.
