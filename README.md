@@ -1,5 +1,6 @@
-# hacker-news-pwas
-Hacker News readers as Progressive Web Apps. A loosely spiritual successor to [TodoMVC](https://github.com/tastejs/todomvc).
+<img src='https://raw.githubusercontent.com/tastejs/hacker-news-pwas/b3f3d40b9e4bd385dbb973d238ce207aed1f60eb/media/logo.png' width='400px'/>
+
+Hacker News readers as Progressive Web Apps. A spiritual successor to [TodoMVC](https://github.com/tastejs/todomvc).
 
 ## Implementations
 
