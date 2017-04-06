@@ -49,7 +49,7 @@ Hacker News readers as Progressive Web Apps. A spiritual successor to [TodoMVC](
 Each implementation must include:
 
 * Views: Top Stories, New, Show, Ask, Jobs & threaded Comments
-* App must be a [Progressive Web App](g.co/ProgressiveWebApps)
+* App must be a [Progressive Web App](http://g.co/ProgressiveWebApps)
 * App must score over a 90/100 using [Lighthouse](https://github.com/GoogleChrome/lighthouse)
 * App must become interactive in under 5 seconds on a Moto G4 over 3G. Use [WebPageTest](https://www.webpagetest.org/easy) to check.
 * App must use the [Application Shell](https://developers.google.com/web/fundamentals/architecture/app-shell) pattern to instantly load the skeleton of the UI on repeat visits
