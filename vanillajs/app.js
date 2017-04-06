@@ -17,7 +17,7 @@ function fetchChildComments(children, root) {
             id => {return fetch(`${API_BASE}/item/${id}.json`)
                        .then(v => v.json())}))
         .then(kids => {
-          for (let comment of kids.map(renderComment)) {
+          for (let comment of kids.filter(c => !c.deleted).map(renderComment)) {
             root.appendChild(comment);
             fetchChildComments(comment.kids, root);
           }
@@ -64,8 +64,8 @@ function renderDetail(storyId) {
         .then(kids => {
           const root = _createElm('ul', {className: 'root'});
 
-          for (let kid of kids) {
-            root.appendChild(renderComment(kid));
+          for (let comment of kids.filter(c => !c.deleted).map(renderComment)) {
+            root.appendChild(comment);
           }
 
           storyRoot.appendChild(root);
