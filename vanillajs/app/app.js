@@ -167,5 +167,11 @@ window.onpopstate = e => {
   }
 };
 
-history.replaceState({offset: 0}, '', '/');
-showTopStories(0);
+if (window.location.pathname === '/') {
+  history.replaceState({offset: 0}, '', '/');
+  showTopStories(0);
+} else {
+  const storyId = window.location.pathname.match(/story\/(\d+)/)[1]
+  history.pushState({storyId}, '', `/story/${storyId}`);
+  renderDetail(storyId);
+}
