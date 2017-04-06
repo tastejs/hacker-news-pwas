@@ -13,9 +13,9 @@ app.addEventListener('click', (e) => {
 function fetchChildComments(children, root) {
   if (children && children.length) {
     Promise
-        .all(children.map(
-            id => {return fetch(`${API_BASE}/item/${id}.json`)
-                       .then(v => v.json())}))
+        .all(children.map(id => {
+          return fetch(`${API_BASE}/item/${id}.json`).then(v => v.json());
+        }))
         .then(kids => {
           for (let comment of kids.filter(c => !c.deleted).map(renderComment)) {
             root.appendChild(comment);
@@ -58,9 +58,9 @@ function renderDetail(storyId) {
     storyRoot.appendChild(renderStory(story, 'div'))
 
     Promise
-        .all(story.kids.map(
-            id => {return fetch(`${API_BASE}/item/${id}.json`)
-                       .then(v => v.json())}))
+        .all(story.kids.map(id => {
+          return fetch(`${API_BASE}/item/${id}.json`).then(v => v.json());
+        }))
         .then(kids => {
           const root = _createElm('ul', {className: 'root'});
 
