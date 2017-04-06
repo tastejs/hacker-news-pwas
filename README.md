@@ -1,6 +1,6 @@
 <img src='https://raw.githubusercontent.com/tastejs/hacker-news-pwas/b3f3d40b9e4bd385dbb973d238ce207aed1f60eb/media/logo.png' width='400px'/>
 
-Hacker News readers as Progressive Web Apps. A spiritual successor to [TodoMVC](https://github.com/tastejs/todomvc).
+Hacker News readers as [Progressive Web Apps](https://g.co/ProgressiveWebApps). A spiritual successor to [TodoMVC](https://github.com/tastejs/todomvc).
 
 ## Implementations
 
@@ -49,7 +49,7 @@ Hacker News readers as Progressive Web Apps. A spiritual successor to [TodoMVC](
 Each implementation must include:
 
 * Views: Top Stories, New, Show, Ask, Jobs & threaded Comments
-* App must be a [Progressive Web App](http://g.co/ProgressiveWebApps)
+* App must be a [Progressive Web App](https://g.co/ProgressiveWebApps)
 * App must score over a 90/100 using [Lighthouse](https://github.com/GoogleChrome/lighthouse)
 * App must become interactive in under 5 seconds on a Moto G4 over 3G. Use [WebPageTest](https://www.webpagetest.org/easy) to check.
 * App must use the [Application Shell](https://developers.google.com/web/fundamentals/architecture/app-shell) pattern to instantly load the skeleton of the UI on repeat visits
