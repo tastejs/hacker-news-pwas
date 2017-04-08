@@ -22,7 +22,12 @@ function fetchJson(url) {
   return fetch(url + '.json').then(v => v.json());
 }
 
-function renderCommentsInto(root, recurse = false, comments) {
+/**
+ * @param {Node} root
+ * @param {boolean} recurse
+ * @param {Array<StoryComment>} comments
+ */
+function renderCommentsInto(root, recurse, comments) {
   for (let comment of comments.filter(c => !c.deleted).map(renderComment)) {
     root.appendChild(comment);
     recurse && fetchChildComments(comment.kids, root);
@@ -36,6 +41,9 @@ function fetchChildComments(children, root) {
   }
 }
 
+/**
+* @param {StoryComment} comment
+*/
 function renderComment(comment) {
   let kidRoot =
       _createElm('ul', {className: 'kid-root', 'story-id': comment.id});
@@ -81,7 +89,7 @@ function fetchStories(scope, offset = 0, num = 30) {
   return fetchJson(`${API_BASE}/${scope}`).then(ids => {
     return Promise.all(ids.slice(offset, num).map((id, idx) => {
       return fetchJson(`${API_BASE}/item/${id}`).then(v => Object.assign(v, {
-        position: idx + offset
+        'idx': idx + offset
       }));
     }));
   });
@@ -107,16 +115,19 @@ function _createElm(tagName, attrs = {}, textContent = undefined) {
   return elm;
 }
 
+/**
+ * @param {Story} story
+ * @param {string} rootTag
+ */
 function renderStory(story, rootTag = 'li') {
   let item = _createElm(rootTag, {className: 'story'});
   let headline = _createElm('div', {className: 'headline'});
   item.appendChild(headline);
 
 
-  if (story.position !== undefined) {
+  if (story.idx !== undefined) {
     headline.appendChild(_createElm(
-        'div', {className: ['position', 'secondary']},
-        `${story.position + 1}.`));
+        'div', {className: ['position', 'secondary']}, `${story.idx + 1}.`));
   }
 
   headline.appendChild(_createElm(
@@ -161,11 +172,9 @@ function showStories(offset, scope) {
 
 window.onpopstate = e => {
   if (e.state.offset !== undefined) {
+    let match = window.location.pathname.match(SECTION_MATCHER);
     showStories(
-        e.state.offset,
-        (window.location.pathname.match(SECTION_MATCHER) === '/' ? 'top' :
-                                                                   match[0]) +
-            'stories');
+        e.state.offset, (match[0] === '/' ? 'top' : match[0]) + 'stories');
   } else {
     renderDetail(e.state.storyId);
   }
