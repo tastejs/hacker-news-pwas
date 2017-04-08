@@ -12,6 +12,31 @@ ul {
   list-style: none;
 }
 
+.app-title a {
+  font-weight: bold;
+  margin-right: 5px;
+  color: #464646;
+  text-decoration: none;
+}
+
+header {
+  background: #ececec;
+  padding: 10px;
+}
+
+header ul {
+  list-style: none;
+}
+
+header .secondary a {
+  color: #8e8e8e;
+  text-decoration: none;
+}
+
+header li {
+  display: inline-block;
+}
+
 #stories {
   margin: 10px;
 }
@@ -62,6 +87,9 @@ ul {
   margin: 10px 0;
   font-size: 14px;
   color: #404040;
+  max-width: 550px;
+  word-wrap: break-word;
+  white-space: pre-line;
 }
 
 .comment-text p {
@@ -74,6 +102,10 @@ ul {
 }
 
 ul.kid-root > ul.kid-root {
-  margin-left: 25px;
+  margin-left: 30px;
+}
+
+code {
+  font-family: monospace;
 }
 

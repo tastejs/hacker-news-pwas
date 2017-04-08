@@ -1,10 +1,18 @@
 const app = document.querySelector('#app');
 const API_BASE = 'https://hacker-news.firebaseio.com/v0'
+const SECTION_MATCHER = /^\/$|top|newest|show|ask|jobs/;
 
-app.addEventListener('click', (e) => {
-  if (e.target.classList.contains('comments')) {
+document.body.addEventListener('click', (e) => {
+  const t = e.target;
+  if (t.classList.contains('page')) {
     e.preventDefault();
-    const storyId = e.target.getAttribute('story-id');
+    history.pushState({offset: 0}, '', `${t.getAttribute('href')}`);
+    showStories(0, t.dataset.scope);
+  }
+
+  if (t.classList.contains('comments')) {
+    e.preventDefault();
+    const storyId = t.getAttribute('story-id');
     history.pushState({storyId}, '', `/story/${storyId}`);
     renderDetail(storyId);
   }
@@ -73,8 +81,8 @@ function renderDetail(storyId) {
   });
 }
 
-function fetchTopStories(offset = 0, num = 30) {
-  return fetch(`${API_BASE}/topstories.json`).then(v => v.json()).then(ids => {
+function fetchStories(scope, offset = 0, num = 30) {
+  return fetch(`${API_BASE}/${scope}.json`).then(v => v.json()).then(ids => {
     return Promise.all(ids.slice(offset, num).map((id, idx) => {
       return fetch(`${API_BASE}/item/${id}.json`)
           .then(v => v.json())
@@ -145,9 +153,9 @@ function renderStory(story, rootTag = 'li') {
   return item;
 }
 
-function showTopStories(offset) {
+function showStories(offset, scope) {
   app.innerHTML = '';
-  fetchTopStories(offset).then(stories => {
+  fetchStories(scope, offset).then(stories => {
     const list = document.createElement('ul');
     list.id = 'stories';
 
@@ -161,15 +169,20 @@ function showTopStories(offset) {
 
 window.onpopstate = e => {
   if (e.state.offset !== undefined) {
-    showTopStories(e.state.offset);
+    showStories(
+        e.state.offset,
+        (window.location.pathname.match(SECTION_MATCHER) === '/' ? 'top' :
+                                                                   match[0]) +
+            'stories');
   } else {
     renderDetail(e.state.storyId);
   }
 };
 
-if (window.location.pathname === '/') {
-  history.replaceState({offset: 0}, '', '/');
-  showTopStories(0);
+if (match = window.location.pathname.match(SECTION_MATCHER)) {
+  let url = match[0] === '/' ? 'top' : match[0];
+  history.replaceState({offset: 0}, '', '/' + url);
+  showStories(0, `${url}stories`);
 } else {
   const storyId = window.location.pathname.match(/story\/(\d+)/)[1]
   history.pushState({storyId}, '', `/story/${storyId}`);
