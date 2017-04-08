@@ -18,18 +18,21 @@ document.body.addEventListener('click', (e) => {
   }
 });
 
+function fetchJson(url) {
+  return fetch(url + '.json').then(v => v.json());
+}
+
+function renderCommentsInto(root, recurse = false, comments) {
+  for (let comment of comments.filter(c => !c.deleted).map(renderComment)) {
+    root.appendChild(comment);
+    recurse && fetchChildComments(comment.kids, root);
+  }
+}
+
 function fetchChildComments(children, root) {
   if (children && children.length) {
-    Promise
-        .all(children.map(id => {
-          return fetch(`${API_BASE}/item/${id}.json`).then(v => v.json());
-        }))
-        .then(kids => {
-          for (let comment of kids.filter(c => !c.deleted).map(renderComment)) {
-            root.appendChild(comment);
-            fetchChildComments(comment.kids, root);
-          }
-        });
+    Promise.all(children.map(id => fetchJson(`${API_BASE}/item/${id}`)))
+        .then(renderCommentsInto.bind(null, root, true));
   }
 }
 
@@ -59,37 +62,27 @@ function renderDetail(storyId) {
   // Empty the app DOM
   app.innerHTML = '';
 
-  fetch(`${API_BASE}/item/${storyId}.json`).then(v => v.json()).then(story => {
+  fetchJson(`${API_BASE}/item/${storyId}`).then(story => {
     const storyRoot = _createElm('div', {className: 'story-root'});
     app.appendChild(storyRoot);
 
     storyRoot.appendChild(renderStory(story, 'div'))
 
-    Promise
-        .all(story.kids.map(id => {
-          return fetch(`${API_BASE}/item/${id}.json`).then(v => v.json());
-        }))
+    Promise.all(story.kids.map(id => fetchJson(`${API_BASE}/item/${id}`)))
         .then(kids => {
           const root = _createElm('ul', {className: 'root'});
-
-          for (let comment of kids.filter(c => !c.deleted).map(renderComment)) {
-            root.appendChild(comment);
-          }
-
+          renderCommentsInto(root, false, kids);
           storyRoot.appendChild(root);
         });
   });
 }
 
 function fetchStories(scope, offset = 0, num = 30) {
-  return fetch(`${API_BASE}/${scope}.json`).then(v => v.json()).then(ids => {
+  return fetchJson(`${API_BASE}/${scope}`).then(ids => {
     return Promise.all(ids.slice(offset, num).map((id, idx) => {
-      return fetch(`${API_BASE}/item/${id}.json`)
-          .then(v => v.json())
-          .then(v => {
-            v.position = idx + offset;
-            return v;
-          });
+      return fetchJson(`${API_BASE}/item/${id}`).then(v => Object.assign(v, {
+        position: idx + offset
+      }));
     }));
   });
 }
@@ -156,8 +149,7 @@ function renderStory(story, rootTag = 'li') {
 function showStories(offset, scope) {
   app.innerHTML = '';
   fetchStories(scope, offset).then(stories => {
-    const list = document.createElement('ul');
-    list.id = 'stories';
+    const list = _createElm('ul', {id: 'stories'});
 
     for (let story of stories) {
       list.appendChild(renderStory(story));
