@@ -11,7 +11,8 @@ var Story;
 var StoryComment;
 
 /**
- * @typedef {{class: (string|undefined), id: (string|undefined),
+ * @typedef {{class: (string|undefined), id: (string|undefined), hidden:
+ * (boolean|undefined),
  * href: (string|undefined) , innerHTML: (string|undefined), story-id:
  * (number|string|undefined)}}
  */
