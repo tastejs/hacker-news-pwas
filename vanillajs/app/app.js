@@ -18,8 +18,8 @@ document.body.addEventListener('click', (e) => {
   }
 });
 
-function fetchJson(url) {
-  return fetch(url + '.json').then(v => v.json());
+function fetchJson(url, query = '') {
+  return fetch(`${url}.json${query}`).then(v => v.json());
 }
 
 /**
@@ -36,7 +36,7 @@ function renderCommentsInto(root, recurse, comments) {
 
 function fetchChildComments(children, root) {
   if (children && children.length) {
-    Promise.all(children.map(id => fetchJson(API_BASE + `/item/${id}`)))
+    fetchJson('/items', `?ids=${children.join(',')}`)
         .then(renderCommentsInto.bind(null, root, true));
   }
 }
@@ -68,23 +68,21 @@ function renderDetail(storyId) {
         'div', {className: 'story-root'}, renderStory(story, 'div', true));
     app.appendChild(storyRoot);
 
-    Promise.all(story.kids.map(id => fetchJson(API_BASE + `/item/${id}`)))
-        .then(kids => {
-          const root = _createElm('ul', {className: 'root'});
-          renderCommentsInto(root, false, kids);
-          storyRoot.appendChild(root);
-        });
+    fetchJson('/items', `?ids=${story.kids.join(',')}`).then(kids => {
+      const root = _createElm('ul', {className: 'root'});
+      renderCommentsInto(root, false, kids);
+      storyRoot.appendChild(root);
+    });
   });
 }
 
 function fetchStories(scope, offset = 0, num = 30) {
-  return fetchJson(API_BASE + `/${scope}`).then(ids => {
-    return Promise.all(ids.slice(offset, num).map((id, idx) => {
-      return fetchJson(API_BASE + `/item/${id}`).then(v => Object.assign(v, {
-        'idx': idx + offset
-      }));
-    }));
-  });
+  return fetchJson(API_BASE + `/${scope}`)
+      .then(
+          ids => fetchJson('/items', `?ids=${ids.slice(offset, num).join(',')}`)
+                     .then(stories => stories.map((v, idx) => Object.assign(v, {
+                       'idx': idx + offset
+                     }))));
 }
 
 /**
