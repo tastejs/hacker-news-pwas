@@ -9,3 +9,10 @@ var Story;
  * string}}
  */
 var StoryComment;
+
+/**
+ * @typedef {{class: (string|undefined), id: (string|undefined),
+ * href: (string|undefined) , innerHTML: (string|undefined), story-id:
+ * (number|string|undefined)}}
+ */
+var DomAttrs;

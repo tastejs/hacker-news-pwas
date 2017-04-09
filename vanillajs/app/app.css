@@ -28,7 +28,7 @@ header ul {
   list-style: none;
 }
 
-header .secondary a {
+header a {
   color: #8e8e8e;
   text-decoration: none;
 }
@@ -43,6 +43,7 @@ header li {
 
 .headline, .sub-info {
   display: flex;
+  color: #8e8e8e;
 }
 
 .secondary {
@@ -77,6 +78,7 @@ header li {
 
 .comments {
   cursor: pointer;
+  color: #8e8e8e;
 }
 
 .comments:hover {
