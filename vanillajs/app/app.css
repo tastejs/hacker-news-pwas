@@ -111,3 +111,8 @@ code {
   font-family: monospace;
 }
 
+.story-text {
+  color: #8e8e8e;
+  font-size: 14px;
+  margin: 4px 0;
+}

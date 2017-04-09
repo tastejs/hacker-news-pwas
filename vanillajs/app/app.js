@@ -65,8 +65,8 @@ function renderDetail(storyId) {
   app.innerHTML = '';
 
   fetchJson(API_BASE + `/item/${storyId}`).then(story => {
-    const storyRoot =
-        _createElm('div', {className: 'story-root'}, renderStory(story, 'div'));
+    const storyRoot = _createElm(
+        'div', {className: 'story-root'}, renderStory(story, 'div', true));
     app.appendChild(storyRoot);
 
     Promise.all(story.kids.map(id => fetchJson(API_BASE + `/item/${id}`)))
@@ -109,8 +109,9 @@ function _createElm(tagName, attrs = {}, var_args) {
 /**
  * @param {Story} story
  * @param {string} rootTag
+ * @param {boolean} withText
  */
-function renderStory(story, rootTag = 'li') {
+function renderStory(story, rootTag = 'li', withText = false) {
   let item = _createElm(rootTag, {className: 'story'});
   let headline = _createElm('div', {className: 'headline'});
   item.appendChild(headline);
@@ -121,7 +122,9 @@ function renderStory(story, rootTag = 'li') {
   }
 
   headline.appendChild(_createElm(
-      'a', {href: story.url, className: 'title primary'}, story.title));
+      'a',
+      {href: story.url || `/story/${story.id}`, className: 'title primary'},
+      story.title));
 
   if (story.url) {
     headline.appendChild(
@@ -140,6 +143,10 @@ function renderStory(story, rootTag = 'li') {
           },
           `${story.descendants} comments`));
   item.appendChild(subInfo);
+
+  withText && story.text !== undefined &&
+      item.appendChild(
+          _createElm('div', {className: 'story-text', innerHTML: story.text}));
 
   return item;
 }
