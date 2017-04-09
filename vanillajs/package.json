@@ -4,6 +4,8 @@
     "start": "node index.js"
   },
   "dependencies": {
-    "express": "^4.15.2"
+    "compression": "^1.6.2",
+    "express": "^4.15.2",
+    "node-fetch": "^1.6.3"
   }
 }
