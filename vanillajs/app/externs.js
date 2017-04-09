@@ -1,6 +1,6 @@
 /**
  * @typedef {{kids: Array<number>, idx: number, url: string, score: number, by:
- * string, id: number, descendants: number}}
+ * string, id: number, descendants: number, text: string}}
  */
 var Story;
 
