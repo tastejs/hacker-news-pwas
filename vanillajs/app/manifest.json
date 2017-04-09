@@ -1,0 +1,16 @@
+{
+  "name": "HN PWA",
+  "short_name": "HN PWA",
+  "orientation": "portrait",
+  "theme_color": "#ececec",
+  "background_color": "#ececec",
+  "display": "standalone",
+  "start_url": "/",
+  "icons": [
+    {
+      "src": "/icon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

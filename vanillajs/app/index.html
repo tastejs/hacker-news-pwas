@@ -1,8 +1,13 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
+    <meta name="theme-color" content="#ececec">
+    <link rel="icon" sizes="512x512" href="/icon.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <script async src="/cc.js"></script>
     <link rel="stylesheet" href="/app.css">
+    <title>Hacker News PWA</title>
   </head>
   <body>
     <header>
@@ -25,5 +30,15 @@
       </ul>
     </header>
     <div id="app"></div>
+    <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('/sw.js').then(function() {
+        console.log('service worker is is all cool 🐳.');
+      }).catch(function(e) {
+        console.error('service worker is not so cool.', e);
+        throw e;
+      });
+    }
+  </script>
   </body>
 </html>

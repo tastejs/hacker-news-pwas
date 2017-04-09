@@ -15,7 +15,7 @@ ul {
 .app-title a {
   font-weight: bold;
   margin-right: 5px;
-  color: #464646;
+  color: #404040;
   text-decoration: none;
 }
 
@@ -29,7 +29,7 @@ header ul {
 }
 
 header a {
-  color: #8e8e8e;
+  color: #1f1f1f;
   text-decoration: none;
 }
 
@@ -43,15 +43,14 @@ header li {
 
 .headline, .sub-info {
   display: flex;
-  color: #8e8e8e;
+  color: #404040;
 }
 
 .secondary {
-  color: #8e8e8e;
-  font-weight: lighter;
+  color: #404040;
 }
 
-.primary {
+a.title {
   color: #404040;
 }
 
@@ -62,6 +61,10 @@ header li {
 .sub-info {
   margin-top: 4px;
   font-size: 13px;
+}
+
+.comment-info.sub-info .author {
+  font-weight: bold;
 }
 
 .host {
@@ -78,7 +81,7 @@ header li {
 
 .comments {
   cursor: pointer;
-  color: #8e8e8e;
+  color: #404040;
 }
 
 .comments:hover {
@@ -109,10 +112,12 @@ ul.kid-root > ul.kid-root {
 
 code {
   font-family: monospace;
+  white-space: pre-wrap;
 }
 
 .story-text {
-  color: #8e8e8e;
+  color: #404040;
   font-size: 14px;
-  margin: 4px 0;
+  margin: 7px 0;
+  font-style: italic;
 }
