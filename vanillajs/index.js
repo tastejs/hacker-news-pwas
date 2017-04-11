@@ -37,6 +37,7 @@ app.get(
                        .catch(e => console.log(e))});
 
 app.get('*', (req, res) => {
+  res.header('Link', '</cc.js>; rel=preload; as=script')
   res.render('index', {maxage: MAX_AGE});
 });
 
