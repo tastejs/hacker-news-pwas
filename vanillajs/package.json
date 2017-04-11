@@ -6,6 +6,7 @@
   "dependencies": {
     "compression": "^1.6.2",
     "express": "^4.15.2",
-    "node-fetch": "^1.6.3"
+    "node-fetch": "^1.6.3",
+    "pug": "^2.0.0-beta11"
   }
 }

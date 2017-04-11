@@ -1,12 +1,13 @@
 const express = require('express');
 const fetch = require('node-fetch');
 const path = require('path');
+const compression = require('compression');
 const app = express();
 const port = process.env.PORT || 3000;
-const compression = require('compression');
 const API_BASE = 'https://hacker-news.firebaseio.com/v0';
 const MAX_AGE = '24h';
 
+app.set('view engine', 'pug');
 app.use(compression());
 app.use(express.static(path.join(__dirname, 'app'), {maxage: MAX_AGE}));
 
@@ -20,7 +21,7 @@ app.get(
             .catch(e => console.log(e))});
 
 app.get('*', (req, res) => {
-  res.sendFile('index.html', {root: './app', maxage: MAX_AGE});
+  res.render('index', {maxage: MAX_AGE});
 });
 
 app.listen(port, () => {
