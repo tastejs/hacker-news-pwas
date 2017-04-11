@@ -5,9 +5,10 @@ const app = express();
 const port = process.env.PORT || 3000;
 const compression = require('compression');
 const API_BASE = 'https://hacker-news.firebaseio.com/v0';
+const MAX_AGE = '24h';
 
 app.use(compression());
-app.use(express.static(path.join(__dirname, 'app')));
+app.use(express.static(path.join(__dirname, 'app'), {maxage: MAX_AGE}));
 
 app.get(
     '/items.json',
@@ -19,7 +20,7 @@ app.get(
             .catch(e => console.log(e))});
 
 app.get('*', (req, res) => {
-  res.sendFile('index.html', {root: './app'});
+  res.sendFile('index.html', {root: './app', maxage: MAX_AGE});
 });
 
 app.listen(port, () => {
