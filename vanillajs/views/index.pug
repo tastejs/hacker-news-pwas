@@ -1,13 +1,138 @@
-html
+doctype html
 html(lang="en")
   head
-    <link rel="preload" href="/app.js" as="script">
-    <meta name="theme-color" content="#ececec">
-    <link rel="icon" sizes="512x512" href="/icon.png">
-    <link rel="manifest" href="/manifest.json">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="/app.css">
-    <title>Hacker News PWA</title>
+    link(rel="preload" href="/cc.js" as="script")
+    meta(name="theme-color" content="#ececec")
+    link(rel="icon" sizes="512x512" href="/icon.png")
+    link(rel="manifest" href="/manifest.json")
+    meta(name="viewport", content="width=device-width, initial-scale=1")
+    title.
+      Hacker News PWA
+    style.
+      * {
+        padding: 0;
+        margin: 0;
+        font-family: Roboto, Noto, sans-serif;
+      }
+
+      .story-root {
+        margin: 10px;
+      }
+
+      ul {
+        list-style: none;
+      }
+
+      .app-title a {
+        font-weight: bold;
+        margin-right: 5px;
+        color: #404040;
+        text-decoration: none;
+      }
+
+      header {
+        background: #ececec;
+        padding: 10px;
+      }
+
+      header ul {
+        list-style: none;
+      }
+
+      header a {
+        color: #1f1f1f;
+        text-decoration: none;
+      }
+
+      header li {
+        display: inline-block;
+        margin-right: 5px;
+      }
+
+      #stories {
+        margin: 10px;
+      }
+
+      .headline, .sub-info {
+        display: flex;
+        color: #404040;
+      }
+
+      .secondary {
+        color: #404040;
+      }
+
+      a.title {
+        color: #404040;
+      }
+
+      .headline > *, .sub-info > * {
+        margin-right: 4px;
+      }
+
+      .sub-info {
+        margin-top: 4px;
+        font-size: 13px;
+      }
+
+      .comment-info.sub-info .author {
+        font-weight: bold;
+      }
+
+      .host {
+        font-size: 13px;
+      }
+
+      .story {
+        margin: 18px 0;
+      }
+
+      .title {
+        text-decoration: none;
+      }
+
+      .comments {
+        cursor: pointer;
+        color: #404040;
+      }
+
+      .comments:hover {
+        text-decoration: underline;
+      }
+
+      .comment-text {
+        margin: 10px 0;
+        font-size: 14px;
+        color: #404040;
+        max-width: 550px;
+        word-wrap: break-word;
+        white-space: pre-line;
+      }
+
+      .comment-text p {
+        margin: 10px 0;
+      }
+
+      .comment-text a {
+        color: #404040;
+        font-size: 13px;
+      }
+
+      ul.kid-root > ul.kid-root {
+        margin-left: 30px;
+      }
+
+      code {
+        font-family: monospace;
+        white-space: pre-wrap;
+      }
+
+      .story-text {
+        color: #404040;
+        font-size: 14px;
+        margin: 7px 0;
+        font-style: italic;
+      }
   body
     header
       ul
@@ -27,7 +152,7 @@ html(lang="en")
           a(class="page", data-scope="jobstories", href="/jobs").
             jobs
     div(id="app")
-    script(async src="/app.js")
+    script(async src="/cc.js")
     script.
       if ('serviceWorker' in navigator) {
         navigator.serviceWorker.register('/sw.js').then(function() {
