@@ -1,11 +1,11 @@
 html
 html(lang="en")
   head
+    <link rel="preload" href="/app.js" as="script">
     <meta name="theme-color" content="#ececec">
     <link rel="icon" sizes="512x512" href="/icon.png">
     <link rel="manifest" href="/manifest.json">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script async src="/cc.js"></script>
     <link rel="stylesheet" href="/app.css">
     <title>Hacker News PWA</title>
   body
@@ -27,6 +27,7 @@ html(lang="en")
           a(class="page", data-scope="jobstories", href="/jobs").
             jobs
     div(id="app")
+    script(async src="/app.js")
     script.
       if ('serviceWorker' in navigator) {
         navigator.serviceWorker.register('/sw.js').then(function() {
