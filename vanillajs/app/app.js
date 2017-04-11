@@ -77,12 +77,7 @@ function renderDetail(storyId) {
 }
 
 function fetchStories(scope, offset = 0, num = 30) {
-  return fetchJson(API_BASE + `/${scope}`)
-      .then(
-          ids => fetchJson('/items', `?ids=${ids.slice(offset, num).join(',')}`)
-                     .then(stories => stories.map((v, idx) => Object.assign(v, {
-                       'idx': idx + offset
-                     }))));
+  return fetchJson('/stories', `?scope=${scope}&offset=${offset}&num=${num}`);
 }
 
 /**

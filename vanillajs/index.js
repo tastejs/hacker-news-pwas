@@ -11,14 +11,30 @@ app.set('view engine', 'pug');
 app.use(compression());
 app.use(express.static(path.join(__dirname, 'app'), {maxage: MAX_AGE}));
 
+function fetchItems(ids) {
+  return Promise.all(
+      ids.map(id => fetch(`${API_BASE}/item/${id}.json`).then(v => v.json())))
+}
+
 app.get(
-    '/items.json',
+    '/stories.json',
     (req, res) => {
-        Promise
-            .all(req.query.ids.split(',').map(
-                id => fetch(`${API_BASE}/item/${id}.json`).then(v => v.json())))
+        fetch(API_BASE + `/${req.query.scope}.json`)
+            .then(v => v.json())
+            .then(
+                ids => fetchItems(ids.slice(req.query.offset, req.query.num))
+                           .then(stories => stories.map((v, idx) => {
+                             v.idx = idx + parseInt(req.query.offset, 10);
+                             return v;
+                           })))
             .then(v => res.json(v))
             .catch(e => console.log(e))});
+
+app.get(
+    '/items.json',
+    (req, res) => {fetchItems(req.query.ids.split(','))
+                       .then(v => res.json(v))
+                       .catch(e => console.log(e))});
 
 app.get('*', (req, res) => {
   res.render('index', {maxage: MAX_AGE});
