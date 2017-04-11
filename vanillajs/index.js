@@ -37,7 +37,13 @@ app.get(
                        .catch(e => console.log(e))});
 
 app.get('*', (req, res) => {
-  res.header('Link', '</cc.js>; rel=preload; as=script')
+  let linkHeaders = ['</cc.js>; rel=preload; as=script'];
+
+  if (req.path === '/' || req.path === '/top') {
+    linkHeaders.push(
+        '</stories.json?scope=topstories&offset=0&num=30>; rel=preload')
+  }
+  res.header('link', linkHeaders)
   res.render('index', {maxage: MAX_AGE});
 });
 
