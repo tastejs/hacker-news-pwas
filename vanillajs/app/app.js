@@ -77,7 +77,15 @@ function renderDetail(storyId) {
 }
 
 function fetchStories(scope, offset = 0, num = 30) {
-  return fetchJson('/stories', `?scope=${scope}&offset=${offset}&num=${num}`);
+  return new Promise((res) => {
+    var oReq = new XMLHttpRequest();
+    oReq.addEventListener('load', function(v) {
+      res(JSON.parse(this.responseText));
+    });
+    oReq.open(
+        'GET', `/stories.json?scope=${scope}&offset=${offset}&num=${num}`);
+    oReq.send();
+  });
 }
 
 /**
