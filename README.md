@@ -46,10 +46,10 @@ Hacker News readers as [Progressive Web Apps](https://g.co/ProgressiveWebApps). 
 
 ### viperHTML
 
-* Live: https://viper-news.now.sh/
+* Live: https://viperhtml-164315.appspot.com/
 * Repo: https://github.com/WebReflection/viper-news
-* WPT: https://www.webpagetest.org/result/170411_1Z_RZQ/
-* Time To Interactive (alpha): 2.6s
+* WPT: https://www.webpagetest.org/result/170412_R2_1K0J/
+* Time To Interactive (alpha): 1.9s
 * Lighthouse: 100/100
 
 ## Specification
