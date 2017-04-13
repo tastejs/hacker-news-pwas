@@ -32,8 +32,8 @@ Hacker News readers as [Progressive Web Apps](https://g.co/ProgressiveWebApps). 
 
 * Live: https://vue-hn.now.sh/
 * Repo: https://github.com/vuejs/vue-hackernews-2.0
-* WPT: https://www.webpagetest.org/result/170328_2F_606c4f49b60d13786fb22b9213aa7523/
-* Time to interactive: 2.48s
+* WPT: https://www.webpagetest.org/result/170413_KY_7F4/
+* Time to interactive: 2.9s
 * Lighthouse: 93/100
 
 ### Angular
