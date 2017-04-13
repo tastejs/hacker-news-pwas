@@ -44,6 +44,14 @@ Hacker News readers as [Progressive Web Apps](https://g.co/ProgressiveWebApps). 
 * Time to interactive: 3.48s
 * Lighthouse: 100/100
 
+### viperHTML
+
+* Live: https://viperhtml-164315.appspot.com/
+* Repo: https://github.com/WebReflection/viper-news
+* WPT: https://www.webpagetest.org/result/170412_R2_1K0J/
+* Time To Interactive (alpha): 1.9s
+* Lighthouse: 100/100
+
 ## Specification
 
 Each implementation must include:
