@@ -1,0 +1,19 @@
+<footer class="tc pv4 pv4-ns flex flex-column items-center avenir bt b--black-10">
+  <h1 class="f5 f4-ns fw4 mid-gray">Brought to you by</h1>
+
+  <div class="flex flex-column flex-wrap nowrap-ns flex-row-ns justify-between center w-100 w-70-l">
+
+    {% assign sortedContributors = site.contributors | sort: 'weight' %}
+
+    {% for contributor in sortedContributors %}
+      <div class="flex flex-column items-center mv3 w-100 w-50-m w-auto-l">
+        <a href={{ contributor.link }}>
+          <img src={{ contributor.image | relative_url }} class="grow-large pa1 ba b--black-10 br-100 h3 w3" alt={{ contributor.name }}>
+        </a>
+
+        <h2 class="f6 silver fw4 ttu tracked">{{ contributor.name }}</h2>
+      </div>
+    {% endfor %}
+
+  </div>
+</footer>

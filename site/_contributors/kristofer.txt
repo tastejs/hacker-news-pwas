@@ -1,0 +1,6 @@
+---
+weight: 3
+name: Kristofer
+image: /assets/images/kristofer.png
+link: https://github.com/kristoferbaxter
+---

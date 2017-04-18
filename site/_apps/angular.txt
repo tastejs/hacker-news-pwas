@@ -1,0 +1,14 @@
+---
+weight: 5
+title:  Angular
+logo: /assets/images/angular-logo.svg
+lighthouse: 100/100
+interactive-em: 5.8s
+interactive-faster-3g: 3.48s
+lighthouse-link: https://www.webpagetest.org/lighthouse.php?test=170423_BN_32H&run=1
+wpt-em-link: https://www.webpagetest.org/result/170420_46_67R/
+wpt-faster-3g-link: https://www.webpagetest.org/result/170328_N6_761d4f12fce28adc5163a3d056ce0af6/
+image: /assets/images/angular2hn-mobile.png
+app-link: https://angular2-hn.firebaseapp.com/
+framework-link: https://angular.io/
+---

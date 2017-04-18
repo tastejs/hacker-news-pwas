@@ -1,0 +1,6 @@
+---
+weight: 4
+name: Rich
+image: /assets/images/rich.png
+link: https://github.com/Rich-Harris
+---
