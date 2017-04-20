@@ -8,49 +8,97 @@ Hacker News readers as [Progressive Web Apps](https://g.co/ProgressiveWebApps). 
 
 * Live: https://react-hn.appspot.com
 * Repo: https://github.com/insin/react-hn
-* WPT: https://www.webpagetest.org/result/170328_4T_471cf99ca38b890fc687d1ca25e2260f/
-* Time to interactive: 4.2s
 * Lighthouse: 100/100
+
+**Emerging Markets**
+
+* WPT: https://www.webpagetest.org/result/170420_95_53G/
+* Time To Interactive: 6.2s
+
+**Fast 3G**
+
+* WPT: https://www.webpagetest.org/result/170328_4T_471cf99ca38b890fc687d1ca25e2260f/
+* Time To Interactive: 4.2s
 
 ### Preact
 
 * Live: https://hn.kristoferbaxter.com/
 * Repo: https://github.com/kristoferbaxter/preact-hn
-* WPT: https://www.webpagetest.org/result/170328_SX_2b62ae440379075b887f472c02a3e0a3/
-* Time to interactive (beta): 1.78s
 * Lighthouse: 100/100
+
+**Emerging Markets**
+
+* WPT: https://www.webpagetest.org/result/170420_73_54G/
+* Time To Interactive: 2.4s
+
+**Fast 3G**
+
+* WPT: https://www.webpagetest.org/result/170328_SX_2b62ae440379075b887f472c02a3e0a3/
+* Time To Interactive: 1.78s
 
 ### Svelte
 
 * Live: https://svelte-hn.now.sh/
 * Repo: https://github.com/sveltejs/svelte-hackernews
-* WPT: https://www.webpagetest.org/result/170326_WA_W1F/
-* Time to interactive (beta): 4.5s
 * Lighthouse: 100/100
+
+**Emerging Markets**
+
+* WPT: https://www.webpagetest.org/result/170420_9K_54X/
+* Time To Interactive: 4.9s
+
+**Fast 3G**
+
+* WPT: https://www.webpagetest.org/result/170420_XE_54S/
+* Time To Interactive: 3.7s
 
 ### Vue.js
 
 * Live: https://vue-hn.now.sh/
 * Repo: https://github.com/vuejs/vue-hackernews-2.0
-* WPT: https://www.webpagetest.org/result/170413_KY_7F4/
-* Time to interactive: 2.9s
 * Lighthouse: 93/100
+
+**Emerging Markets**
+
+* WPT: https://www.webpagetest.org/result/170413_KY_7F4/
+* Time To Interactive: 2.9s
+
+**Fast 3G**
+
+* WPT: https://www.webpagetest.org/result/170420_MK_556/
+* Time To Interactive: 2.4s
 
 ### Angular
 
 * Live: https://angular2-hn.firebaseapp.com/
 * Repo: https://github.com/housseindjirdeh/angular2-hn
-* WPT: https://www.webpagetest.org/result/170328_N6_761d4f12fce28adc5163a3d056ce0af6/
-* Time to interactive: 3.48s
 * Lighthouse: 100/100
+
+**Emerging Markets**
+
+* WPT: https://www.webpagetest.org/result/170420_46_67R/
+* Time To Interactive: 5.8s
+
+**Fast 3G**
+
+* WPT: https://www.webpagetest.org/result/170328_N6_761d4f12fce28adc5163a3d056ce0af6/
+* Time To Interactive: 3.48s
 
 ### viperHTML
 
 * Live: https://viperhtml-164315.appspot.com/
 * Repo: https://github.com/WebReflection/viper-news
-* WPT: https://www.webpagetest.org/result/170412_R2_1K0J/
-* Time To Interactive (alpha): 1.9s
 * Lighthouse: 100/100
+
+**Emerging Markets**
+
+* WPT: https://www.webpagetest.org/result/170412_R2_1K0J/
+* Time To Interactive: 1.9s
+
+**Fast 3G**
+
+* WPT: https://www.webpagetest.org/result/170420_Y0_5KR/
+* Time To Interactive: 1.6s
 
 ## Specification
 
