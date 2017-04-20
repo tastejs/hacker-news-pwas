@@ -10,12 +10,12 @@ Hacker News readers as [Progressive Web Apps](https://g.co/ProgressiveWebApps). 
 * Repo: https://github.com/insin/react-hn
 * Lighthouse: 100/100
 
-**Emerging Markets**
+*Emerging Markets*
 
 * WPT: https://www.webpagetest.org/result/170420_95_53G/
 * Time To Interactive: 6.2s
 
-**Fast 3G**
+*Fast 3G*
 
 * WPT: https://www.webpagetest.org/result/170328_4T_471cf99ca38b890fc687d1ca25e2260f/
 * Time To Interactive: 4.2s
@@ -26,12 +26,12 @@ Hacker News readers as [Progressive Web Apps](https://g.co/ProgressiveWebApps). 
 * Repo: https://github.com/kristoferbaxter/preact-hn
 * Lighthouse: 100/100
 
-**Emerging Markets**
+*Emerging Markets*
 
 * WPT: https://www.webpagetest.org/result/170420_73_54G/
 * Time To Interactive: 2.4s
 
-**Fast 3G**
+*Fast 3G*
 
 * WPT: https://www.webpagetest.org/result/170328_SX_2b62ae440379075b887f472c02a3e0a3/
 * Time To Interactive: 1.78s
@@ -42,12 +42,12 @@ Hacker News readers as [Progressive Web Apps](https://g.co/ProgressiveWebApps). 
 * Repo: https://github.com/sveltejs/svelte-hackernews
 * Lighthouse: 100/100
 
-**Emerging Markets**
+*Emerging Markets*
 
 * WPT: https://www.webpagetest.org/result/170420_9K_54X/
 * Time To Interactive: 4.9s
 
-**Fast 3G**
+*Fast 3G*
 
 * WPT: https://www.webpagetest.org/result/170420_XE_54S/
 * Time To Interactive: 3.7s
@@ -58,12 +58,12 @@ Hacker News readers as [Progressive Web Apps](https://g.co/ProgressiveWebApps). 
 * Repo: https://github.com/vuejs/vue-hackernews-2.0
 * Lighthouse: 93/100
 
-**Emerging Markets**
+*Emerging Markets*
 
 * WPT: https://www.webpagetest.org/result/170413_KY_7F4/
 * Time To Interactive: 2.9s
 
-**Fast 3G**
+*Fast 3G*
 
 * WPT: https://www.webpagetest.org/result/170420_MK_556/
 * Time To Interactive: 2.4s
@@ -74,12 +74,12 @@ Hacker News readers as [Progressive Web Apps](https://g.co/ProgressiveWebApps). 
 * Repo: https://github.com/housseindjirdeh/angular2-hn
 * Lighthouse: 100/100
 
-**Emerging Markets**
+*Emerging Markets*
 
 * WPT: https://www.webpagetest.org/result/170420_46_67R/
 * Time To Interactive: 5.8s
 
-**Fast 3G**
+*Fast 3G*
 
 * WPT: https://www.webpagetest.org/result/170328_N6_761d4f12fce28adc5163a3d056ce0af6/
 * Time To Interactive: 3.48s
@@ -90,12 +90,12 @@ Hacker News readers as [Progressive Web Apps](https://g.co/ProgressiveWebApps). 
 * Repo: https://github.com/WebReflection/viper-news
 * Lighthouse: 100/100
 
-**Emerging Markets**
+*Emerging Markets*
 
 * WPT: https://www.webpagetest.org/result/170412_R2_1K0J/
 * Time To Interactive: 1.9s
 
-**Fast 3G**
+*Fast 3G*
 
 * WPT: https://www.webpagetest.org/result/170420_Y0_5KR/
 * Time To Interactive: 1.6s
