@@ -154,11 +154,12 @@ html(lang="en")
     div(id="app")
     script(async src="/cc.js")
     script.
-      if ('serviceWorker' in navigator) {
-        navigator.serviceWorker.register('/sw.js').then(function() {
-          console.log('service worker is is all cool 🐳.');
-        }).catch(function(e) {
-          console.error('service worker is not so cool.', e);
-          throw e;
-        });
-      }
+       if ('serviceWorker' in navigator) {
+         navigator.serviceWorker.register('/sw.js').then(function() {
+           console.log('service worker is is all cool 🐳.');
+         }).catch(function(e) {
+           console.error('service worker is not so cool.', e);
+           throw e;
+         });
+       }
+

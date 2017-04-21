@@ -1,22 +1,28 @@
-const app = document.querySelector('#app');
+// const app = document.querySelector('#app');
 const API_BASE = 'https://hacker-news.firebaseio.com/v0'
 const SECTION_MATCHER = /^\/$|top|newest|show|ask|jobs/;
 
-document.body.addEventListener('click', (e) => {
-  const t = e.target;
-  if (t.classList.contains('page')) {
-    e.preventDefault();
-    history.pushState({offset: 0}, '', `${t.getAttribute('href')}`);
-    showStories(0, t.dataset.scope);
-  }
+const windowExists = typeof window === undefined;
+const documentExists = typeof document === undefined;
 
-  if (t.classList.contains('comments')) {
-    e.preventDefault();
-    const storyId = t['story-id'];
-    history.pushState({storyId}, '', `/story/${storyId}`);
-    renderDetail(storyId);
-  }
-});
+if(documentExists) {
+  document.body.addEventListener('click', (e) => {
+    const t = e.target;
+    if (t.classList.contains('page')) {
+      e.preventDefault();
+      history.pushState({offset: 0}, '', `${t.getAttribute('href')}`);
+      showStories(0, t.dataset.scope);
+    }
+
+    if (t.classList.contains('comments')) {
+      e.preventDefault();
+      const storyId = t['story-id'];
+      history.pushState({storyId}, '', `/story/${storyId}`);
+      renderDetail(storyId);
+    }
+  });
+}
+
 
 function fetchJson(url, query = '') {
   return fetch(`${url}.json${query}`).then(v => v.json());
@@ -94,14 +100,14 @@ function fetchStories(scope, offset = 0, num = 30) {
  * @param {...*} var_args
  */
 function _createElm(tagName, attrs = {}, var_args) {
-  const elm = document.createElement(tagName);
+  const elm = this.document.createElement(tagName);
 
   for (let k in attrs) {
     elm[k] = attrs[k];
   }
 
   Array.from(arguments).slice(2).forEach(
-      n => elm.appendChild(typeof n === 'string' ? new Text(n) : n));
+    n => elm.appendChild(typeof n === 'string' ? this.document.createTextNode(n || '') : n));
 
   return elm;
 }
@@ -144,35 +150,42 @@ function renderStory(story, rootTag = 'li', withText = false) {
       }));
 }
 
-function showStories(offset, scope) {
+function showStories(stories, app) {
   app.innerHTML = '';
-  fetchStories(scope, offset).then(stories => {
-    app.appendChild(stories.reduce(
+  _createElm = _createElm.bind(this);
+  app.appendChild(stories.reduce(
         (list, story) => list.appendChild(renderStory(story)) && list,
         _createElm('ul', {id: 'stories'})));
-  });
 }
 
 function matchPath(matcher) {
   return window.location.pathname.match(matcher);
 }
 
-window.onpopstate = e => {
-  if (e.state.offset !== undefined) {
-    let match = matchPath(SECTION_MATCHER);
-    showStories(
-        e.state.offset, (match[0] === '/' ? 'top' : match[0]) + 'stories');
-  } else {
-    renderDetail(e.state.storyId);
-  }
-};
+if(windowExists) {
+  window.onpopstate = e => {
+    if (e.state.offset !== undefined) {
+      let match = matchPath(SECTION_MATCHER);
+      showStories(
+          e.state.offset, (match[0] === '/' ? 'top' : match[0]) + 'stories');
+    } else {
+      renderDetail(e.state.storyId);
+    }
+  };
 
-if (match = matchPath(SECTION_MATCHER)) {
-  let url = match[0] === '/' ? 'top' : match[0];
-  history.replaceState({offset: 0}, '', '/' + url);
-  showStories(0, `${url}stories`);
-} else {
-  const storyId = matchPath(/story\/(\d+)/)[1]
-  history.pushState({storyId}, '', `/story/${storyId}`);
-  renderDetail(storyId);
+  if (match = matchPath(SECTION_MATCHER)) {
+    let url = match[0] === '/' ? 'top' : match[0];
+    history.replaceState({offset: 0}, '', '/' + url);
+    showStories(0, `${url}stories`);
+  } else {
+    const storyId = matchPath(/story\/(\d+)/)[1]
+    history.pushState({storyId}, '', `/story/${storyId}`);
+    renderDetail(storyId);
+  }
+}
+
+if(typeof module !== undefined) {
+  module.exports = {
+    showStories: showStories,
+  };
 }
