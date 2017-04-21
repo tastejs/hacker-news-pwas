@@ -8,5 +8,9 @@
     "express": "^4.15.2",
     "node-fetch": "^1.6.3",
     "pug": "^2.0.0-beta11"
+  },
+  "devDependencies": {
+    "jsdom": "^9.12.0",
+    "parse5": "https://github.com/davideast/parse5.git"
   }
 }
