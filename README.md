@@ -125,6 +125,7 @@ Optionally:
 
 * Emerging Markets: Chrome Beta on a Motorola G (gen 4) tested from Dulles, Virginia on a 400 Kbps 3G connection with 400ms of latency.
 * Faster 3G: Chrome Beta on a Motorola G (gen 4) tested from Dulles, Virginia on a 1.6 Mbps 3G connection with 300ms of latency.
+* `Time to Interactive` readings taken from linked Lighthouse results in WebPageTest.
 
 ## License
 
