@@ -5,7 +5,7 @@ const SECTION_MATCHER = /^\/$|top|newest|show|ask|jobs/;
 const windowExists = typeof window === undefined;
 const documentExists = typeof document === undefined;
 
-if(documentExists) {
+if (documentExists) {
   document.body.addEventListener('click', (e) => {
     const t = e.target;
     if (t.classList.contains('page')) {
@@ -107,7 +107,8 @@ function _createElm(tagName, attrs = {}, var_args) {
   }
 
   Array.from(arguments).slice(2).forEach(
-    n => elm.appendChild(typeof n === 'string' ? this.document.createTextNode(n || '') : n));
+      n => elm.appendChild(
+          typeof n === 'string' ? this.document.createTextNode(n || '') : n));
 
   return elm;
 }
@@ -154,15 +155,15 @@ function showStories(stories, app) {
   app.innerHTML = '';
   _createElm = _createElm.bind(this);
   app.appendChild(stories.reduce(
-        (list, story) => list.appendChild(renderStory(story)) && list,
-        _createElm('ul', {id: 'stories'})));
+      (list, story) => list.appendChild(renderStory(story)) && list,
+      _createElm('ul', {id: 'stories'})));
 }
 
 function matchPath(matcher) {
   return window.location.pathname.match(matcher);
 }
 
-if(windowExists) {
+if (windowExists) {
   window.onpopstate = e => {
     if (e.state.offset !== undefined) {
       let match = matchPath(SECTION_MATCHER);
@@ -184,7 +185,7 @@ if(windowExists) {
   }
 }
 
-if(typeof module !== undefined) {
+if (typeof module !== undefined) {
   module.exports = {
     showStories: showStories,
   };
