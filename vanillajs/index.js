@@ -10,7 +10,7 @@ const jsdom = require('jsdom');
 const dom = require('./app/app');
 const request = require('request');
 const pug = require('pug');
-const indexFn = pug.compileFile('./views/index.pug');
+const renderIndex = pug.compileFile('./views/index.pug');
 
 app.set('view engine', 'pug');
 app.use(compression());
@@ -29,7 +29,7 @@ function fetchStories(scope, offset, num) {
                      .then(stories => stories.map((v, idx) => {
                        v.idx = idx + parseInt(offset, 10);
                        return v;
-                     })));
+                     })))
 }
 
 app.get('/stories.json', (req, res) => {
@@ -47,18 +47,19 @@ app.get(
                        .then(v => res.json(v))
                        .catch(e => console.log(e))});
 
-app.get('/', (req, res) => {
-  jsdom.env(indexFn(), [''], function(err, window) {
+function renderRoot(req, res) {
+  jsdom.env(renderIndex(), (err, window) => {
     const app = window.document.querySelector('#app');
 
     fetchStories('topstories', 0, 30).then(stories => {
       dom.showStories = dom.showStories.bind(window);
       dom.showStories(stories, app);
       res.send(window.document.documentElement.outerHTML);
-    });
+    })
   });
+}
 
-});
+app.get('/', renderRoot);
 
 app.get('*', (req, res) => {
   let linkHeaders = ['</cc.js>; rel=preload; as=script'];
@@ -68,7 +69,7 @@ app.get('*', (req, res) => {
         '</stories.json?scope=topstories&offset=0&num=30>; rel=preload')
   }
   res.header('link', linkHeaders)
-  // res.render('index', {maxage: MAX_AGE});
+  renderRoot(req, res);
 });
 
 app.listen(port, () => {

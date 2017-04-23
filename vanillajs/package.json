@@ -11,6 +11,6 @@
   },
   "devDependencies": {
     "jsdom": "^9.12.0",
-    "parse5": "https://github.com/davideast/parse5.git"
+    "parse5": "https://github.com/davideast/parse5.git#2a1de7d32e4d329241f1d633d9b1d6564cbf1584"
   }
 }

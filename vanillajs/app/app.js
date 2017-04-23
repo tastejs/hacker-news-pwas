@@ -1,28 +1,34 @@
-// const app = document.querySelector('#app');
+let app;
 const API_BASE = 'https://hacker-news.firebaseio.com/v0'
 const SECTION_MATCHER = /^\/$|top|newest|show|ask|jobs/;
+const STORY_MATCHER = /story\/(\d+$)/;
 
-const windowExists = typeof window === undefined;
-const documentExists = typeof document === undefined;
+const windowExists = typeof window !== 'undefined';
+const documentExists = typeof document !== 'undefined';
 
 if (documentExists) {
+  app = document.querySelector('#app');
   document.body.addEventListener('click', (e) => {
     const t = e.target;
     if (t.classList.contains('page')) {
       e.preventDefault();
       history.pushState({offset: 0}, '', `${t.getAttribute('href')}`);
-      showStories(0, t.dataset.scope);
+      fetchAndShow(app, t.dataset.scope);
     }
 
     if (t.classList.contains('comments')) {
       e.preventDefault();
-      const storyId = t['story-id'];
+      const storyId = t.href.match(STORY_MATCHER)[1];
       history.pushState({storyId}, '', `/story/${storyId}`);
       renderDetail(storyId);
     }
   });
 }
 
+function fetchAndShow(shell, scope, offset = 0) {
+  return fetchStories(scope, offset)
+      .then(stories => showStories(stories, shell));
+}
 
 function fetchJson(url, query = '') {
   return fetch(`${url}.json${query}`).then(v => v.json());
@@ -52,7 +58,7 @@ function fetchChildComments(children, root) {
 */
 function renderComment(comment) {
   let kidRoot = _createElm(
-      'ul', {className: 'kid-root', 'story-id': comment.id},
+      'ul', {className: 'kid-root', 'data-story-id': comment.id},
       _createElm(
           'li', {}, _createElm(
                         'div', {className: 'comment-info sub-info'},
@@ -130,20 +136,19 @@ function renderStory(story, rootTag = 'li', withText = false) {
               _createElm(
                   'a',
                   {href: story.url || `/story/${story.id}`, className: 'title'},
-                  story.title,
+                  story.title),
+              _createElm(
+                  'div', {className: 'sub-info'},
+                  _createElm('div', {}, `${story.score} points |`),
+                  _createElm('div', {}, `by ${story.by} |`),
                   _createElm(
-                      'div', {className: 'sub-info'},
-                      _createElm('div', {}, `${story.score} points |`),
-                      _createElm('div', {}, `by ${story.by} |`),
-                      _createElm(
-                          'a', {
-                            'story-id': story.id,
-                            className: 'comments',
-                            href: `/story/${story.id}`,
-                            // Some stories have no descendants.
-                            hidden: story.descendants === undefined,
-                          },
-                          `${story.descendants} comments`))))),
+                      'a', {
+                        className: 'comments',
+                        href: `/story/${story.id}`,
+                        // Some stories have no descendants.
+                        hidden: story.descendants === undefined,
+                      },
+                      `${story.descendants} comments`)))),
       _createElm('div', {
         className: 'story-text',
         innerHTML: story.text,
@@ -167,8 +172,7 @@ if (windowExists) {
   window.onpopstate = e => {
     if (e.state.offset !== undefined) {
       let match = matchPath(SECTION_MATCHER);
-      showStories(
-          e.state.offset, (match[0] === '/' ? 'top' : match[0]) + 'stories');
+      fetchAndShow(app, (match[0] === '/' ? 'top' : match[0]) + 'stories');
     } else {
       renderDetail(e.state.storyId);
     }
@@ -177,16 +181,16 @@ if (windowExists) {
   if (match = matchPath(SECTION_MATCHER)) {
     let url = match[0] === '/' ? 'top' : match[0];
     history.replaceState({offset: 0}, '', '/' + url);
-    showStories(0, `${url}stories`);
+    fetchAndShow(`${url}stories`, app);
   } else {
-    const storyId = matchPath(/story\/(\d+)/)[1]
+    const storyId = matchPath(STORY_MATCHER)[1]
     history.pushState({storyId}, '', `/story/${storyId}`);
     renderDetail(storyId);
   }
 }
 
-if (typeof module !== undefined) {
+if (typeof module !== 'undefined') {
   module.exports = {
-    showStories: showStories,
+    showStories,
   };
 }
