@@ -1,4 +1,6 @@
 const SECTION_MATCHER = /^\/$|top|new|show|ask|job/;
+const STORY_MATCHER = /story\/(\d+$)/;
+
 const express = require('express');
 const fetch = require('node-fetch');
 const path = require('path');
@@ -68,26 +70,24 @@ function getScopeFromPath(path) {
     return 'topstories';
   }
 
-  if (path.match(SECTION_MATCHER)) {
-    return `${path.match(SECTION_MATCHER)[0]}stories`
-  } else {
-    return undefined;
-  }
+  return `${path.match(SECTION_MATCHER)[0]}stories`
 }
 
-app.get('/', (req, res) => renderRoot(req, res));
 app.get('*', (req, res) => {
   let linkHeaders = ['</cc.js>; rel=preload; as=script'];
-  const scope = getScopeFromPath(req.path);
 
-  if (!scope) {
-    res.status(404);
-    res.end();
-  } else {
+  if (req.path.match(SECTION_MATCHER)) {
+    const scope = getScopeFromPath(req.path);
     linkHeaders.push(
         `</stories.json?scope=${scope}&offset=0&num=30>; rel=preload`)
     res.header('link', linkHeaders)
     renderRoot(req, res, scope);
+  } else if (req.path.match(STORY_MATCHER)) {
+    // For now just punt the render to the client.
+    res.send(renderIndex());
+  } else {
+    res.status(404);
+    res.end();
   }
 });
 
