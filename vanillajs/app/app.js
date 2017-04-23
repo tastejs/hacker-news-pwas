@@ -1,6 +1,6 @@
 let app;
 const API_BASE = 'https://hacker-news.firebaseio.com/v0'
-const SECTION_MATCHER = /^\/$|top|newest|show|ask|jobs/;
+const SECTION_MATCHER = /^\/$|top|new|show|ask|job/;
 const STORY_MATCHER = /story\/(\d+$)/;
 
 const windowExists = typeof window !== 'undefined';
@@ -27,7 +27,15 @@ if (documentExists) {
 
 function fetchAndShow(shell, scope, offset = 0) {
   return fetchStories(scope, offset)
-      .then(stories => showStories(stories, shell));
+      .then(stories => showStories(shell, stories));
+}
+
+function showStories(appShell, stories) {
+  appShell.innerHTML = '';
+  _createElm = _createElm.bind(this);
+  appShell.appendChild(stories.reduce(
+      (list, story) => list.appendChild(renderStory(story)) && list,
+      _createElm('ul', {id: 'stories'})));
 }
 
 function fetchJson(url, query = '') {
@@ -156,14 +164,6 @@ function renderStory(story, rootTag = 'li', withText = false) {
       }));
 }
 
-function showStories(stories, app) {
-  app.innerHTML = '';
-  _createElm = _createElm.bind(this);
-  app.appendChild(stories.reduce(
-      (list, story) => list.appendChild(renderStory(story)) && list,
-      _createElm('ul', {id: 'stories'})));
-}
-
 function matchPath(matcher) {
   return window.location.pathname.match(matcher);
 }
@@ -181,7 +181,7 @@ if (windowExists) {
   if (match = matchPath(SECTION_MATCHER)) {
     let url = match[0] === '/' ? 'top' : match[0];
     history.replaceState({offset: 0}, '', '/' + url);
-    fetchAndShow(`${url}stories`, app);
+    fetchAndShow(app, `${url}stories`);
   } else {
     const storyId = matchPath(STORY_MATCHER)[1]
     history.pushState({storyId}, '', `/story/${storyId}`);

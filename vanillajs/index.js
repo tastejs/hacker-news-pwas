@@ -1,3 +1,4 @@
+const SECTION_MATCHER = /^\/$|top|new|show|ask|job/;
 const express = require('express');
 const fetch = require('node-fetch');
 const path = require('path');
@@ -47,29 +48,47 @@ app.get(
                        .then(v => res.json(v))
                        .catch(e => console.log(e))});
 
-function renderRoot(req, res) {
+function renderRoot(req, res, scope='topstories') {
   jsdom.env(renderIndex(), (err, window) => {
     const app = window.document.querySelector('#app');
 
-    fetchStories('topstories', 0, 30).then(stories => {
+    fetchStories(scope, 0, 30).then(stories => {
       dom.showStories = dom.showStories.bind(window);
-      dom.showStories(stories, app);
+      dom.showStories(app, stories);
       res.send(window.document.documentElement.outerHTML);
-    })
+    }).catch(e => {
+      res.status(500);
+      res.send(e.message);
+    });
   });
 }
 
-app.get('/', renderRoot);
+function getScopeFromPath(path) {
+  if (path === '/') {
+    return 'topstories';
+  }
 
+  if (path.match(SECTION_MATCHER)) {
+    return `${path.match(SECTION_MATCHER)[0]}stories`
+  } else {
+    return undefined;
+  }
+}
+
+app.get('/', (req, res) => renderRoot(req, res));
 app.get('*', (req, res) => {
   let linkHeaders = ['</cc.js>; rel=preload; as=script'];
+  const scope = getScopeFromPath(req.path);
 
-  if (req.path === '/' || req.path === '/top') {
+  if (!scope) {
+    res.status(404);
+    res.end();
+  } else {
     linkHeaders.push(
-        '</stories.json?scope=topstories&offset=0&num=30>; rel=preload')
+        `</stories.json?scope=${scope}&offset=0&num=30>; rel=preload`)
+    res.header('link', linkHeaders)
+    renderRoot(req, res, scope);
   }
-  res.header('link', linkHeaders)
-  renderRoot(req, res);
 });
 
 app.listen(port, () => {
