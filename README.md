@@ -123,8 +123,8 @@ Optionally:
 
 ## Network settings
 
-* Emerging Markets: Chrome Beta on a Motorola G (gen 4) tested from Dulles, Virginia on a 400 Kbps 3G connection with 400ms of latency.
-* Faster 3G: Chrome Beta on a Motorola G (gen 4) tested from Dulles, Virginia on a 1.6 Mbps 3G connection with 300ms of latency.
+* Emerging Markets: Chrome Beta on a Motorola G (gen 4) tested from Dulles, Virginia on a 400 Kbps 3G connection with 400ms of latency. Tested with [WebPageTest](https://www.webpagetest.org/easy) using the auto-selected Moto G4 + Emerging Markets setting.
+* Faster 3G: Chrome Beta on a Motorola G (gen 4) tested from Dulles, Virginia on a 1.6 Mbps 3G connection with 300ms of latency. Tested with [WebPageTest](https://www.webpagetest.org/easy) using the auto-selected Moto G4 + Faster 3G setting.
 * `Time to Interactive` readings taken from linked Lighthouse results in WebPageTest.
 
 ## License
