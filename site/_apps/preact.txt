@@ -10,5 +10,6 @@ wpt-em-link: https://www.webpagetest.org/result/170420_73_54G/
 wpt-faster-3g-link: https://www.webpagetest.org/result/170328_SX_2b62ae440379075b887f472c02a3e0a3/
 image: /assets/images/preacthn-mobile.png
 app-link: https://hn.kristoferbaxter.com/
+github-link: https://github.com/kristoferbaxter/preact-hn
 framework-link: https://preactjs.com/
 ---

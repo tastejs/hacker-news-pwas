@@ -22,7 +22,7 @@ layout: default
 {% assign sortedApps = site.apps | sort: 'weight' %}
 
 {% for app in sortedApps %}
-  <article class="h6-l bt b--black-10 lh-copy mid-gray ph3 ph5 pv4 pv5-ns avenir {% cycle 'bg-white', 'bg-near-white' %}" id={{ app.title }}>
+  <article class="h6-l bt b--black-10 mid-gray lh-copy-ns ph2 ph5-m pv4 pv5-ns avenir {% cycle 'bg-white', 'bg-near-white' %}" id={{ app.title }}>
     <div class="flex flex-row justify-center center">
       <div class="flex h-inherit items-center mr7-l">
         <div class="flex-column">
@@ -55,8 +55,9 @@ layout: default
             </dd>
           </dl>
 
-          <div class="flex justify-center justify-start-l">
-            <a class="f7 tracked bg-orange link dim br-pill dib ph4 pv2 white" href={{ app.app-link }}>VIEW APP</a>
+          <div class="flex justify-center justify-start-l ">
+            <a class="f7 f6-m fw5 fw6-m tracked bg-orange link dim br-pill dib ph3 ph4-l pv2 white" href={{ app.app-link }}>VIEW APP</a>
+            <a class="f7 f6-m fw5 fw6-m tracked bg-orange link dim br-pill dib ph3 ph4-l pv2 white ml2" href={{ app.github-link }}>SOURCE CODE</a>
           </div>
         </div>
       </div>

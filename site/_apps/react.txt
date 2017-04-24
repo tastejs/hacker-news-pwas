@@ -10,5 +10,6 @@ wpt-em-link: https://www.webpagetest.org/result/170420_95_53G/
 wpt-faster-3g-link: https://www.webpagetest.org/result/170328_4T_471cf99ca38b890fc687d1ca25e2260f/
 image: /assets/images/reacthn-mobile.png
 app-link: https://react-hn.appspot.com/
+github-link: https://github.com/insin/react-hn
 framework-link: https://facebook.github.io/react/
 ---

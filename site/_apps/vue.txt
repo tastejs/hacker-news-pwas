@@ -10,5 +10,6 @@ wpt-em-link: https://www.webpagetest.org/result/170413_KY_7F4/
 wpt-faster-3g-link: https://www.webpagetest.org/result/170420_MK_556/
 image: /assets/images/vuehn-mobile.png
 app-link: https://vue-hn.now.sh/
+github-link: https://github.com/vuejs/vue-hackernews-2.0
 framework-link: https://vuejs.org/
 ---

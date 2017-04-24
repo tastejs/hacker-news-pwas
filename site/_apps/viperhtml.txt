@@ -10,5 +10,6 @@ wpt-em-link: https://www.webpagetest.org/result/170412_R2_1K0J/
 wpt-faster-3g-link: https://www.webpagetest.org/result/170420_Y0_5KR/
 image: /assets/images/viperhtml-mobile.png
 app-link: https://viperhtml-164315.appspot.com/
+github-link: https://github.com/WebReflection/viper-news
 framework-link: https://github.com/WebReflection/viperHTML
 ---
