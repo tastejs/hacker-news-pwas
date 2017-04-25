@@ -8,7 +8,7 @@
     {% for contributor in sortedContributors %}
       <div class="flex flex-column items-center mv3 w-100 w-50-m w-auto-l">
         <a href={{ contributor.link }}>
-          <img src={{ contributor.image | relative_url }} class="grow-large pa1 ba b--black-10 br-100 h3 w3" alt={{ contributor.name }}>
+          <img src={{ contributor.image }} class="grow-large pa1 ba b--black-10 br-100 h3 w3" alt={{ contributor.name }}>
         </a>
 
         <h2 class="f6 silver fw4 ttu tracked">{{ contributor.name }}</h2>

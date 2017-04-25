@@ -1,6 +1,6 @@
 ---
 weight: 2
 name: Jonny
-image: /assets/images/jonny.png
+image: https://github.com/insin.png
 link: https://github.com/insin
 ---
