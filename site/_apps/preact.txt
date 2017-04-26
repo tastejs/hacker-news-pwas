@@ -1,0 +1,15 @@
+---
+weight: 2
+title:  Preact
+logo: /assets/images/preact-logo.svg
+lighthouse: 99/100
+interactive-em: 2.4s
+interactive-faster-3g: 1.8s
+lighthouse-link: https://www.webpagetest.org/lighthouse.php?test=170423_RE_31X&run=1
+wpt-em-link: https://www.webpagetest.org/result/170420_73_54G/
+wpt-faster-3g-link: https://www.webpagetest.org/result/170328_SX_2b62ae440379075b887f472c02a3e0a3/
+image: /assets/images/preacthn-mobile.png
+app-link: https://hn.kristoferbaxter.com/
+github-link: https://github.com/kristoferbaxter/preact-hn
+framework-link: https://preactjs.com/
+---

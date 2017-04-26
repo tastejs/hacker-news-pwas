@@ -1,0 +1,75 @@
+$primary-orange: #F4751E;
+
+// overwrite tachyons orange
+.b--orange { border-color: $primary-orange; }
+.orange { color: $primary-orange; }
+.bg-orange { background-color: $primary-orange; }
+.hover-orange:hover { color: $primary-orange; }
+.hover-orange:focus { color:$primary-orange; }
+.hover-bg-orange:hover { background-color: $primary-orange; }
+.hover-bg-orange:focus { background-color: $primary-orange; }
+
+// Svg
+.link-svg svg {
+  height: 1.5rem;
+  width: 1.5rem;
+  fill: #999;
+
+  &:hover {
+    fill: $primary-orange;
+  }
+
+  // Small
+  @media screen and (max-width: 30em) {
+    height: 1rem;
+    width: 1rem;
+  }
+
+  // Medium
+  @media screen and (min-width: 30em) and (max-width: 60em) {
+    height: 1.25rem;
+    width: 1.25rem;
+  }
+}
+
+// Github Corner
+.github-corner svg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 5rem;
+  width: 5rem;
+  fill: $primary-orange;
+
+  &:hover .octo-arm {
+    animation: octocat-wave 560ms ease-in-out;
+  }
+}
+
+@keyframes octocat-wave {
+  0%, 100% {
+    transform: rotate(0);
+  }
+
+  20%,
+    60% {
+    transform: rotate(-25deg);
+  }
+
+  40%,
+    80% {
+    transform: rotate(10deg);
+  }
+}
+
+
+@media (max-width: 500px) {
+  .github-corner {
+    &:hover .octo-arm {
+      animation: none;
+    }
+    .octo-arm {
+      animation: octocat-wave 560ms ease-in-out;
+    }
+  }
+}

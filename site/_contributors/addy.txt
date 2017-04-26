@@ -1,0 +1,6 @@
+---
+weight: 1
+name: Addy
+image: https://github.com/addyosmani.png
+link: https://github.com/addyosmani
+---

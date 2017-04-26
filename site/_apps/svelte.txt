@@ -1,0 +1,15 @@
+---
+weight: 3
+title:  Svelte
+logo: /assets/images/svelte-logo.svg
+lighthouse: 37/100
+interactive-em: 4.9s
+interactive-faster-3g: 3.7s
+lighthouse-link: https://www.webpagetest.org/lighthouse.php?test=170423_0F_323&run=1
+wpt-em-link: https://www.webpagetest.org/result/170420_9K_54X/
+wpt-faster-3g-link: https://www.webpagetest.org/result/170420_XE_54S/
+image: /assets/images/sveltehn-mobile.png
+app-link: https://svelte-hn.now.sh/
+github-link: https://github.com/sveltejs/svelte-hackernews
+framework-link: https://svelte.technology/
+---
