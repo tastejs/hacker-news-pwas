@@ -1,3 +1,14 @@
+$primary-orange: #F4751E;
+
+// overwrite tachyons orange
+.b--orange { border-color: $primary-orange; }
+.orange { color: $primary-orange; }
+.bg-orange { background-color: $primary-orange; }
+.hover-orange:hover { color: $primary-orange; }
+.hover-orange:focus { color:$primary-orange; }
+.hover-bg-orange:hover { background-color: $primary-orange; }
+.hover-bg-orange:focus { background-color: $primary-orange; }
+
 // Svg
 .link-svg svg {
   height: 1.5rem;
@@ -5,7 +16,7 @@
   fill: #999;
 
   &:hover {
-    fill: #F4751E;
+    fill: $primary-orange;
   }
 
   // Small
@@ -22,8 +33,17 @@
 }
 
 // Github Corner
-.github-corner:hover .octo-arm {
-  animation: octocat-wave 560ms ease-in-out;
+.github-corner svg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 5rem;
+  width: 5rem;
+  fill: $primary-orange;
+
+  &:hover .octo-arm {
+    animation: octocat-wave 560ms ease-in-out;
+  }
 }
 
 @keyframes octocat-wave {
