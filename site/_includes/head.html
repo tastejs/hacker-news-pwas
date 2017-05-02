@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="{{ "/assets/styles/main.css" | relative_url }}">
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ "/feed.xml" | relative_url }}">
+  <link rel="manifest" href="/assets/manifest.json">
 
   {% if jekyll.environment == 'production' and site.google_analytics %}
     {% include google-analytics.html %}
