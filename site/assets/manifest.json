@@ -1,6 +1,6 @@
 {
-  "name": "HNPWA",
-  "short_name": "HNPWA",
+  "name": "Hacker News PWA",
+  "short_name": "HN PWA",
   "description": "Hacker News readers as Progressive Web Apps",
   "theme_color": "#F4751E",
   "background_color": "#FFFFFF",
