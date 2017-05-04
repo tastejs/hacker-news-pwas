@@ -5,5 +5,12 @@
   "theme_color": "#F4751E",
   "background_color": "#FFFFFF",
   "start_url": "/",
-  "display": "standalone"
+  "display": "standalone",
+  "icons": [
+      {
+          "src": "/assets/images/favicon.png",
+          "type": "image/png",
+          "sizes": "512x512"
+      }
+  ]
 }
