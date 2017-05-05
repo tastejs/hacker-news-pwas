@@ -13,7 +13,7 @@ $primary-orange: #F4751E;
 .link-svg svg {
   height: 1.5rem;
   width: 1.5rem;
-  fill: #999;
+  fill: #555;
 
   &:hover {
     fill: $primary-orange;
@@ -33,7 +33,7 @@ $primary-orange: #F4751E;
 }
 
 // Github Corner
-.github-corner svg {
+.github-corner {
   position: absolute;
   top: 0;
   right: 0;
@@ -72,4 +72,12 @@ $primary-orange: #F4751E;
       animation: octocat-wave 560ms ease-in-out;
     }
   }
+}
+
+.visuallyhidden {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px; width: 1px;
+  margin: -1px; padding: 0; border: 0;
 }

@@ -26,7 +26,7 @@ layout: default
     <div class="flex flex-row justify-center center">
       <div class="flex h-inherit items-center mr7-l">
         <div class="flex-column">
-          <a class="flex items-center justify-center justify-start-l mb4 no-underline" href={{ app.framework-link }}>
+          <a class="flex items-center justify-center justify-start-l mb4 no-underline link" href={{ app.framework-link }}>
             <img src={{ app.logo | relative_url}} class="grow-large pa1 ba b--black-10 br-100 h2 w2 h3-ns w3-ns" alt={{ app.framework }}>
             <h1 class="dark-gray ma0 f3 f2-ns fw4 pl2 pl3-ns tracked">{{ app.title }}</h1>
           </a>
@@ -36,34 +36,43 @@ layout: default
             <dd class="ml0 f5 fw5 f4-m f3-l pt1">
               <div class="flex items-center justify-center justify-start-l mid-gray">
                 {{ app.lighthouse }}
-                <a class="flex grow-large ml1 ml2-l link-svg" href={{ app.lighthouse-link }} target="_blank" rel="noopener">{% include link-icon.svg %}</a>
+                <a class="flex grow-large ml1 ml2-l link-svg link" href={{ app.lighthouse-link }} target="_blank" rel="noopener">
+                    <span class="visuallyhidden">View Lighthouse results</span>
+                    {% include link-icon.svg %}
+                </a>
               </div>
             </dd>
             <dt class="f6 f4-ns b mt2">Interactive (Emerging Markets)</dt>
             <dd class="ml0 f5 fw5 f4-m f3-l pt1">
               <div class="flex items-center justify-center justify-start-l mid-gray">
                 {{ app.interactive-em }}
-                <a class="flex grow-large ml1 ml2-l link-svg" href={{ app.wpt-em-link }} target="_blank" rel="noopener">{% include link-icon.svg %}</a>
+                <a class="flex grow-large ml1 ml2-l link-svg link" href={{ app.wpt-em-link }} target="_blank" rel="noopener">
+                    <span class="visuallyhidden">View Interactive (Emerging Markets) results</span>
+                    {% include link-icon.svg %}
+                </a>
               </div>
             </dd>
             <dt class="f6 f4-ns b mt2">Interactive (Faster 3G)</dt>
             <dd class="ml0 f5 fw5 f4-m f3-l pt1">
               <div class="flex items-center justify-center justify-start-l mid-gray">
                 {{ app.interactive-faster-3g }}
-                <a class="flex grow-large ml1 ml2-l link-svg" href={{ app.wpt-faster-3g-link }} target="_blank" rel="noopener">{% include link-icon.svg %}</a>
+                <a class="flex grow-large ml1 ml2-l link-svg link" href={{ app.wpt-faster-3g-link }} target="_blank" rel="noopener">
+                    <span class="visuallyhidden">View Interactive (Faster 3G) results</span>
+                    {% include link-icon.svg %}
+                </a>
               </div>
             </dd>
           </dl>
 
           <div class="flex justify-center justify-start-l ">
-            <a class="f7 f6-m fw5 fw6-m tracked bg-orange link dim br-pill dib ph3 ph4-l pv2 black" href={{ app.app-link }}>VIEW APP</a>
-            <a class="f7 f6-m fw5 fw6-m tracked bg-orange link dim br-pill dib ph3 ph4-l pv2 black ml2" href={{ app.github-link }}>SOURCE CODE</a>
+            <a class="f7 f6-m fw5 fw6-m tracked bg-orange link grow br-pill dib ph3 ph4-l pv2 black" href={{ app.app-link }}>VIEW APP</a>
+            <a class="f7 f6-m fw5 fw6-m tracked bg-orange link grow br-pill dib ph3 ph4-l pv2 black ml2" href={{ app.github-link }}>SOURCE CODE</a>
           </div>
         </div>
       </div>
       <div class="fl-l dn db-l">
         <div class="flex h-100 items-center">
-          <a href={{ app.app-link }}>
+          <a class="link" href={{ app.app-link }}>
             <img class="grow w5" src={{ app.image | relative_url }}>
           </a>
         </div>
