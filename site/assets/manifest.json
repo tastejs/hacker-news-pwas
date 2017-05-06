@@ -1,0 +1,16 @@
+{
+  "name": "Hacker News PWA",
+  "short_name": "HN PWA",
+  "description": "Hacker News readers as Progressive Web Apps",
+  "theme_color": "#F4751E",
+  "background_color": "#FFFFFF",
+  "start_url": "/",
+  "display": "standalone",
+  "icons": [
+      {
+          "src": "/assets/images/favicon.png",
+          "type": "image/png",
+          "sizes": "512x512"
+      }
+  ]
+}
