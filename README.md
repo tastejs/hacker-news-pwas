@@ -44,13 +44,13 @@ Hacker News readers as [Progressive Web Apps](https://g.co/ProgressiveWebApps). 
 
 *Emerging Markets*
 
-* WPT: https://www.webpagetest.org/result/170420_9K_54X/
-* Time To Interactive: 4.9s
+* WPT: https://www.webpagetest.org/result/170506_CY_60f3658fb6ca1c3c8426feccc631bfe8/
+* Time To Interactive: 3.6s
 
 *Faster 3G*
 
-* WPT: https://www.webpagetest.org/result/170420_XE_54S/
-* Time To Interactive: 3.7s
+* WPT: https://www.webpagetest.org/result/170506_9H_40a4c53f3f07b983e44feb518271d8a7/
+* Time To Interactive: 2.3s
 
 ### Vue.js
 
