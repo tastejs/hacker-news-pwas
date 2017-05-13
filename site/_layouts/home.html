@@ -2,19 +2,19 @@
 layout: default
 ---
 <div class="flex flex-column items-center justify-center pv5 tc ph4 avenir">
-  <h2 class="f3 f2-ns fw5 mb4 mid-gray">
+  <h2 class="f3 f2-ns fw5 mb4 dark-gray">
     A spiritual successor to TodoMVC
   </h2>
-  <p class="f5 f4-ns mt0 silver lh-copy mw8">
+  <p class="f5 f4-ns mt0 mid-gray lh-copy mw8">
     TodoMVC has helped thousands of developers select
     an MV* framework for their JavaScript applications. However, the web ecosystem
     has evolved in the past few years allowing us to build powerful applications using
     modern browser capabilities.
   </p>
 
-  <p class="f5 f4-ns silver lh-copy mw8">
+  <p class="f5 f4-ns mid-gray lh-copy mw8">
     To provide developers with examples, we collected a list of Hacker News clients built with a number of popular JavaScript frameworks and libraries.
-    Each implementation is a complete <a class="b gray link hover-orange" href="https://developers.google.com/web/progressive-web-apps/">Progressive Web App</a> that utilizes
+    Each implementation is a complete <a class="b dark-gray link hover-orange" href="https://developers.google.com/web/progressive-web-apps/">Progressive Web App</a> that utilizes
     different progressive technologies to provide a fast, reliable and engaging experience.
   </p>
 </div>
@@ -22,49 +22,55 @@ layout: default
 {% assign sortedApps = site.apps | sort: 'weight' %}
 
 {% for app in sortedApps %}
-  <article class="h6-l bt b--black-10 mid-gray lh-copy-ns ph2 ph5-m pv4 pv5-ns avenir {% cycle 'bg-white', 'bg-near-white' %}" id={{ app.title }}>
+  <article class="h6-l bt b--black-10 dark-gray lh-copy-ns ph2 ph5-m pv4 pv5-ns avenir {% cycle 'bg-white', 'bg-near-white' %}" id={{ app.title }}>
     <div class="flex flex-row justify-center center">
       <div class="flex h-inherit items-center mr7-l">
         <div class="flex-column">
-          <a class="flex items-center justify-center justify-start-l mb4 no-underline" href={{ app.framework-link }}>
-            <img src={{ app.logo | relative_url}} class="grow-large pa1 ba b--black-10 br-100 h2 w2 h3-ns w3-ns" alt={{ app.framework }}>
-            <h1 class="mid-gray ma0 f3 f2-ns fw4 pl2 pl3-ns tracked">{{ app.title }}</h1>
+          <a class="flex items-center justify-center justify-start-l mb4 no-underline link" href={{ app.framework-link }}>
+            <img src={{ app.logo | relative_url}} class="grow-large pa1 ba b--black-10 br-100 h2 w2 h3-ns w3-ns" alt={{ app.title }}>
+            <h3 class="dark-gray ma0 f3 f2-ns fw4 pl2 pl3-ns tracked">{{ app.title }}</h3>
           </a>
 
           <dl class="lh-title mt0 mb4 tc tl-l">
             <dt class="f6 f4-ns b">Lighthouse</dt>
             <dd class="ml0 f5 fw5 f4-m f3-l pt1">
-              <div class="flex items-center justify-center justify-start-l silver">
+              <div class="flex items-center justify-center justify-start-l mid-gray">
                 {{ app.lighthouse }}
-                <a class="flex grow-large ml1 ml2-l link-svg" href={{ app.lighthouse-link }} target="_blank" rel="noopener">{% include link-icon.svg %}</a>
+                <a aria-label="View Lighthouse results" class="flex grow-large ml1 ml2-l link-svg link" href={{ app.lighthouse-link }} target="_blank" rel="noopener">
+                    {% include link-icon.svg %}
+                </a>
               </div>
             </dd>
             <dt class="f6 f4-ns b mt2">Interactive (Emerging Markets)</dt>
             <dd class="ml0 f5 fw5 f4-m f3-l pt1">
-              <div class="flex items-center justify-center justify-start-l silver">
+              <div class="flex items-center justify-center justify-start-l mid-gray">
                 {{ app.interactive-em }}
-                <a class="flex grow-large ml1 ml2-l link-svg" href={{ app.wpt-em-link }} target="_blank" rel="noopener">{% include link-icon.svg %}</a>
+                <a aria-label="View Interactive (Emerging Markets) results" class="flex grow-large ml1 ml2-l link-svg link" href={{ app.wpt-em-link }} target="_blank" rel="noopener">
+                    {% include link-icon.svg %}
+                </a>
               </div>
             </dd>
             <dt class="f6 f4-ns b mt2">Interactive (Faster 3G)</dt>
             <dd class="ml0 f5 fw5 f4-m f3-l pt1">
-              <div class="flex items-center justify-center justify-start-l silver">
+              <div class="flex items-center justify-center justify-start-l mid-gray">
                 {{ app.interactive-faster-3g }}
-                <a class="flex grow-large ml1 ml2-l link-svg" href={{ app.wpt-faster-3g-link }} target="_blank" rel="noopener">{% include link-icon.svg %}</a>
+                <a aria-label="View Interactive (Faster 3G) results" class="flex grow-large ml1 ml2-l link-svg link" href={{ app.wpt-faster-3g-link }} target="_blank" rel="noopener">
+                    {% include link-icon.svg %}
+                </a>
               </div>
             </dd>
           </dl>
 
           <div class="flex justify-center justify-start-l ">
-            <a class="f7 f6-m fw5 fw6-m tracked bg-orange link dim br-pill dib ph3 ph4-l pv2 white" href={{ app.app-link }}>VIEW APP</a>
-            <a class="f7 f6-m fw5 fw6-m tracked bg-orange link dim br-pill dib ph3 ph4-l pv2 white ml2" href={{ app.github-link }}>SOURCE CODE</a>
+            <a class="f7 f6-m fw5 fw6-m tracked bg-orange link grow br-pill dib ph3 ph4-l pv2 black" href={{ app.app-link }}>VIEW APP</a>
+            <a class="f7 f6-m fw5 fw6-m tracked bg-orange link grow br-pill dib ph3 ph4-l pv2 black ml2" href={{ app.github-link }}>SOURCE CODE</a>
           </div>
         </div>
       </div>
       <div class="fl-l dn db-l">
         <div class="flex h-100 items-center">
-          <a href={{ app.app-link }}>
-            <img class="grow w5" src={{ app.image | relative_url }}>
+          <a class="link" href={{ app.app-link }}>
+            <img class="grow w5" src={{ app.image | relative_url }} alt="{{ app.title }} HN PWA running on a mobile phone">
           </a>
         </div>
       </div>
