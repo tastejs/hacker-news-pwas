@@ -1,0 +1,8 @@
+before_install:
+- openssl aes-256-cbc -K $encrypted_11961919721b_key -iv $encrypted_11961919721b_iv
+  -in service-account.json.enc -out service-account.json -d
+script: jekyll build && mv _site/app.yaml .
+deploy:
+  provider: gae
+  keyfile: service-account.json
+  project: hnpwa-prod
