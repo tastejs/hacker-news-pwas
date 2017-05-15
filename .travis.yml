@@ -1,4 +1,5 @@
 before_install:
+  - cd site
   - openssl aes-256-cbc -k "$super_secret_password" -in service-account.json.enc -out service-account.json -d
 script: jekyll build && mv _site/app.yaml .
 deploy:
