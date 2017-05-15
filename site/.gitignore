@@ -2,3 +2,5 @@ _site
 .sass-cache
 .jekyll-metadata
 service-acc.json
+service-worker.js
+node_modules

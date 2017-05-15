@@ -1,0 +1,10 @@
+{
+  "name": "hacker-news-pwas",
+  "description": "Hacker News readers as Progressive Web Apps",
+  "scripts": {
+    "start": "sw-precache --config=sw-precache-config.js && bundle exec jekyll serve"
+  },
+  "devDependencies": {
+    "sw-precache": "^5.1.1"
+  }
+}
