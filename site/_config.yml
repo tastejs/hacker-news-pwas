@@ -29,7 +29,6 @@ collections:
 markdown: kramdown
 gems:
   - jekyll-feed
-  - jekyll-app-engine
 exclude:
   - Gemfile
   - Gemfile.lock
