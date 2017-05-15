@@ -1,3 +1,10 @@
+language: ruby
+rvm:
+  - 2.2
+
+before_install:
+  - cd site 
+  - echo $super_secret_password | gpg --passphrase-fd 0 service-acc.json.gpg
 script: jekyll build && mv _site/app.yaml .
 deploy:
   provider: gae
@@ -6,5 +13,3 @@ deploy:
 env:
   global:
     secure: Xrj7PhES/LHZSdRt4ft/j5I/9+TXVmZ6t0NlrUlR+vo82ZKxFszedXoHcIVhxk0dZBBA26kQmM+RMasLtcmAbgzeSeXBhMAqcSKIX7BtcMpzc0hSnF5pCTueDH3JmW1IeDzT9n7WMXovRAjnjOIMqBKOBnlppZ72xbKi0a3wTrlAmZFtBz4leO3dHQUC6IxOfB8m1xhGGDvyXvADGyy5yEGHzXpWQj495k6c1hsQargl8Rq/DyYPCWHkiLLMzkstreYokQjM8FIIjr0u7XfYI+3DadHqNUZyAKYKUfoz2LXqEx/eZNEU89kMVMctBgInoRXagSoSter2aCa3BKIRxAEyTGgRH71ujDHD1IgiLknbEcVLoaC5n3+2N/QQlyvULZ6MXN8LscTTUiqyDDHTqW1Znklsdxg93sqXzXPIHP7vfydzomVpn6GZ4OijHZ/fTJc7O8FkFw+VXHGmDXPkfJZNhenfCZR60ZgHTRV7QverQEOg5tXLEGq7y/O2Y/ViOP9qDtCDeY4uOuwvMn3ofDX7qyzoK4BCk9PZfdsezh9nE2R1E5CmU2Mqv5N1WiIQ0VvNe/C5GtDXAdoGUeLFXm4JzJZquAZPrMmtH/MRzu+TtYWUIabinMiuhbwozELBSNh/5Sd0w2/PMcZkBP5XNj4e3GdMo8DwM9BsdImZ0B8=
-before_install:
-  - cd site && echo $super_secret_password | gpg --passphrase-fd 0 service-acc.json.gpg
