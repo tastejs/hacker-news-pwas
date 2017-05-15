@@ -33,6 +33,7 @@ gems:
 exclude:
   - Gemfile
   - Gemfile.lock
+  - vendor
 app_engine:
   runtime: go
   api_version: go1
