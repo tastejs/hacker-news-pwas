@@ -1,8 +1,10 @@
 before_install:
-- cd site && openssl aes-256-cbc -K $encrypted_11961919721b_key -iv $encrypted_11961919721b_iv
-  -in service-account.json.enc -out service-account.json -d
+  - openssl aes-256-cbc -k "$super_secret_password" -in service-account.json.enc -out service-account.json -d
 script: jekyll build && mv _site/app.yaml .
 deploy:
   provider: gae
   keyfile: service-account.json
   project: hnpwa-prod
+env:
+  global:
+    secure: HfiYizGgew91aDYB4OwwD6fMsf2A2FJX8UD6byvPdaMJWqsTT05M3V/OOZYJy45tgKUreZ7iL6hApznlQP4L+buFT+GVW+eEoZ6BR5iNGPXBvgG/FtBu0ETMj2jaQP/4MbvXHuKEELVmzRLQAMOHDpcz0yO89LkwsFhXeGKqwnoqMcJ+t/eV2nAX99iy9+5p5ogxuasB0yKrWkypsx8HRH5dz6LAPERnIktoUB7HF7t3HywQIKBxKb0w/AtOgjXUBhXflZKvuQcP3rd5C9P9k1Dtf5ePhTWuUMgutW5Zm4oxHW1LDbAJP0GxBagLCiBOmbk6a6knq1/wFS2mAwSomNzYxWO+lE9Pm3SOWygdA4AzkibUAtEKTyepCShct7R4hr8ErHlzNfKm6wQeCnYAqYuNvzWKOD/CNVU7qRIDRZjpT//ZJ3mEXZjHXNnyhuc5RB6b/Sw7Cm0ddv8qkk+oH5x0RGScb45bu3ew9oWB0Dj/pdRLkHR302+H0suWrlS73oLRXpJHEJ2tbSf9u3znmIdQ0rPtCXzrPWDypfWhLSucgQaOwfOnUWfLfSbZEQD6R0naqMO6z7dB9sWAYglQii77cfCZgNUp1JrwxGFsxynS9szKGjJwvGYsuLF9tQvszAtEHPRk414fjOtm8kZL7kTcvtJsA8e7RScz/dBb7q0=
