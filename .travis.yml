@@ -1,11 +1,13 @@
 language: ruby
 rvm:
-  - 2.2
+  - 2.3.3
 
 before_install:
   - cd site 
   - echo $super_secret_password | gpg --passphrase-fd 0 service-acc.json.gpg
-script: jekyll build && mv _site/app.yaml .
+script: 
+  - bundle exec jekyll build
+  - mv _site/app.yaml .
 deploy:
   provider: gae
   keyfile: service-acc.json
