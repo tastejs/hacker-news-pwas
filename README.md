@@ -11,10 +11,11 @@ list of implementations.
 
 Each implementation must include:
 
-* Views: Top Stories, New, Show, Ask, Jobs & threaded Comments
+* Views: Hacker News Top Stories, New, Show, Ask, Jobs & threaded Comments
 * App must be a [Progressive Web App](https://g.co/ProgressiveWebApps)
 * App must score over a 90/100 using [Lighthouse](https://github.com/GoogleChrome/lighthouse)
-* App must become interactive in under 5 seconds on a Moto G4 over 3G. Use [WebPageTest](https://www.webpagetest.org/easy) using the auto-selected Moto G4 + Faster 3G setting to check.
+* App must become aim to be interactive in under 5 seconds on a Moto G4 over 3G. Use [WebPageTest](https://www.webpagetest.org/easy) using the auto-selected Moto G4 + Faster 3G setting to validate "Time to interactive"
+  * We look at numeric Lighthouse scores for TTI as well as a manual inspection of the application's Timeline "trace" and [Filmstrip](https://www.webpagetest.org/video/compare.php?tests=170514_00_bb389f33405b558ea644b37f565c8a56-r:1-c:0) as a sanity check.
 * App must use the [Application Shell](https://developers.google.com/web/fundamentals/architecture/app-shell) pattern to instantly load the skeleton of the UI on repeat visits
 * App must do its best to work cross-browser
 
@@ -22,6 +23,10 @@ Optionally:
 
 * App supports offline caching of HN data (e.g similar to the 'Offline Mode' in ReactHN)
 * App may use server-side rendering so displaying content is resilient to JS not loading on the network
+
+User interface:
+
+* At this time, HNPWA does not prescribe a specific stylesheet or theme for implementations. We will be aiming to provide this in the near future similar to how we do with TodoMVC.
 
 ### Data sources
 
