@@ -4,12 +4,11 @@ rvm:
 before_install:
   - cd site
   - 'if [ "$TRAVIS_PULL_REQUEST" = "false" ]; then echo $super_secret_password | gpg --passphrase-fd 0 service-acc.json.gpg; fi'
-script:
   - nvm install 7
   - npm install
-  - bundle exec jekyll build
+script:
+  - npm run build
   - npm run precache
-  - bundle exec jekyll build
 deploy:
   provider: gae
   skip_cleanup: true

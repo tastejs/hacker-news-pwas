@@ -12,4 +12,4 @@ We're exploring using wildcards for our handlers in the `appl.yaml` file but if 
 
 ## Testing Service Worker locally
 
-To test the Service Worker locally you need to run `npm run precache` before running `bundle exec jekyll serve`.
+To test the Service Worker locally you can run `npm run dev-sw`.
