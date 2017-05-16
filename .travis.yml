@@ -1,15 +1,14 @@
 language: ruby
 rvm:
   - 2.3.3
-
 before_install:
   - cd site 
-  - echo $super_secret_password | gpg --passphrase-fd 0 service-acc.json.gpg
+  - 'if [ "$TRAVIS_PULL_REQUEST" = "false" ]; then echo $super_secret_password | gpg --passphrase-fd 0 service-acc.json.gpg; fi'
 script: 
   - bundle exec jekyll build
-  - mv _site/app.yaml .
 deploy:
   provider: gae
+  skip_cleanup: true
   keyfile: service-acc.json
   project: hnpwa-prod
 env:
