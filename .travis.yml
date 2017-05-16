@@ -1,6 +1,8 @@
 language: ruby
 rvm:
   - 2.3.3
+node_js:
+  - "7"
 before_install:
   - cd site
   - 'if [ "$TRAVIS_PULL_REQUEST" = "false" ]; then echo $super_secret_password | gpg --passphrase-fd 0 service-acc.json.gpg; fi'
