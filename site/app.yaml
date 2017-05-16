@@ -60,3 +60,6 @@ handlers:
 - url: "/assets/manifest.json"
   static_files: _site/assets/manifest.json
   upload: _site/assets/manifest.json
+- url: "/service-worker.js"
+  static_files: _site/service-worker.js
+  upload: _site/service-worker.js

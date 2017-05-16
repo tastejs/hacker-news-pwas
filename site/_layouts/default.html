@@ -15,7 +15,11 @@
 
     {% include footer.html %}
 
-    {% include service-worker-register.html %}
+    {% for static_file in site.static_files %}
+      {% if static_file.path == '/service-worker.js' %}
+        {% include service-worker-register.html %}
+      {% endif %}
+    {% endfor %}
 
   </body>
 
