@@ -7,6 +7,7 @@ before_install:
 script:
   - nvm install 7
   - npm install
+  - bundle exec jekyll build
   - npm run precache
   - bundle exec jekyll build
 deploy:
