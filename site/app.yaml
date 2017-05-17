@@ -57,6 +57,12 @@ handlers:
 - url: "/assets/images/vuehn-mobile.png"
   static_files: _site/assets/images/vuehn-mobile.png
   upload: _site/assets/images/vuehn-mobile.png
+- url: "/assets/images/polymer-mobile.png"
+  static_files: _site/assets/images/polymer-mobile.png
+  upload: _site/assets/images/polymer-mobile.png
+- url: "/assets/images/polymer-logo.svg"
+  static_files: _site/assets/images/polymer-logo.svg
+  upload: _site/assets/images/polymer-logo.svg
 - url: "/assets/manifest.json"
   static_files: _site/assets/manifest.json
   upload: _site/assets/manifest.json
