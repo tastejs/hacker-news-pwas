@@ -2,7 +2,7 @@
   "name": "hacker-news-pwas",
   "description": "Hacker News readers as Progressive Web Apps",
   "scripts": {
-    "build": "bundle exec jekyll build",
+    "build": "JEKYLL_ENV=production bundle exec jekyll build",
     "dev": "bundle exec jekyll serve",
     "dev-sw": "npm run build && sw-precache --config=sw-precache-config.js && npm run dev",
     "precache": "sw-precache --config=sw-precache-config.js --root=_site --verbose"
