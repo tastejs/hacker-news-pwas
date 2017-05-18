@@ -6,6 +6,9 @@ handlers:
 - url: "/"
   static_files: _site/index.html
   upload: _site/index.html
+- url: "/index.html"
+  static_files: _site/index.html
+  upload: _site/index.html
 - url: "/assets/styles/main.css"
   static_files: _site/assets/styles/main.css
   upload: _site/assets/styles/main.css
