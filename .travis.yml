@@ -2,10 +2,13 @@ language: ruby
 rvm:
   - 2.3.3
 before_install:
-  - cd site 
+  - cd site
   - 'if [ "$TRAVIS_PULL_REQUEST" = "false" ]; then echo $super_secret_password | gpg --passphrase-fd 0 service-acc.json.gpg; fi'
-script: 
-  - bundle exec jekyll build
+  - nvm install 7
+  - npm install
+script:
+  - npm run build
+  - npm run precache
 deploy:
   provider: gae
   skip_cleanup: true
