@@ -1,6 +1,6 @@
 ---
 weight: 3
-title:  Svelte
+title:  Svelte Hacker News
 logo: /assets/images/svelte-logo.svg
 lighthouse: 93/100
 interactive-em: 3.6s

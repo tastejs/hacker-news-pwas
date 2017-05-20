@@ -1,6 +1,6 @@
 ---
 weight: 7
-title: Polymer
+title: Polymer HN
 logo: /assets/images/polymer-logo.svg
 lighthouse: 92/100
 interactive-em: 2.7s

@@ -1,6 +1,6 @@
 ---
 weight: 4
-title:  Vue.js
+title:  Vue HN
 logo: /assets/images/vue-logo.svg
 lighthouse: 93/100
 interactive-em: 2.9s

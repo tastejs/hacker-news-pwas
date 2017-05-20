@@ -1,6 +1,6 @@
 ---
 weight: 6
-title:  viperHTML
+title:  viperHTML Hacker News
 logo: /assets/images/viperhtml-logo.svg
 lighthouse: 93/100
 interactive-em: 3.1s

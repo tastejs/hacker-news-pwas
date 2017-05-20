@@ -1,6 +1,6 @@
 ---
 weight: 1
-title:  React
+title:  React HN
 logo: /assets/images/react-logo.svg
 lighthouse: 91/100
 interactive-em: 6.2s

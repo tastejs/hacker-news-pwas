@@ -1,6 +1,6 @@
 ---
 weight: 5
-title:  Angular
+title:  Angular HN
 logo: /assets/images/angular-logo.svg
 lighthouse: 87/100
 interactive-em: 5.8s

@@ -1,6 +1,6 @@
 ---
 weight: 2
-title:  Preact
+title:  Preact HN
 logo: /assets/images/preact-logo.svg
 lighthouse: 93/100
 interactive-em: 2.3s
