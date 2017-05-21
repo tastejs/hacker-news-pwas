@@ -1,10 +1,22 @@
-<img src='https://raw.githubusercontent.com/tastejs/hacker-news-pwas/b3f3d40b9e4bd385dbb973d238ce207aed1f60eb/media/logo.png' width='400px'/>
+<p align="center">
+  <a href="https://hnpwa.com/">
+    <img src='https://raw.githubusercontent.com/tastejs/hacker-news-pwas/b3f3d40b9e4bd385dbb973d238ce207aed1f60eb/media/logo.png' width='400px'/>
+  </a>
+</p>
 
-Hacker News readers as [Progressive Web Apps](https://g.co/ProgressiveWebApps). A spiritual successor to [TodoMVC](https://github.com/tastejs/todomvc).
+<p align="center">
+  Hacker News readers as  <a href="https://g.co/ProgressiveWebApps">Progressive Web Apps</a>. A spiritual successor to <a href="https://github.com/tastejs/todomvc">TodoMVC</a>.
+</p>
+
+<p align="center">
+  <a href="https://travis-ci.org/tastejs/hacker-news-pwas"><img alt="Build Status" src="https://travis-ci.org/tastejs/hacker-news-pwas.svg?branch=master"></a>
+</p>
+
+---
 
 ## Implementations
 
-See our [site](https://hnpwa-prod.appspot.com/) or the `site/apps` directory for the current
+See our [site](https://hnpwa.com/) or the `site/apps` directory for the current
 list of implementations. 
 
 ## Specification
