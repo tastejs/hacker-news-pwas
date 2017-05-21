@@ -26,58 +26,5 @@ layout: default
 {% assign sortedApps = site.apps | sort: 'weight' %}
 
 {% for app in sortedApps %}
-  <article class="h6-l bt b--black-10 dark-gray lh-copy-ns ph2 ph5-m pv4 pv5-ns avenir {% cycle 'bg-white', 'bg-near-white' %}" id={{ app.title }}>
-    <div class="flex flex-row justify-center center">
-      <div class="flex h-inherit items-center mr7-l">
-        <div class="flex-column">
-          <a class="flex items-center justify-center justify-start-l mb4 no-underline link" href={{ app.framework-link }}>
-            <img src={{ app.logo | relative_url}} class="grow-large pa1 ba b--black-10 br-100 h2 w2 h3-ns w3-ns" alt={{ app.title }}>
-            <h3 class="dark-gray ma0 f3 f2-ns fw4 pl2 pl3-ns tracked">{{ app.title }}</h3>
-          </a>
-
-          <dl class="lh-title mt0 mb4 tc tl-l">
-            <dt class="f6 f4-ns b">Lighthouse</dt>
-            <dd class="ml0 f5 fw5 f4-m f3-l pt1">
-              <div class="flex items-center justify-center justify-start-l mid-gray">
-                {{ app.lighthouse }}
-                <a aria-label="View Lighthouse results" class="flex grow-large ml1 ml2-l link-svg link" href={{ app.lighthouse-link }} target="_blank" rel="noopener">
-                    {% include link-icon.svg %}
-                </a>
-              </div>
-            </dd>
-            <dt class="f6 f4-ns b mt2">Interactive (Emerging Markets)</dt>
-            <dd class="ml0 f5 fw5 f4-m f3-l pt1">
-              <div class="flex items-center justify-center justify-start-l mid-gray">
-                {{ app.interactive-em }}
-                <a aria-label="View Interactive (Emerging Markets) results" class="flex grow-large ml1 ml2-l link-svg link" href={{ app.wpt-em-link }} target="_blank" rel="noopener">
-                    {% include link-icon.svg %}
-                </a>
-              </div>
-            </dd>
-            <dt class="f6 f4-ns b mt2">Interactive (Faster 3G)</dt>
-            <dd class="ml0 f5 fw5 f4-m f3-l pt1">
-              <div class="flex items-center justify-center justify-start-l mid-gray">
-                {{ app.interactive-faster-3g }}
-                <a aria-label="View Interactive (Faster 3G) results" class="flex grow-large ml1 ml2-l link-svg link" href={{ app.wpt-faster-3g-link }} target="_blank" rel="noopener">
-                    {% include link-icon.svg %}
-                </a>
-              </div>
-            </dd>
-          </dl>
-
-          <div class="flex justify-center justify-start-l ">
-            <a class="f7 f6-m fw5 fw6-m tracked bg-orange no-underline grow br-pill dib ph3 ph4-l pv2 near-black" href={{ app.app-link }}>VIEW APP</a>
-            <a class="f7 f6-m fw5 fw6-m tracked bg-orange no-underline grow br-pill dib ph3 ph4-l pv2 near-black ml2" href={{ app.github-link }}>SOURCE CODE</a>
-          </div>
-        </div>
-      </div>
-      <div class="fl-l dn db-l">
-        <div class="flex h-100 items-center">
-          <a class="link" href={{ app.app-link }}>
-            <img class="grow w5" src={{ app.image | relative_url }} alt="{{ app.title }} HN PWA running on a mobile phone">
-          </a>
-        </div>
-      </div>
-    </div>
-  </article>
+  {% include implementation.html app=app %}
 {% endfor %}

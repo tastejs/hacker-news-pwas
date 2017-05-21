@@ -1,7 +1,20 @@
 ---
 weight: 7
-title: Polymer HN
-logo: /assets/images/polymer-logo.svg
+title: 'Polymer HN'
+library: 'Polymer'
+library-logo: /assets/images/polymer-logo.svg
+scaffolding: 'Polymer CLI & Polymer Starter Kit'
+module-bundling: 'Polymer-build with HTML Imports'
+service-worker: 'Application Shell + data caching with sw-precache'
+perfomance-patterns: 'PRPL, code-splitting for granular loading'
+server-side-rendering: 'None'
+api: 'Node-hnapi (unofficial)'
+hosting: 'Firebase functions over HTTP/2 with Server Push + edge-caching'
+other-details: 'Route-specific pushing'
+authors: 
+    - name: 'Dan'
+    - name: 'Kevin'
+    - name: 'Steve'
 lighthouse: 92/100
 interactive-em: 2.7s
 interactive-faster-3g: 2.0s

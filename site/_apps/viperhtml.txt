@@ -1,10 +1,19 @@
 ---
 weight: 6
-title:  viperHTML Hacker News
-logo: /assets/images/viperhtml-logo.svg
-lighthouse: 93/100
-interactive-em: 3.1s
-interactive-faster-3g: 2.0s
+title:  'Viper-news'
+library: 'viperHTML'
+library-logo: /assets/images/viperhtml-logo.svg
+module-bundling: 'Browserify'
+service-worker: 'Application Shell + data caching'
+perfomance-patterns: 'Asynchronous Partial Outputs'
+server-side-rendering: 'Yes'
+api: 'Hacker News Firebase API'
+hosting: 'Google App Engine'
+authors: 
+    - name: 'Andrea'
+lighthouse: '93/100'
+interactive-em: '3.1s'
+interactive-faster-3g: '2.0s'
 lighthouse-link: https://www.webpagetest.org/lighthouse.php?test=170511_7Q_15882b2c52ed51c614ec707736e52940&run=3
 wpt-em-link: https://www.webpagetest.org/result/170511_AW_b2e2360d4207831ece22ab4210ab9444/
 wpt-faster-3g-link: https://www.webpagetest.org/result/170511_7Q_15882b2c52ed51c614ec707736e52940/

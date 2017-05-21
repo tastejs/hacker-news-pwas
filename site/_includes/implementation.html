@@ -1,0 +1,119 @@
+<article class="h6-l bt b--black-10 dark-gray lh-copy-ns ph2 ph5-m pv4 pv5-ns avenir {% cycle 'bg-white', 'bg-near-white' %}" id={{ app.title }}>
+    <div class="flex flex-row justify-center center">
+      <div class="flex h-inherit items-center mr7-l tc tl-l">
+        <div class="flex-column mw6">
+          <h2 class="f3 f2-l fw5 mb4 mb3-l">{{ app.title }}</h2>
+
+          <div class="flex flex-row items-center mb4 justify-center justify-start-l">            
+            <a class="flex flex-row items-center justify-center grow no-underline ba b--mid-gray br3 pa2" aria-label="View Lighthouse results" href={{ app.lighthouse-link }}>
+              <span class="h1 h2-l">{% include lighthouse.svg %}</span>
+              <span class="f5 f4-l ml2 mid-gray">{{ app.lighthouse }}</span>
+            </a>
+
+             <a class="flex flex-row items-center justify-center grow no-underline ba b--mid-gray br3 pa2 ml3 ml4-l" aria-label="View Interactive (Emerging Markets) results" href={{ app.wpt-em-link }}>
+              <span class="h1 h2-l">{% include timer.svg %}</span>
+              <span class="f5 f4-l ml2 mid-gray">(EM) {{ app.interactive-em }}</span>
+            </a>
+
+             <a class="flex flex-row items-center justify-center grow no-underline ba b--mid-gray br3 pa2 ml3 ml4-l" aria-label="View Interactive (Faster 3G) results" href={{ app.wpt-faster-3g-link }}>
+              <span class="h1 h2-l">{% include timer.svg %}</span>
+              <span class="f5 f4-l ml2 mid-gray">(3G) {{ app.interactive-faster-3g }}</span>
+            </a>
+          </div>
+
+          <dl class="lh-title mt0 mb4">
+            {% if app.library %}
+              <dt class="f5 b">Framework/UI library</dt>
+              <div class="flex flex-row items-center justify-center justify-start-l no-underline">
+                <dd class="ml0">{{ app.library }}</dd>
+
+                <a class="flex" href={{ app.framework-link }}>
+                  <img src={{ app.library-logo | relative_url}} class="grow-large h2 w2 ml1 br-100" alt={{ app.title }}>
+                </a>
+              </div>
+            {% endif %}
+            
+            {% if app.scaffolding %}
+              <dt class="f5 b mt2">Scaffolding</dt>
+              <dd class="ml0">{{ app.scaffolding }}</dd>
+            {% endif %}
+
+            {% if app.module-bundling %}
+              <dt class="f5 b mt2">Module bundling</dt>
+              <dd class="ml0">{{ app.module-bundling }}</dd>
+            {% endif %}
+
+            {% if app.service-worker %}
+              <dt class="f5 b mt2">Service Worker</dt>
+              <dd class="ml0">{{ app.service-worker }}</dd>
+            {% endif %}
+
+            {% if app.perfomance-patterns %}
+              <dt class="f5 b mt2">Performance patterns</dt>
+              <dd class="ml0">{{ app.perfomance-patterns }}</dd>
+            {% endif %}
+
+            {% if app.server-side-rendering %}
+              <dt class="f5 b mt2">Server-side rendering</dt>
+              <dd class="ml0">{{ app.server-side-rendering }}</dd>
+            {% endif %}
+
+            {% if app.api %}
+              <dt class="f5 b mt2">API</dt>
+              <dd class="ml0">{{ app.api }}</dd>
+            {% endif %}
+
+            {% if app.hosting %}
+              <dt class="f5 b mt2">Hosting</dt>
+              <dd class="ml0">{{ app.hosting }}</dd>
+            {% endif %}
+            
+            {% if app.other-details %}
+              <dt class="f5 b mt2">Other details</dt>
+              <dd class="ml0">{{ app.other-details }}</dd>
+            {% endif %}
+            
+            {% if app.authors %}
+              <dt class="f5 b mt2 mb2">
+                {% if app.authors.size == 1 %}
+                  Author
+                {% endif %}
+
+                {% if app.authors.size > 1 %}
+                  Authors
+                {% endif %}
+              </dt>
+
+              {% for author in app.authors %}
+                {% assign contributor = site.contributors | where: 'name', {{author.name}} | first %}
+                <a class="link" href={{ contributor.link }}>
+                  <img src={{ contributor.image }} class="grow-large ba b--black-10 br-100 h2 w2 {% if forloop.first == false %}ml2{% endif %}" alt={{ contributor.name }}>
+                </a>
+              {% endfor %}
+            {% endif %}
+          </dl>
+
+          <!--<div class="flex items-center justify-center justify-start-l mb4" href={{ app.framework-link }}>
+            {% for author in app.authors %}
+              {% assign contributor = site.contributors | where: 'name', {{author.name}} | first %}
+              <a class="link" href={{ contributor.link }}>
+                <img src={{ contributor.image }} class="grow-large pa1 ba b--black-10 br-100 h3 w3 {% if forloop.first == false %}ml3{% endif %}" alt={{ contributor.name }}>
+              </a>
+            {% endfor %}
+          </div>-->
+
+          <div class="flex justify-center justify-start-l ">
+            <a class="f7 f6-m fw5 fw6-m tracked bg-orange no-underline grow br-pill dib ph3 ph4-l pv2 near-black" href={{ app.app-link }}>VIEW APP</a>
+            <a class="f7 f6-m fw5 fw6-m tracked bg-orange no-underline grow br-pill dib ph3 ph4-l pv2 near-black ml2" href={{ app.github-link }}>SOURCE CODE</a>
+          </div>
+        </div>
+      </div>
+      <div class="fl-l dn db-l">
+        <div class="flex h-100 items-center">
+          <a class="link" href={{ app.app-link }}>
+            <img class="grow w5" src={{ app.image | relative_url }} alt="{{ app.title }} HN PWA running on a mobile phone">
+          </a>
+        </div>
+      </div>
+    </div>
+  </article>

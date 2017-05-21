@@ -1,6 +1,6 @@
 ---
 weight: 8
-name: Dan
+name: 'Dan'
 image: https://github.com/azakus.png
 link: https://github.com/azakus
 ---

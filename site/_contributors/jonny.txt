@@ -1,6 +1,6 @@
 ---
 weight: 2
-name: Jonny
+name: 'Jonny'
 image: https://github.com/insin.png
 link: https://github.com/insin
 ---

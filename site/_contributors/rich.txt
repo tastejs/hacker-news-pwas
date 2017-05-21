@@ -1,6 +1,6 @@
 ---
 weight: 4
-name: Rich
+name: 'Rich'
 image: https://github.com/Rich-Harris.png
 link: https://github.com/Rich-Harris
 ---

@@ -1,6 +1,6 @@
 ---
 weight: 9
-name: Kevin
+name: 'Kevin'
 image: https://github.com/kevinpschaaf.png
 link: https://github.com/kevinpschaaf
 ---

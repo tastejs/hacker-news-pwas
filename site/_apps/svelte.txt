@@ -1,10 +1,18 @@
 ---
 weight: 3
-title:  Svelte Hacker News
-logo: /assets/images/svelte-logo.svg
-lighthouse: 93/100
-interactive-em: 3.6s
-interactive-faster-3g: 2.3s
+title:  'Svelte Hacker News'
+library: 'Svelte'
+library-logo: /assets/images/svelte-logo.svg
+module-bundling: 'Rollup'
+service-worker: 'Application Shell + data caching'
+server-side-rendering: 'Yes'
+api: 'Hacker News Firebase API'
+hosting: 'Now'
+authors: 
+    - name: 'Rich'
+lighthouse: '93/100'
+interactive-em: '3.6s'
+interactive-faster-3g: '2.3s'
 lighthouse-link: https://www.webpagetest.org/lighthouse.php?test=170506_9H_40a4c53f3f07b983e44feb518271d8a7&run=3
 wpt-em-link: https://www.webpagetest.org/result/170506_CY_60f3658fb6ca1c3c8426feccc631bfe8/
 wpt-faster-3g-link: https://www.webpagetest.org/result/170506_9H_40a4c53f3f07b983e44feb518271d8a7/
