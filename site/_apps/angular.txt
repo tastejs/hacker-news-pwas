@@ -1,7 +1,8 @@
 ---
 weight: 5
 title: 'Angular HN'
-library: 'Angular'
+libraries: 
+    - name: 'Angular'
 library-logo: /assets/images/angular-logo.svg
 scaffolding: 'Angular CLI'
 module-bundling: 'Webpack'

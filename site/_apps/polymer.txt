@@ -1,7 +1,8 @@
 ---
 weight: 7
 title: 'Polymer HN'
-library: 'Polymer'
+libraries: 
+    - name: 'Polymer'
 library-logo: /assets/images/polymer-logo.svg
 scaffolding: 'Polymer CLI & Polymer Starter Kit'
 module-bundling: 'Polymer-build with HTML Imports'

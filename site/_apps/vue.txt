@@ -1,7 +1,10 @@
 ---
 weight: 4
 title:  'Vue Hacker News 2.0'
-library: 'Vue'
+libraries: 
+    - name: 'Vue'
+    - name: 'vue-router'
+    - name: 'Vuex'
 library-logo: /assets/images/vue-logo.svg
 module-bundling: 'Webpack'
 service-worker: 'Application Shell + data caching with SWPrecachePlugin'

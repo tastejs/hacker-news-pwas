@@ -1,7 +1,8 @@
 ---
 weight: 6
 title:  'Viper-news'
-library: 'viperHTML'
+libraries: 
+    - name: 'viperHTML'
 library-logo: /assets/images/viperhtml-logo.svg
 module-bundling: 'Browserify'
 service-worker: 'Application Shell + data caching'

@@ -2,13 +2,16 @@
 weight: 2
 title: 'Preact HN'
 library: 'Preact'
+libraries: 
+    - name: 'Peact'
+    - name: 'Preact Router'
 library-logo: /assets/images/preact-logo.svg
 module-bundling: 'Webpack'
-service-worker: 'Application Shell + data caching with OfflinePlugin'
-perfomance-patterns: 'HTTP/2 with Server Push'
+service-worker: 'Application Shell with OfflinePlugin'
+perfomance-patterns: 'HTTP/2 with Server Push, Brotli and Zopfli static assets'
 server-side-rendering: 'Yes'
-api: 'Hacker News Firebase API'
-hosting: '?'
+api: 'In-memory cached Hacker News Firebase API'
+hosting: 'Webfaction + Cloudflare'
 authors: 
     - name: 'Kristofer'
 lighthouse: '93/100'
