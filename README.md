@@ -24,6 +24,7 @@ list of implementations.
 Each implementation must include:
 
 * Views: Hacker News Top Stories, New, Show, Ask, Jobs & threaded Comments
+* App must display 30 items per-page for story list views
 * App must be a [Progressive Web App](https://g.co/ProgressiveWebApps)
 * App must score over a 90/100 using [Lighthouse](https://github.com/GoogleChrome/lighthouse)
 * App must become aim to be interactive in under 5 seconds on a Moto G4 over 3G. Use [WebPageTest](https://www.webpagetest.org/easy) using the auto-selected Moto G4 + Faster 3G setting to validate "Time to interactive"
@@ -44,6 +45,8 @@ User interface:
 
 * [Official real-time Hacker News API powered by Firebase](https://github.com/HackerNews/API)
 * [Unofficial Hacker News API](https://github.com/cheeaun/node-hnapi) by cheeaun
+
+If using the Firebase powered API please use 30 stories per-page to ensure consistency between implementations using the Unofficial API as well as the actual [Hacker News website](https://news.ycombinator.com/)
 
 ## Network settings
 
