@@ -18,9 +18,6 @@ handlers:
 - url: "/assets/favicon.ico"
   static_files: _site/assets/favicon.ico
   upload: _site/assets/favicon.ico
-- url: "/assets/images/angular-logo.svg"
-  static_files: _site/assets/images/angular-logo.svg
-  upload: _site/assets/images/angular-logo.svg
 - url: "/assets/images/angular2hn-mobile.png"
   static_files: _site/assets/images/angular2hn-mobile.png
   upload: _site/assets/images/angular2hn-mobile.png
@@ -30,42 +27,24 @@ handlers:
 - url: "/assets/images/hnpwa-logo.png"
   static_files: _site/assets/images/hnpwa-logo.png
   upload: _site/assets/images/hnpwa-logo.png
-- url: "/assets/images/preact-logo.svg"
-  static_files: _site/assets/images/preact-logo.svg
-  upload: _site/assets/images/preact-logo.svg
 - url: "/assets/images/preacthn-mobile.png"
   static_files: _site/assets/images/preacthn-mobile.png
   upload: _site/assets/images/preacthn-mobile.png
-- url: "/assets/images/react-logo.svg"
-  static_files: _site/assets/images/react-logo.svg
-  upload: _site/assets/images/react-logo.svg
 - url: "/assets/images/reacthn-mobile.png"
   static_files: _site/assets/images/reacthn-mobile.png
   upload: _site/assets/images/reacthn-mobile.png
-- url: "/assets/images/svelte-logo.svg"
-  static_files: _site/assets/images/svelte-logo.svg
-  upload: _site/assets/images/svelte-logo.svg
 - url: "/assets/images/sveltehn-mobile.png"
   static_files: _site/assets/images/sveltehn-mobile.png
   upload: _site/assets/images/sveltehn-mobile.png
-- url: "/assets/images/viperhtml-logo.svg"
-  static_files: _site/assets/images/viperhtml-logo.svg
-  upload: _site/assets/images/viperhtml-logo.svg
 - url: "/assets/images/viperhtml-mobile.png"
   static_files: _site/assets/images/viperhtml-mobile.png
   upload: _site/assets/images/viperhtml-mobile.png
-- url: "/assets/images/vue-logo.svg"
-  static_files: _site/assets/images/vue-logo.svg
-  upload: _site/assets/images/vue-logo.svg
 - url: "/assets/images/vuehn-mobile.png"
   static_files: _site/assets/images/vuehn-mobile.png
   upload: _site/assets/images/vuehn-mobile.png
 - url: "/assets/images/polymer-mobile.png"
   static_files: _site/assets/images/polymer-mobile.png
   upload: _site/assets/images/polymer-mobile.png
-- url: "/assets/images/polymer-logo.svg"
-  static_files: _site/assets/images/polymer-logo.svg
-  upload: _site/assets/images/polymer-logo.svg
 - url: "/assets/manifest.json"
   static_files: _site/assets/manifest.json
   upload: _site/assets/manifest.json
