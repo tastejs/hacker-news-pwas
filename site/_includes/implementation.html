@@ -7,19 +7,16 @@
           <div class="mb4 bt bb b--moon-gray">
             <dl class="f5 f4-l lh-title mv2 flex flex-row items-center justify-center justify-start-l">              
               <dt class="dib b">Lighthouse:</dt>
-              <!--<span class="h1 h2-l flex ml2">{% include lighthouse.svg %}:</span>-->
               <dd class="dib ml2 mid-gray">{{ app.lighthouse }}</dd>
             </dl>
 
               <dl class="f5 f4-l lh-title mv2 flex flex-row items-center justify-center justify-start-l">              
               <dt class="dib b">Interactive (Emerging Markets):</dt>
-              <!--<span class="h1 h2-l flex ml2">{% include timer.svg %}:</span>-->
               <dd class="dib ml2 mid-gray">{{ app.interactive-em }}</dd>
             </dl>
 
             <dl class="f5 f4-l lh-title mv2 flex flex-row items-center justify-center justify-start-l">              
               <dt class="dib b">Interactive (Faster 3G):</dt>
-              <!--<span class="h1 h2-l flex ml2">{% include timer.svg %}:</span>-->
               <dd class="dib ml2 mid-gray">{{ app.interactive-faster-3g }}</dd>
             </dl>
           </div>
@@ -34,14 +31,6 @@
               {% endfor %}
               </dd>
             </dl>
-              <!--<dt class="f5 b">Framework/UI library</dt>
-              <div class="flex flex-row items-center justify-center justify-start-l no-underline">
-                <dd class="ml0">{{ app.library }}</dd>
-
-                <a class="flex" href={{ app.framework-link }}>
-                  <img src={{ app.library-logo | relative_url}} class="grow-large h2 w2 ml1 br-100" alt={{ app.title }}>
-                </a>
-              </div>-->
             {% endif %}
             
             {% if app.scaffolding %}
