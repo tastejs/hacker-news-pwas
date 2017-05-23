@@ -5,7 +5,6 @@ library: 'Preact'
 libraries: 
     - name: 'Peact'
     - name: 'Preact Router'
-library-logo: /assets/images/preact-logo.svg
 module-bundling: 'Webpack'
 service-worker: 'Application Shell with OfflinePlugin'
 perfomance-patterns: 'HTTP/2 with Server Push, Brotli and Zopfli static assets'

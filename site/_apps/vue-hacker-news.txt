@@ -5,7 +5,6 @@ libraries:
     - name: 'Vue'
     - name: 'vue-router'
     - name: 'Vuex'
-library-logo: /assets/images/vue-logo.svg
 module-bundling: 'Webpack'
 service-worker: 'Application Shell + data caching with SWPrecachePlugin'
 perfomance-patterns: 'Server-side data pre-fetching, preload/prefetch resources'

@@ -4,26 +4,6 @@
         <div class="flex-column w-100">
           <h2 class="f3 f2-l fw5 mb4">{{ app.title }}</h2>
 
-          <!--<div class="flex flex-row items-center mb4 justify-center justify-start-l">            
-            <a class="flex flex-column items-center justify-center grow no-underline ba b--mid-gray br3 h4 w4-5 tc" aria-label="View Lighthouse results" href={{ app.lighthouse-link }}>
-              <h4 class="f6 mt1 mb1 dark-gray">Lighthouse<br>Score</h4>
-              <span class="h1 h2-l">{% include lighthouse.svg %}</span>
-              <span class="f5 f4-l mid-gray">{{ app.lighthouse }}</span>
-            </a>
-
-             <a class="flex flex-column items-center justify-center grow no-underline ba b--mid-gray br3 ml3 ml4-l h4 w4-5 tc" aria-label="View Interactive (Emerging Markets) results" href={{ app.wpt-em-link }}>
-              <h4 class="f6 mt1 mb1 dark-gray">Interactive<br>(Emerging Markets)</h4>
-              <span class="h1 h2-l">{% include timer.svg %}</span>
-              <span class="f5 f4-l ml2 mid-gray">{{ app.interactive-em }}</span>
-            </a>
-
-             <a class="flex flex-column items-center justify-center grow no-underline ba b--mid-gray br3 ml3 ml4-l h4 w4-5 tc" aria-label="View Interactive (Faster 3G) results" href={{ app.wpt-faster-3g-link }}>
-              <h4 class="f6 mt1 mb1 dark-gray">Interactive<br>(Faster 3G)</h4>              
-              <span class="h1 h2-l">{% include timer.svg %}</span>
-              <span class="f5 f4-l ml2 mid-gray">{{ app.interactive-faster-3g }}</span>
-            </a>
-          </div>-->
-
           <div class="mb4 bt bb b--moon-gray">
             <dl class="f5 f4-l lh-title mv2 flex flex-row items-center justify-center justify-start-l">              
               <dt class="dib b">Lighthouse:</dt>
@@ -140,9 +120,9 @@
             {% endif %}
           </div>
 
-          <div class="flex justify-center justify-start-l ">
-            <a class="f7 f6-m fw5 fw6-m tracked bg-orange no-underline grow br-pill dib ph3 ph4-l pv2 near-black" href={{ app.app-link }}>VIEW APP</a>
-            <a class="f7 f6-m fw5 fw6-m tracked bg-orange no-underline grow br-pill dib ph3 ph4-l pv2 near-black ml2" href={{ app.github-link }}>SOURCE CODE</a>
+          <div class="flex justify-center justify-start-l">
+            <a class="f7 fw5 tracked bg-orange no-underline grow br-pill dib ph3 ph4-l pv2 near-black" href={{ app.app-link }}>VIEW APP</a>
+            <a class="f7 fw5 tracked bg-orange no-underline grow br-pill dib ph3 ph4-l pv2 near-black ml2" href={{ app.github-link }}>SOURCE CODE</a>
           </div>
         </div>
       </div>

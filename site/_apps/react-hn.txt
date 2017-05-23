@@ -5,7 +5,6 @@ library: 'React'
 libraries: 
     - name: 'React'
     - name: 'React Router'
-library-logo: /assets/images/react-logo.svg
 module-bundling: 'Webpack'
 service-worker: 'Application Shell + data caching with Workbox'
 perfomance-patterns: 'PRPL, route-based chunking'

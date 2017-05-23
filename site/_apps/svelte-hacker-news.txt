@@ -3,7 +3,6 @@ weight: 3
 title:  'Svelte Hacker News'
 libraries: 
     - name: 'Svelte'
-library-logo: /assets/images/svelte-logo.svg
 module-bundling: 'Rollup'
 service-worker: 'Application Shell + data caching'
 server-side-rendering: 'Yes'

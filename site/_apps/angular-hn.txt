@@ -3,7 +3,6 @@ weight: 5
 title: 'Angular HN'
 libraries: 
     - name: 'Angular'
-library-logo: /assets/images/angular-logo.svg
 scaffolding: 'Angular CLI'
 module-bundling: 'Webpack'
 service-worker: 'Application Shell + data caching with sw-precache'
