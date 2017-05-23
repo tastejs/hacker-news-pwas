@@ -1,6 +1,7 @@
 ---
 weight: 6
 title:  'Viper-news'
+github-title: 'WebReflection/viper-news'
 libraries: 
     - name: 'viperHTML'
 module-bundling: 'Browserify'

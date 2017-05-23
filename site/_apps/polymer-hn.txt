@@ -1,6 +1,7 @@
 ---
 weight: 7
 title: 'Polymer HN'
+github-title: 'Polymer/hn-polymer-2'
 libraries: 
     - name: 'Polymer'
 scaffolding: 'Polymer CLI & Polymer Starter Kit'

@@ -2,8 +2,12 @@
     <div class="flex flex-row justify-center center">
       <div class="flex h-inherit items-center w-third-l mr6-l tc tl-l">
         <div class="flex-column w-100">
-          <h2 class="f3 f2-l fw5 mb4">{{ app.title }}</h2>
+          <h2 class="f3 f2-l fw6 mb1">{{ app.title }}</h2>
 
+          <h3 class="mt2 mb4">
+            <a class="f6 f4-l dark-gray fw5 mt2 mb4 link hover-orange" href={{ app.github-link }}>{{ app.github-title }}</a>
+          </h3>
+        
           <div class="mb4 bt bb b--moon-gray">
             <dl class="f5 f4-l lh-title mv2 flex flex-row items-center justify-center justify-start-l">              
               <dt class="dib b">Lighthouse:</dt>

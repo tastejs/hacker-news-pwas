@@ -1,6 +1,7 @@
 ---
 weight: 2
 title: 'Preact HN'
+github-title: 'kristoferbaxter/preact-hn'
 library: 'Preact'
 libraries: 
     - name: 'Peact'

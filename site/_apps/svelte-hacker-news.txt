@@ -1,6 +1,7 @@
 ---
 weight: 3
 title:  'Svelte Hacker News'
+github-title: 'sveltejs/svelte-hackernews'
 libraries: 
     - name: 'Svelte'
 module-bundling: 'Rollup'

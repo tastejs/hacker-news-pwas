@@ -1,6 +1,7 @@
 ---
 weight: 4
 title:  'Vue Hacker News 2.0'
+github-title: 'vuejs/vue-hackernews-2.0'
 libraries: 
     - name: 'Vue'
     - name: 'vue-router'

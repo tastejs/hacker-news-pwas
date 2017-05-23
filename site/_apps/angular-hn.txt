@@ -1,6 +1,7 @@
 ---
 weight: 5
 title: 'Angular HN'
+github-title: 'housseindjirdeh/angular2-hn'
 libraries: 
     - name: 'Angular'
 scaffolding: 'Angular CLI'
