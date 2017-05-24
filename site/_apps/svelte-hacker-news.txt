@@ -1,5 +1,5 @@
 ---
-weight: 3
+weight: 4
 title:  'Svelte Hacker News'
 github-title: 'sveltejs/svelte-hackernews'
 libraries: 

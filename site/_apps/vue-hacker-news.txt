@@ -1,5 +1,5 @@
 ---
-weight: 4
+weight: 5
 title:  'Vue Hacker News 2.0'
 github-title: 'vuejs/vue-hackernews-2.0'
 libraries: 

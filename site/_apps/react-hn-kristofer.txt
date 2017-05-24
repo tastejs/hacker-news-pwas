@@ -1,0 +1,27 @@
+---
+weight: 1
+title: 'React HN'
+github-title: 'kristoferbaxter/react-hn'
+library: 'React'
+libraries: 
+    - name: 'React'
+    - name: 'React Router'
+module-bundling: 'Webpack'
+service-worker: 'Application Shell with OfflinePlugin'
+perfomance-patterns: 'HTTP/2 with Server Push, Brotli and Zopfli static assets'
+server-side-rendering: 'Yes'
+api: 'In-memory cached Hacker News Firebase API'
+hosting: 'Webfaction + Cloudflare'
+authors: 
+    - name: 'Kristofer'
+lighthouse: '91/100'
+interactive-em: '3.4s'
+interactive-faster-3g: '1.8s'
+lighthouse-link: https://www.webpagetest.org/lighthouse.php?test=170523_JN_1CAH&run=3
+wpt-em-link: https://www.webpagetest.org/result/170522_PN_86f54c759ef3ac8ee1cdc7cb8f62528f/
+wpt-faster-3g-link: https://www.webpagetest.org/result/170523_JN_1CAH/
+image: /assets/images/reacthn-kristofer-mobile.png
+app-link: https://react-hn.kristoferbaxter.com/
+github-link: https://github.com/kristoferbaxter/react-hn
+framework-link: https://facebook.github.io/react/
+---

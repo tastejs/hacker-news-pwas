@@ -1,6 +1,6 @@
 ---
-weight: 6
-title:  'Viper-news'
+weight: 7
+title: 'Viper-news'
 github-title: 'WebReflection/viper-news'
 libraries: 
     - name: 'viperHTML'

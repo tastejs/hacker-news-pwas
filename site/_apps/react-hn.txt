@@ -1,6 +1,6 @@
 ---
-weight: 1
-title:  'React HN'
+weight: 2
+title: 'React HN'
 github-title: 'insin/react-hn'
 library: 'React'
 libraries: 

@@ -1,10 +1,10 @@
 ---
-weight: 2
+weight: 3
 title: 'Preact HN'
 github-title: 'kristoferbaxter/preact-hn'
 library: 'Preact'
 libraries: 
-    - name: 'Peact'
+    - name: 'Preact'
     - name: 'Preact Router'
 module-bundling: 'Webpack'
 service-worker: 'Application Shell with OfflinePlugin'
