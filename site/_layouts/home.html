@@ -23,7 +23,14 @@ layout: default
   </p>
 </div>
 
-<div class="flex flex-column items-center justify-center pv5 tc ph4 avenir bg-near-white">
+{% assign sortedApps = site.apps | sort: 'weight' %}
+{% assign numAppsIsEven = site.apps.size | modulo: 2 %} 
+
+{% for app in sortedApps %}
+  {% include implementation.html app=app %}
+{% endfor %}
+
+<div class="flex flex-column items-center justify-center pv5 tc ph4 avenir {% if numAppsIsEven == 0 %} bg-near-white {% else %} bg-white {% endif %}">
   <h2 class="f3 f2-ns fw5 mb4 dark-gray">
     Submit your Hacker News Progressive Web App
   </h2>
@@ -36,9 +43,3 @@ layout: default
 
   <a class="mt3 f7 fw5 tracked bg-orange no-underline grow br-pill dib ph3 ph4-l pv2 near-black" href="https://github.com/tastejs/hacker-news-pwas/blob/master/CONTRIBUTING.md">SUBMIT</a>
 </div>
-
-{% assign sortedApps = site.apps | sort: 'weight' %}
-
-{% for app in sortedApps %}
-  {% include implementation.html app=app %}
-{% endfor %}

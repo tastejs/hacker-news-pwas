@@ -1,4 +1,4 @@
-<article class="h6-l bt b--black-10 dark-gray lh-copy-ns ph2 ph5-m pv4 pv5-ns avenir {% cycle 'bg-white', 'bg-near-white' %}" id={{ app.title }}>
+<article class="h6-l bt b--black-10 dark-gray lh-copy-ns ph2 ph5-m pv4 pv5-ns avenir {% cycle 'bg-near-white', 'bg-white' %}">
     <div class="flex flex-row justify-center center">
       <div class="flex h-inherit items-center w-third-l mr6-l tc tl-l">
         <div class="flex-column w-100">
@@ -18,7 +18,7 @@
               </dd>
             </dl>
 
-              <dl class="f5 f4-l lh-title mv2 flex flex-row items-center justify-center justify-start-l">              
+            <dl class="f5 f4-l lh-title mv2 flex flex-row items-center justify-center justify-start-l">              
               <dt class="dib b">Interactive (Emerging Markets):</dt>
               <dd class="dib ml2 mid-gray">
                 <a aria-label="View Interactive (Emerging Markets) results" class="mid-gray link hover-orange" href={{ app.wpt-em-link }}>
@@ -106,15 +106,15 @@
             {% endif %}
             
             {% if app.authors %}
-              <dt class="f5 b mt2 mb2">
+              <div class="f5 b mt2 mb2">
                 {% if app.authors.size == 1 %}
-                  Author
+                  Author:
                 {% endif %}
 
                 {% if app.authors.size > 1 %}
-                  Authors
+                  Authors:
                 {% endif %}
-              </dt>
+              </div>
 
               {% for author in app.authors %}
                 {% assign contributor = site.contributors | where: 'name', {{author.name}} | first %}
