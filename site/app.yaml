@@ -3,54 +3,10 @@ runtime: go
 api_version: go1
 default_expiration: 300s
 handlers:
-- url: "/"
+- url: /
   static_files: _site/index.html
-  upload: _site/index.html
-- url: "/index.html"
-  static_files: _site/index.html
-  upload: _site/index.html
-- url: "/assets/styles/main.css"
-  static_files: _site/assets/styles/main.css
-  upload: _site/assets/styles/main.css
-- url: "/feed.xml"
-  static_files: _site/feed.xml
-  upload: _site/feed.xml
-- url: "/assets/favicon.ico"
-  static_files: _site/assets/favicon.ico
-  upload: _site/assets/favicon.ico
-- url: "/assets/images/angular2hn-mobile.png"
-  static_files: _site/assets/images/angular2hn-mobile.png
-  upload: _site/assets/images/angular2hn-mobile.png
-- url: "/assets/images/favicon.png"
-  static_files: _site/assets/images/favicon.png
-  upload: _site/assets/images/favicon.png
-- url: "/assets/images/hnpwa-logo.png"
-  static_files: _site/assets/images/hnpwa-logo.png
-  upload: _site/assets/images/hnpwa-logo.png
-- url: "/assets/images/preacthn-mobile.png"
-  static_files: _site/assets/images/preacthn-mobile.png
-  upload: _site/assets/images/preacthn-mobile.png
-- url: "/assets/images/reacthn-mobile.png"
-  static_files: _site/assets/images/reacthn-mobile.png
-  upload: _site/assets/images/reacthn-mobile.png
-- url: "/assets/images/reacthn-kristofer-mobile.png"
-  static_files: _site/assets/images/reacthn-kristofer-mobile.png
-  upload: _site/assets/images/reacthn-kristofer-mobile.png
-- url: "/assets/images/sveltehn-mobile.png"
-  static_files: _site/assets/images/sveltehn-mobile.png
-  upload: _site/assets/images/sveltehn-mobile.png
-- url: "/assets/images/viperhtml-mobile.png"
-  static_files: _site/assets/images/viperhtml-mobile.png
-  upload: _site/assets/images/viperhtml-mobile.png
-- url: "/assets/images/vuehn-mobile.png"
-  static_files: _site/assets/images/vuehn-mobile.png
-  upload: _site/assets/images/vuehn-mobile.png
-- url: "/assets/images/polymer-mobile.png"
-  static_files: _site/assets/images/polymer-mobile.png
-  upload: _site/assets/images/polymer-mobile.png
-- url: "/assets/manifest.json"
-  static_files: _site/assets/manifest.json
-  upload: _site/assets/manifest.json
-- url: "/service-worker.js"
-  static_files: _site/service-worker.js
-  upload: _site/service-worker.js
+  upload: _site/index\.html
+
+- url: /(.*)
+  static_files: _site/\1
+  upload: _site/(.*)
