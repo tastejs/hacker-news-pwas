@@ -1,10 +1,21 @@
 ---
-weight: 5
-title:  Angular HN
-logo: /assets/images/angular-logo.svg
-lighthouse: 87/100
-interactive-em: 5.8s
-interactive-faster-3g: 3.48s
+weight: 6
+title: 'Angular HN'
+github-title: 'housseindjirdeh/angular2-hn'
+libraries: 
+    - name: 'Angular'
+scaffolding: 'Angular CLI'
+module-bundling: 'Webpack'
+service-worker: 'Application Shell + data caching with sw-precache'
+perfomance-patterns: 'Lazy loaded modules'
+server-side-rendering: 'None'
+api: 'Node-hnapi (unofficial)'
+hosting: 'Firebase'
+authors: 
+    - name: 'Houssein'
+lighthouse: '87/100'
+interactive-em: '6.1s'
+interactive-faster-3g: '4.2s'
 lighthouse-link: https://www.webpagetest.org/lighthouse.php?test=170511_K9_dc8782ce30bfee7e9e5744736d44cd26&run=3
 wpt-em-link: https://www.webpagetest.org/result/170511_G4_45d46ba11f34aedeb022f60e4f77adbe/
 wpt-faster-3g-link: https://www.webpagetest.org/result/170511_K9_dc8782ce30bfee7e9e5744736d44cd26/

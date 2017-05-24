@@ -1,0 +1,28 @@
+---
+weight: 5
+title:  'Vue Hacker News 2.0'
+github-title: 'vuejs/vue-hackernews-2.0'
+libraries: 
+    - name: 'Vue'
+    - name: 'vue-router'
+    - name: 'Vuex'
+module-bundling: 'Webpack'
+service-worker: 'Application Shell + data caching with SWPrecachePlugin'
+perfomance-patterns: 'Server-side data pre-fetching, preload/prefetch resources'
+server-side-rendering: 'Yes'
+api: 'Hacker News Firebase API'
+hosting: 'Now'
+other-details: 'Inlined CSS used by rendered components'
+authors: 
+    - name: 'Evan'
+lighthouse: '93/100'
+interactive-em: '2.9s'
+interactive-faster-3g: '2.4s'
+lighthouse-link: https://www.webpagetest.org/lighthouse.php?test=170423_PF_32D&run=1
+wpt-em-link: https://www.webpagetest.org/result/170413_KY_7F4/
+wpt-faster-3g-link: https://www.webpagetest.org/result/170420_MK_556/
+image: /assets/images/vuehn-mobile.png
+app-link: https://vue-hn.now.sh/
+github-link: https://github.com/vuejs/vue-hackernews-2.0
+framework-link: https://vuejs.org/
+---

@@ -1,0 +1,142 @@
+<article class="h6-l bt b--black-10 dark-gray lh-copy-ns ph2 ph5-m pv4 pv5-ns avenir {% cycle 'bg-white', 'bg-near-white' %}" id={{ app.title }}>
+    <div class="flex flex-row justify-center center">
+      <div class="flex h-inherit items-center w-third-l mr6-l tc tl-l">
+        <div class="flex-column w-100">
+          <h2 class="f3 f2-l fw6 mb1">{{ app.title }}</h2>
+
+          <h3 class="mt2 mb4">
+            <a class="f6 f4-l dark-gray fw5 mt2 mb4 link hover-orange" href={{ app.github-link }}>{{ app.github-title }}</a>
+          </h3>
+        
+          <div class="mb4 bt bb b--moon-gray">
+            <dl class="f5 f4-l lh-title mv2 flex flex-row items-center justify-center justify-start-l">              
+              <dt class="dib b">Lighthouse:</dt>
+              <dd class="dib ml2 mid-gray">
+                <a aria-label="View Lighthouse results" class="mid-gray link hover-orange" href={{ app.lighthouse-link }}>
+                  {{ app.lighthouse }}
+                </a>
+              </dd>
+            </dl>
+
+              <dl class="f5 f4-l lh-title mv2 flex flex-row items-center justify-center justify-start-l">              
+              <dt class="dib b">Interactive (Emerging Markets):</dt>
+              <dd class="dib ml2 mid-gray">
+                <a aria-label="View Interactive (Emerging Markets) results" class="mid-gray link hover-orange" href={{ app.wpt-em-link }}>
+                  {{ app.interactive-em }}
+                </a>
+              </dd>
+            </dl>
+
+            <dl class="f5 f4-l lh-title mv2 flex flex-row items-center justify-center justify-start-l">              
+              <dt class="dib b">Interactive (Faster 3G):</dt>
+              <dd class="dib ml2 mid-gray">
+                <a aria-label="View Interactive (Faster 3G) results" class="mid-gray link hover-orange" href={{ app.wpt-faster-3g-link }}>
+                  {{ app.interactive-faster-3g }}
+                </a>
+              </dd>
+            </dl>
+          </div>
+          
+          <div class="lh-title mb4">
+            {% if app.libraries %}
+            <dl class="f5 lh-title mv2">
+              <dt class="dib b">Framework/UI libraries:</dt>
+              <dd class="dib ml0">
+              {% for library in app.libraries %}
+                {{ library.name }}{% if forloop.last == false %}, {% endif %}
+              {% endfor %}
+              </dd>
+            </dl>
+            {% endif %}
+            
+            {% if app.scaffolding %}
+              <dl class="f5 lh-title mv2">
+                <dt class="dib b">Scaffolding:</dt>
+                <dd class="dib ml0">{{ app.scaffolding }}</dd>
+              </dl>
+            {% endif %}
+
+            {% if app.module-bundling %}
+              <dl class="f5 lh-title mv2">
+                <dt class="dib b">Module bundling:</dt>
+                <dd class="dib ml0">{{ app.module-bundling }}</dd>
+              </dl>
+            {% endif %}
+
+            {% if app.service-worker %}
+              <dl class="f5 lh-title mv2">
+                <dt class="dib b">Service Worker:</dt>
+                <dd class="dib ml0">{{ app.service-worker }}</dd>
+              </dl>
+            {% endif %}
+
+            {% if app.perfomance-patterns %}
+              <dl class="f5 lh-title mv2">
+                <dt class="dib b">Performance patterns:</dt>
+                <dd class="dib ml0">{{ app.perfomance-patterns }}</dd>
+              </dl>
+            {% endif %}
+
+            {% if app.server-side-rendering %}
+              <dl class="f5 lh-title mv2">
+                <dt class="dib b">Server-side rendering:</dt>
+                <dd class="dib ml0">{{ app.server-side-rendering }}</dd>
+              </dl>
+            {% endif %}
+
+            {% if app.api %}
+              <dl class="f5 lh-title mv2">
+                <dt class="dib b">API:</dt>
+                <dd class="dib ml0">{{ app.api }}</dd>
+              </dl>
+            {% endif %}
+
+            {% if app.hosting %}
+              <dl class="f5 lh-title mv2">
+                <dt class="dib b">Hosting:</dt>
+                <dd class="dib ml0">{{ app.hosting }}</dd>
+              </dl>
+            {% endif %}
+            
+            {% if app.other-details %}
+              <dl class="f5 lh-title mv2">
+                <dt class="dib b">Other details:</dt>
+                <dd class="dib ml0">{{ app.other-details }}</dd>
+              </dl>
+            {% endif %}
+            
+            {% if app.authors %}
+              <dt class="f5 b mt2 mb2">
+                {% if app.authors.size == 1 %}
+                  Author
+                {% endif %}
+
+                {% if app.authors.size > 1 %}
+                  Authors
+                {% endif %}
+              </dt>
+
+              {% for author in app.authors %}
+                {% assign contributor = site.contributors | where: 'name', {{author.name}} | first %}
+                <a class="link" href={{ contributor.link }}>
+                  <img src={{ contributor.image }} class="grow-large ba b--black-10 br-100 h2 w2 {% if forloop.first == false %}ml2{% endif %}" alt={{ contributor.name }}>
+                </a>
+              {% endfor %}
+            {% endif %}
+          </div>
+
+          <div class="flex justify-center justify-start-l">
+            <a class="f7 fw5 tracked bg-orange no-underline grow br-pill dib ph3 ph4-l pv2 near-black" href={{ app.app-link }}>VIEW APP</a>
+            <a class="f7 fw5 tracked bg-orange no-underline grow br-pill dib ph3 ph4-l pv2 near-black ml2" href={{ app.github-link }}>SOURCE CODE</a>
+          </div>
+        </div>
+      </div>
+      <div class="fl-l dn db-l">
+        <div class="flex h-100 items-center">
+          <a class="link" href={{ app.app-link }}>
+            <img class="grow w5" src={{ app.image | relative_url }} alt="{{ app.title }} HN PWA running on a mobile phone">
+          </a>
+        </div>
+      </div>
+    </div>
+  </article>

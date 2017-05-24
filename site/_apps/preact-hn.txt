@@ -1,0 +1,27 @@
+---
+weight: 3
+title: 'Preact HN'
+github-title: 'kristoferbaxter/preact-hn'
+library: 'Preact'
+libraries: 
+    - name: 'Preact'
+    - name: 'Preact Router'
+module-bundling: 'Webpack'
+service-worker: 'Application Shell with OfflinePlugin'
+perfomance-patterns: 'HTTP/2 with Server Push, Brotli and Zopfli static assets'
+server-side-rendering: 'Yes'
+api: 'In-memory cached Hacker News Firebase API'
+hosting: 'Webfaction + Cloudflare'
+authors: 
+    - name: 'Kristofer'
+lighthouse: '93/100'
+interactive-em: '2.3s'
+interactive-faster-3g: '1.7s'
+lighthouse-link: https://www.webpagetest.org/lighthouse.php?test=170511_E0_8c496a263005af3b781063741a159cb8&run=3
+wpt-em-link: https://www.webpagetest.org/result/170511_35_23743024b907386a966d2367e0d96b38/
+wpt-faster-3g-link: https://www.webpagetest.org/result/170511_E0_8c496a263005af3b781063741a159cb8/
+image: /assets/images/preacthn-mobile.png
+app-link: https://hn.kristoferbaxter.com/
+github-link: https://github.com/kristoferbaxter/preact-hn
+framework-link: https://preactjs.com/
+---

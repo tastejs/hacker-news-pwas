@@ -1,0 +1,29 @@
+---
+weight: 8
+title: 'Polymer HN'
+github-title: 'Polymer/hn-polymer-2'
+libraries: 
+    - name: 'Polymer'
+scaffolding: 'Polymer CLI & Polymer Starter Kit'
+module-bundling: 'Polymer-build with HTML Imports'
+service-worker: 'Application Shell + data caching with sw-precache'
+perfomance-patterns: 'PRPL, code-splitting for granular loading'
+server-side-rendering: 'None'
+api: 'Node-hnapi (unofficial)'
+hosting: 'Firebase functions over HTTP/2 with Server Push + edge-caching'
+other-details: 'Route-specific pushing'
+authors: 
+    - name: 'Dan'
+    - name: 'Kevin'
+    - name: 'Steve'
+lighthouse: 92/100
+interactive-em: 2.7s
+interactive-faster-3g: 2.0s
+lighthouse-link: https://www.webpagetest.org/lighthouse.php?test=170516_F6_82399308fdbe29d39cd297ee0960a062&run=3
+wpt-em-link: https://www.webpagetest.org/result/170516_F6_82399308fdbe29d39cd297ee0960a062/
+wpt-faster-3g-link: https://www.webpagetest.org/result/170516_WW_6bbab2960100313ae75052346ca7efad/
+image: /assets/images/polymer-mobile.png
+app-link: https://hn-polymer-2.firebaseapp.com
+github-link: https://github.com/polymer/hn-polymer-2
+framework-link: https://www.polymer-project.org
+---
