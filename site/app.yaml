@@ -33,6 +33,9 @@ handlers:
 - url: "/assets/images/reacthn-mobile.png"
   static_files: _site/assets/images/reacthn-mobile.png
   upload: _site/assets/images/reacthn-mobile.png
+- url: "/assets/images/reacthn-kristofer-mobile.png"
+  static_files: _site/assets/images/reacthn-kristofer-mobile.png
+  upload: _site/assets/images/reacthn-kristofer-mobile.png
 - url: "/assets/images/sveltehn-mobile.png"
   static_files: _site/assets/images/sveltehn-mobile.png
   upload: _site/assets/images/sveltehn-mobile.png
