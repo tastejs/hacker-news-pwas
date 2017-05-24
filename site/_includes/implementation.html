@@ -11,17 +11,29 @@
           <div class="mb4 bt bb b--moon-gray">
             <dl class="f5 f4-l lh-title mv2 flex flex-row items-center justify-center justify-start-l">              
               <dt class="dib b">Lighthouse:</dt>
-              <dd class="dib ml2 mid-gray">{{ app.lighthouse }}</dd>
+              <dd class="dib ml2 mid-gray">
+                <a aria-label="View Lighthouse results" class="mid-gray link hover-orange" href={{ app.lighthouse-link }}>
+                  {{ app.lighthouse }}
+                </a>
+              </dd>
             </dl>
 
               <dl class="f5 f4-l lh-title mv2 flex flex-row items-center justify-center justify-start-l">              
               <dt class="dib b">Interactive (Emerging Markets):</dt>
-              <dd class="dib ml2 mid-gray">{{ app.interactive-em }}</dd>
+              <dd class="dib ml2 mid-gray">
+                <a aria-label="View Interactive (Emerging Markets) results" class="mid-gray link hover-orange" href={{ app.wpt-em-link }}>
+                  {{ app.interactive-em }}
+                </a>
+              </dd>
             </dl>
 
             <dl class="f5 f4-l lh-title mv2 flex flex-row items-center justify-center justify-start-l">              
               <dt class="dib b">Interactive (Faster 3G):</dt>
-              <dd class="dib ml2 mid-gray">{{ app.interactive-faster-3g }}</dd>
+              <dd class="dib ml2 mid-gray">
+                <a aria-label="View Interactive (Faster 3G) results" class="mid-gray link hover-orange" href={{ app.wpt-faster-3g-link }}>
+                  {{ app.interactive-faster-3g }}
+                </a>
+              </dd>
             </dl>
           </div>
           
