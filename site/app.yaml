@@ -10,3 +10,19 @@ handlers:
 - url: /(.*)
   static_files: _site/\1
   upload: _site/(.*)
+
+skip_files:
+- ^_apps/.*
+- ^_contributors/.*
+- ^_includes/.*
+- ^_layouts/.*
+- ^_sass/.*
+- ^assets/.*
+- ^node_modules/.*
+- ^_config\.yml$
+- ^Gemfile.*
+- ^package\.json$
+- ^sw-precache-config\.js$
+- ^(.*/)?.*\.md$
+- ^(.*/)?.*\.gpg$
+- ^(.*/)?\..*$
