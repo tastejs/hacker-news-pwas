@@ -39,7 +39,3 @@ exclude:
   - service-acc.json.gpg
   - sw-precache-config.js
   - node_modules
-app_engine:
-  runtime: go
-  api_version: go1
-  default_expiration: 300s
