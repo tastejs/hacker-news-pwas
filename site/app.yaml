@@ -7,14 +7,12 @@ handlers:
 - url: /
   static_files: _site/index.html
   upload: _site/index\.html
-  secure: always
   http_headers:
     X-UA-Compatible: "IE=edge"
 
 - url: /(.*)
   static_files: _site/\1
   upload: _site/(.*)
-  secure: always
 
 skip_files:
 - ^_apps
