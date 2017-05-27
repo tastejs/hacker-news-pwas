@@ -33,7 +33,9 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - vendor
-app_engine:
-  runtime: go
-  api_version: go1
-  default_expiration: 300s
+  - init.go
+  - app.yaml
+  - package.json
+  - service-acc.json.gpg
+  - sw-precache-config.js
+  - node_modules
