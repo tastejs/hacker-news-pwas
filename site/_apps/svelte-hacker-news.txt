@@ -18,7 +18,7 @@ lighthouse-link: https://www.webpagetest.org/lighthouse.php?test=170506_9H_40a4c
 wpt-em-link: https://www.webpagetest.org/result/170506_CY_60f3658fb6ca1c3c8426feccc631bfe8/
 wpt-faster-3g-link: https://www.webpagetest.org/result/170506_9H_40a4c53f3f07b983e44feb518271d8a7/
 image: /assets/images/sveltehn-mobile.png
-app-link: https://svelte-hn.now.sh/
+app-link: https://hn.svelte.technology/
 github-link: https://github.com/sveltejs/svelte-hackernews
 framework-link: https://svelte.technology/
 ---
