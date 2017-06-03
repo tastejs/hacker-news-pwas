@@ -1,0 +1,27 @@
+---
+weight: 9
+title: 'HN-PWA'
+github-title: 'mozeal'
+libraries: 
+    - name: 'Polymer'
+scaffolding: 'Polymer CLI & Polymer Starter Kit'
+module-bundling: 'Polymer-build with HTML Imports'
+service-worker: 'Application Shell + data caching with sw-precache'
+perfomance-patterns: 'PRPL, code-splitting for granular loading'
+server-side-rendering: 'None'
+api: 'Node-hnapi (unofficial)'
+hosting: 'Google AppEngine'
+other-details: ''
+authors: 
+    - name: 'Mozeal'
+lighthouse: 91/100
+interactive-em: 4.817s
+interactive-faster-3g: 2.696s
+lighthouse-link: https://www.webpagetest.org/lighthouse.php?test=170603_Q7_8f9c820981695c6b9fcc810c854b4362&run=3
+wpt-em-link: https://www.webpagetest.org/result/170603_Q7_8f9c820981695c6b9fcc810c854b4362/
+wpt-faster-3g-link: https://www.webpagetest.org/result/170603_8G_7c8f401cd68ccf076e1c2e00147c98a4/
+image: http://qrx.io/ss/hn-pwa.png
+app-link: https://hn-pwa.appspot.com/
+github-link: https://github.com/mozeal/hn-pwa
+framework-link: https://www.polymer-project.org
+---
