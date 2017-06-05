@@ -3,7 +3,7 @@ weight: 10
 title: 'HackerNew.io'
 github-title: 'ivanvanderbyl/ember-hackernews-pwa'
 libraries:
-    - name: 'Ember.js'
+  - name: 'Ember.js'
 module-bundling: 'Broccoli'
 service-worker: 'Application Shell + data caching'
 perfomance-patterns: 'Asynchronous Partial Outputs'
@@ -13,11 +13,11 @@ hosting: 'Cloudfront'
 authors:
     - name: 'Ivan'
 lighthouse: '91/100'
-interactive-em: '3.1s'
-interactive-faster-3g: '2.0s'
+interactive-em: 'TBA'
+interactive-faster-3g: '8.337s'
 lighthouse-link:
-wpt-em-link: https://www.webpagetest.org/result/170511_AW_b2e2360d4207831ece22ab4210ab9444/
-wpt-faster-3g-link: https://www.webpagetest.org/result/170511_7Q_15882b2c52ed51c614ec707736e52940/
+wpt-em-link: TBA
+wpt-faster-3g-link: https://www.webpagetest.org/result/170605_VN_4a855bbc9f60427b05e8aa0a6505eb94/
 image: /assets/images/ember-hn-mobile.png
 app-link: https://hackernews.io/
 github-link: https://github.com/ivanvanderbyl/ember-hackernews-pwa
