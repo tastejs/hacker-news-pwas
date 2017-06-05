@@ -15,7 +15,7 @@ authors:
 lighthouse: '91/100'
 interactive-em: 'TBA'
 interactive-faster-3g: '8.337s'
-lighthouse-link:
+lighthouse-link: https://www.webpagetest.org/lighthouse.php?test=170605_VN_4a855bbc9f60427b05e8aa0a6505eb94&run=1
 wpt-em-link: TBA
 wpt-faster-3g-link: https://www.webpagetest.org/result/170605_VN_4a855bbc9f60427b05e8aa0a6505eb94/
 image: /assets/images/ember-hn-mobile.png
