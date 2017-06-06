@@ -1,0 +1,6 @@
+---
+weight: 13
+name: 'Jimmy'
+image: https://github.com/ragingwind.png
+link: https://github.com/ragingwind
+---
