@@ -1,5 +1,5 @@
 ---
-weight: 10
+weight: 12
 name: 'Gene'
 image: https://github.com/genielabs.png
 link: https://github.com/genielabs
