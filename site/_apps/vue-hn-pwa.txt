@@ -1,0 +1,28 @@
+---
+weight: 13
+title:  'HNPWA with Vue.js'
+github-title: 'codebusking/vue-hn-pwa-guide-kit'
+libraries: 
+    - name: 'Vue'
+    - name: 'vue-router'
+    - name: 'vue-pwa-boilerplate'
+    - name: 'firebase-hackernews'
+module-bundling: 'Webpack'
+service-worker: 'Application Shell + data caching with SWPrecachePlugin'
+perfomance-patterns: 'Server-side data pre-fetching, preload/prefetch and lazy loading for rest of routes'
+server-side-rendering: 'Yes'
+api: 'Hacker News Firebase API via firebase-hackernews'
+hosting: 'Now'
+authors: 
+    - name: 'Jimmy'
+lighthouse: '91/100'
+interactive-em: '5.1s'
+interactive-faster-3g: '3.9s'
+lighthouse-link: https://www.webpagetest.org/lighthouse.php?test=170606_8F_9a74ddc961724a98e92b71ea0ad1443e&run=2
+wpt-em-link: https://www.webpagetest.org/result/170606_AY_901bc2310bcc8fc640315092d0f0de6b/
+wpt-faster-3g-link: https://www.webpagetest.org/result/170606_8F_9a74ddc961724a98e92b71ea0ad1443e/
+image: /assets/images/vue-hn-pwa.png
+app-link: https://vue-hn-pwa.now.sh/
+github-link: https://github.com/codebusking/vue-hn-pwa-guide-kit
+framework-link: https://vuejs.org/
+---
