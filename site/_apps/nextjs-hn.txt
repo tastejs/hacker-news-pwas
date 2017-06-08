@@ -14,11 +14,11 @@ hosting: 'Digital Ocean & Cloudflare'
 authors:
     - name: 'Chris'
 lighthouse: '91/100'
-interactive-em: '4.7s'
-interactive-faster-3g: '3.0s'
+interactive-em: '4.4s'
+interactive-faster-3g: '4.4s'
 lighthouse-link: https://www.webpagetest.org/result/170607_PW_1d454612c736a65ddff058cf16b8842e/
 wpt-em-link: https://www.webpagetest.org/result/170607_PW_1d454612c736a65ddff058cf16b8842e/
-wpt-faster-3g-link: https://www.webpagetest.org/result/170607_DY_400d1cc5db11ec9727404dc9cbc441e6/
+wpt-faster-3g-link: https://www.webpagetest.org/result/170608_YC_J16/
 image: /assets/images/nextjs-hn.png
 app-link: https://nextjs-hn.chrisdwheatley.com
 github-link: https://github.com/chrisdwheatley/nextjs-hn
