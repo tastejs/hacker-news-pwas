@@ -1,5 +1,5 @@
 ---
-weight: 9
+weight: 10
 title: 'Zuix HN'
 github-title: 'genielabs/zuix-hn'
 library: 'ZUIX'
@@ -14,11 +14,11 @@ hosting: 'Firebase'
 authors: 
     - name: 'Gene'
 lighthouse: '91/100'
-interactive-em: '6.9s'
-interactive-faster-3g: '5.2s'
-lighthouse-link: https://www.webpagetest.org/lighthouse.php?test=170606_X1_5e2b4d73072504eaafc17d59899cd4b8&run=3
-wpt-em-link: https://www.webpagetest.org/result/170606_E9_8ae5523bac6ae3a9c48f85af2ec7aaa9/
-wpt-faster-3g-link: https://www.webpagetest.org/result/170606_X1_5e2b4d73072504eaafc17d59899cd4b8/
+interactive-em: '5.3s'
+interactive-faster-3g: '5.0s'
+lighthouse-link: https://www.webpagetest.org/lighthouse.php?test=170608_R9_da7e6d2250380cec54c9555a0b59b69a&run=3
+wpt-em-link: https://www.webpagetest.org/result/170608_WN_a3acc96da84088832cd85ea6be37da1a/
+wpt-faster-3g-link: https://www.webpagetest.org/result/170608_R9_da7e6d2250380cec54c9555a0b59b69a/
 image: /assets/images/zuixhn-mobile.png
 app-link: https://zuix-hn.firebaseapp.com/
 github-link: https://github.com/g-labs-sw/zuix-hackernews
