@@ -12,12 +12,12 @@ api: 'Hacker News Firebase API'
 hosting: 'Google App Engine'
 authors: 
     - name: 'Andrea'
-lighthouse: '93/100'
-interactive-em: '3.1s'
-interactive-faster-3g: '2.0s'
-lighthouse-link: https://www.webpagetest.org/lighthouse.php?test=170511_7Q_15882b2c52ed51c614ec707736e52940&run=3
-wpt-em-link: https://www.webpagetest.org/result/170511_AW_b2e2360d4207831ece22ab4210ab9444/
-wpt-faster-3g-link: https://www.webpagetest.org/result/170511_7Q_15882b2c52ed51c614ec707736e52940/
+lighthouse: '73/100'
+interactive-em: '2.4s'
+interactive-faster-3g: '1.7s'
+lighthouse-link: https://www.webpagetest.org/lighthouse.php?test=170611_DC_6bf5fb102603eb30b3d57dc4c25b480b&run=1
+wpt-em-link: https://www.webpagetest.org/result/170611_DC_6bf5fb102603eb30b3d57dc4c25b480b/
+wpt-faster-3g-link: https://www.webpagetest.org/result/170611_QV_29714c806eb48d5c62aa527953f079b2/
 image: /assets/images/viperhtml-mobile.png
 app-link: https://viperhtml-164315.appspot.com/
 github-link: https://github.com/WebReflection/viper-news
