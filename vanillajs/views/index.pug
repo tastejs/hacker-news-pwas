@@ -1,7 +1,7 @@
 doctype html
 html(lang="en")
   head
-    link(rel="preload" href="/cc.js" as="script")
+    link(rel="preload" href="/app.js" as="script")
     meta(name="theme-color" content="#ececec")
     link(rel="icon" sizes="512x512" href="/icon.png")
     link(rel="manifest" href="/manifest.json")
@@ -32,7 +32,7 @@ html(lang="en")
 
       header {
         background: #ececec;
-        padding: 10px;
+        padding: 20px 10px;
       }
 
       header ul {
@@ -133,7 +133,14 @@ html(lang="en")
         margin: 7px 0;
         font-style: italic;
       }
+
+      .hidden {
+        display: none !important;
+      }
   body
+
+    div(class="hidden" id="reload-prompt" onclick="window.location.reload(true)")
+      Click For The Latest Version!
     header
       ul
         li(class="app-title")
@@ -152,7 +159,7 @@ html(lang="en")
           a(class="page", data-scope="jobstories", href="/jobs").
             jobs
     div(id="app")
-    script(async src="/cc.js")
+    script(async src="/app.js")
     script.
        if ('serviceWorker' in navigator) {
          navigator.serviceWorker.register('/sw.js').then(function() {
@@ -161,5 +168,14 @@ html(lang="en")
            console.error('service worker is not so cool.', e);
            throw e;
          });
+
+         if (navigator.serviceWorker.controller) {
+          // Correctly prompt the user to reload during SW phase change.
+          navigator.serviceWorker.controller.onstatechange = function(e) {
+            if (e.target.state === 'redundant') {
+              document.querySelector('#reload-prompt').classList.remove('hidden');
+            }
+          };
+        }
        }
 
