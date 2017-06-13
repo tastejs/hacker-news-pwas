@@ -13,12 +13,12 @@ api: 'Node-hnapi (unofficial)'
 hosting: 'Firebase'
 authors: 
     - name: 'Houssein'
-lighthouse: '87/100'
-interactive-em: '6.1s'
-interactive-faster-3g: '4.2s'
-lighthouse-link: https://www.webpagetest.org/lighthouse.php?test=170511_K9_dc8782ce30bfee7e9e5744736d44cd26&run=3
-wpt-em-link: https://www.webpagetest.org/result/170511_G4_45d46ba11f34aedeb022f60e4f77adbe/
-wpt-faster-3g-link: https://www.webpagetest.org/result/170511_K9_dc8782ce30bfee7e9e5744736d44cd26/
+lighthouse: '91/100'
+interactive-em: '6.0s'
+interactive-faster-3g: '4.4s'
+lighthouse-link: https://www.webpagetest.org/lighthouse.php?test=170612_BV_5cd2c04584152647e2e556f5af8f5eba&run=3
+wpt-em-link: https://www.webpagetest.org/result/170612_N2_7f979f17312d8feaa1709697d388c1ab/
+wpt-faster-3g-link: https://www.webpagetest.org/result/170612_BV_5cd2c04584152647e2e556f5af8f5eba/
 image: /assets/images/angular2hn-mobile.png
 app-link: https://angular2-hn.firebaseapp.com/
 github-link: https://github.com/housseindjirdeh/angular2-hn
