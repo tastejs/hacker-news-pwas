@@ -719,6 +719,10 @@ node-fetch@^1.6.3:
     encoding "^0.1.11"
     is-stream "^1.0.1"
 
+now@^6.4.1:
+  version "6.4.1"
+  resolved "https://registry.yarnpkg.com/now/-/now-6.4.1.tgz#bf8d09ddc75e3929535a305044161875eb1ee31f"
+
 "nwmatcher@>= 1.3.9 < 2.0.0":
   version "1.3.9"
   resolved "https://registry.yarnpkg.com/nwmatcher/-/nwmatcher-1.3.9.tgz#8bab486ff7fa3dfd086656bbe8b17116d3692d2a"

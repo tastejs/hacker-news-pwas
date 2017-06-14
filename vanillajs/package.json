@@ -9,6 +9,7 @@
     "express": "^4.15.2",
     "google-closure-compiler": "^20170521.0.0",
     "node-fetch": "^1.6.3",
+    "now": "^6.4.1",
     "pug": "^2.0.0-beta11"
   },
   "devDependencies": {
