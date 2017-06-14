@@ -17,3 +17,9 @@ var StoryComment;
  * (number|string|undefined)}}
  */
 var DomAttrs;
+
+
+/**
+ * @typedef {*}
+ */
+var module;

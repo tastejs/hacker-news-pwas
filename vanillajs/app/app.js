@@ -178,7 +178,8 @@ if (windowExists) {
     }
   };
 
-  if (match = matchPath(SECTION_MATCHER)) {
+  let match = matchPath(SECTION_MATCHER);
+  if (match) {
     let url = match[0] === '/' ? 'top' : match[0];
     history.replaceState({offset: 0}, '', '/' + url);
     fetchAndShow(app, `${url}stories`);

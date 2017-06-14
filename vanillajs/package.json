@@ -1,11 +1,13 @@
 {
   "name": "vanillajs-hackernews-pwa",
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "deploy-now": "now --public"
   },
   "dependencies": {
     "compression": "^1.6.2",
     "express": "^4.15.2",
+    "google-closure-compiler": "^20170521.0.0",
     "node-fetch": "^1.6.3",
     "pug": "^2.0.0-beta11"
   },
