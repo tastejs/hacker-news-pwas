@@ -191,7 +191,7 @@ if (windowExists) {
 }
 
 if (typeof module !== 'undefined') {
-  module.exports = {
-    showStories,
+  module['exports'] = {
+    'showStories': showStories,
   };
 }
