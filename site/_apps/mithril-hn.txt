@@ -1,0 +1,26 @@
+---
+weight: 12
+title: 'Mithril HN'
+github-title: 'chimon2000/mithril-hn'
+libraries: 
+    - name: 'Mithril'
+    - name: 'typestyle'
+module-bundling: 'fuse-box'
+service-worker: 'Application Shell'
+perfomance-patterns: 'HTTP/2 with Server Push'
+server-side-rendering: 'None'
+api: 'Node-hnapi (unofficial)'
+hosting: 'Firebase functions over HTTP/2 with Server Push + edge-caching'
+authors: 
+    - name: 'Ryan'
+lighthouse: 91/100
+interactive-em: 2.9s
+interactive-faster-3g: 2.2s
+lighthouse-link: https://www.webpagetest.org/lighthouse.php?test=170615_KW_cc7ce98d7be5f17a1381b42aebc6b69d&run=2
+wpt-em-link: https://www.webpagetest.org/result/170615_51_48fa6a90be213da908a150776c040326/
+wpt-faster-3g-link: https://www.webpagetest.org/result/170615_9W_b966e04a3cdec211f0c723bf8a453779/
+image: /images/mithril-hn-pwa.png
+app-link: https://mithril-hn.firebaseapp.com
+github-link: https://github.com/chimon2000/mithril-hn
+framework-link: https://mithril.js.org
+---
