@@ -1,0 +1,27 @@
+---
+weight: 14
+title:  'HNPWA with Next.js'
+github-title: 'codebusking/next-hnpwa-guide-kit'
+libraries: 
+    - name: 'Next.js'
+    - name: 'Preact'
+    - name: 'firebase-hackernews'
+module-bundling: 'Webpack'
+service-worker: 'Application Shell + data caching with Workbox'
+perfomance-patterns: 'Server-side data pre-fetching, preload/prefetch'
+server-side-rendering: 'Yes'
+api: 'Hacker News Firebase API via firebase-hackernews running on service worker'
+hosting: 'Now'
+authors: 
+    - name: 'Jimmy'
+lighthouse: '91/100'
+interactive-em: '3.3s'
+interactive-faster-3g: '3.0s'
+lighthouse-link: https://www.webpagetest.org/lighthouse.php?test=170615_8A_f6ee37ba2caadbb9139e35cf97129673
+wpt-em-link: https://www.webpagetest.org/result/170615_8A_f6ee37ba2caadbb9139e35cf97129673/
+wpt-faster-3g-link: https://www.webpagetest.org/result/170615_TK_5f9791787bb3bf5916205d05a150cb94/
+image: /assets/images/next-hnpwa.png
+app-link: https://next-hnpwa.now.sh/
+github-link: https://github.com/codebusking/next-hnpwa-guide-kit
+framework-link: https://github.com/zeit/next.js/
+---
