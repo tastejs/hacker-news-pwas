@@ -1,5 +1,5 @@
 ---
-weight: 9
+weight: 14
 title: 'React HN'
 github-title: 'stephenkingsley/hackerNews-pwa'
 library: 'React'
