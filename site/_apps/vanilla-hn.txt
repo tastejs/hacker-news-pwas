@@ -1,0 +1,22 @@
+---
+weight: 3
+title: 'Vanilla HN'
+github-title: 'cristianbote/hnpwa-vanilla'
+library: 'Plain javascript'
+module-bundling: 'Webpack'
+service-worker: 'Application Shell'
+server-side-rendering: 'No'
+api: 'Hacker News Firebase API + Node-hnapi (unoffical)'
+hosting: 'Firebase static files hosting'
+authors: 
+    - name: 'Cristian Bote'
+lighthouse: '91/100'
+interactive-em: '2.3s'
+interactive-faster-3g: '1.7s'
+lighthouse-link: https://www.webpagetest.org/lighthouse.php?test=170511_E0_8c496a263005af3b781063741a159cb8&run=3
+wpt-em-link: https://www.webpagetest.org/result/170511_35_23743024b907386a966d2367e0d96b38/
+wpt-faster-3g-link: https://www.webpagetest.org/result/170511_E0_8c496a263005af3b781063741a159cb8/
+image: /assets/images/vanillahn-mobile.png
+app-link: https://hnpwa-vanilla.firebaseapp.com/
+github-link: https://github.com/cristianbote/hnpwa-vanilla
+---
