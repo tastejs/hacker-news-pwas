@@ -1,0 +1,26 @@
+---
+weight: 16
+title: 'Mithril HN'
+github-title: 'gyandeeps/mithril-hn'
+library: 'Mithril'
+libraries: 
+    - name: 'Mithril'
+module-bundling: 'Webpack'
+service-worker: 'Application Shell + data caching with Workbox'
+perfomance-patterns: 'HTTP/2'
+server-side-rendering: 'No'
+api: 'Node-hnapi (unoffical)'
+hosting: 'Google App Engine'
+authors: 
+    - name: 'Gyandeep'
+lighthouse: '91/100'
+interactive-em: '4.1s'
+interactive-faster-3g: '3.3s'
+lighthouse-link: https://www.webpagetest.org/lighthouse.php?test=170620_9Q_199eaa7c8cb87856c9c90a9adaf41677&run=2
+wpt-em-link: https://www.webpagetest.org/result/170620_9Q_199eaa7c8cb87856c9c90a9adaf41677/
+wpt-faster-3g-link: https://www.webpagetest.org/result/170620_AH_6cd0cdb9d5b5318389a9bb0a15bb7bbd/
+image: /assets/images/hn-mithril-mobile.png
+app-link: https://hn-mithril.firebaseapp.com/
+github-link: https://github.com/gyandeeps/mithril-hn
+framework-link: https://mithril.js.org
+---

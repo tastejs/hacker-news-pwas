@@ -1,0 +1,6 @@
+---
+weight: 16
+name: 'Gyandeep'
+image: https://github.com/gyandeeps.png
+link: https://github.com/gyandeeps
+---
