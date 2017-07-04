@@ -1,0 +1,26 @@
+---
+weight: 15
+title: 'CxJS Hacker News'
+github-title: 'codaxy/cxjs-hackernews'
+libraries: 
+    - name: 'CxJS'
+scaffolding: 'Cx CLI'
+module-bundling: 'Webpack'
+service-worker: 'Application Shell + data caching with sw-precache'
+perfomance-patterns: 'Code-splitting, CSS and JS inlining'
+server-side-rendering: 'None'
+api: 'Hacker News Firebase REST API'
+hosting: 'Netlify'
+authors: 
+    - name: 'Marko Stijak'
+lighthouse: '91/100'
+interactive-em: '7.7s'
+interactive-faster-3g: '6.7s'
+lighthouse-link: https://www.webpagetest.org/lighthouse.php?test=170704_2N_104e86a38b26c779d19b84f372468165&run=3
+wpt-em-link: https://www.webpagetest.org/result/170704_T2_6f1b46ce19498b51c15e2a8e6797c3c7/
+wpt-faster-3g-link: https://www.webpagetest.org/result/170704_2N_104e86a38b26c779d19b84f372468165/
+image: /assets/images/cxjs-hackernews.png
+app-link: https://hn.cxjs.io/
+github-link: https://github.com/codaxy/cxjs-hackernews
+framework-link: https://cxjs.io/
+---
