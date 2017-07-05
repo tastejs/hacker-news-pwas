@@ -1,5 +1,9 @@
 {
   "hosting": {
-    "public": "_site"
+    "public": "_site",
+    "rewrites": [{
+      "source": "/api/v0/**",
+      "function": "api0"
+    }]
   }
 }
