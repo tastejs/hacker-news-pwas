@@ -10,6 +10,7 @@ script:
 - npm run precache
 deploy:
   provider: firebase
+  skip_cleanup: true
   token:
     secure: "$FIREBASE_TOKEN"
 env:
