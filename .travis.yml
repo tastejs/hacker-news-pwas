@@ -1,19 +1,17 @@
 language: ruby
 rvm:
-  - 2.3.3
+- 2.3.3
 before_install:
-  - cd site
-  - 'if [ "$TRAVIS_PULL_REQUEST" = "false" ]; then echo $super_secret_password | gpg --passphrase-fd 0 service-acc.json.gpg; fi'
-  - nvm install 7
-  - npm install
+- cd site
+- nvm install 7
+- npm install
 script:
-  - npm run build
-  - npm run precache
+- npm run build
+- npm run precache
 deploy:
-  provider: gae
-  skip_cleanup: true
-  keyfile: service-acc.json
-  project: hnpwa-prod
+  provider: firebase
+  token:
+    secure: $FIREBASE_TOKEN
 env:
   global:
-    secure: Xrj7PhES/LHZSdRt4ft/j5I/9+TXVmZ6t0NlrUlR+vo82ZKxFszedXoHcIVhxk0dZBBA26kQmM+RMasLtcmAbgzeSeXBhMAqcSKIX7BtcMpzc0hSnF5pCTueDH3JmW1IeDzT9n7WMXovRAjnjOIMqBKOBnlppZ72xbKi0a3wTrlAmZFtBz4leO3dHQUC6IxOfB8m1xhGGDvyXvADGyy5yEGHzXpWQj495k6c1hsQargl8Rq/DyYPCWHkiLLMzkstreYokQjM8FIIjr0u7XfYI+3DadHqNUZyAKYKUfoz2LXqEx/eZNEU89kMVMctBgInoRXagSoSter2aCa3BKIRxAEyTGgRH71ujDHD1IgiLknbEcVLoaC5n3+2N/QQlyvULZ6MXN8LscTTUiqyDDHTqW1Znklsdxg93sqXzXPIHP7vfydzomVpn6GZ4OijHZ/fTJc7O8FkFw+VXHGmDXPkfJZNhenfCZR60ZgHTRV7QverQEOg5tXLEGq7y/O2Y/ViOP9qDtCDeY4uOuwvMn3ofDX7qyzoK4BCk9PZfdsezh9nE2R1E5CmU2Mqv5N1WiIQ0VvNe/C5GtDXAdoGUeLFXm4JzJZquAZPrMmtH/MRzu+TtYWUIabinMiuhbwozELBSNh/5Sd0w2/PMcZkBP5XNj4e3GdMo8DwM9BsdImZ0B8=
+    secure: CwBrPtw+TtJmwQ7Gr1FZdCSSPfEf1Oyv52hh3b+ItNHPx8Q7qRw54p4qOKNgphM0bl7hwdueLa0dTiNplBB6c+9X3pBhcjd8peMJDzSXnzGNHaipOXIYmZpCU7OVxr8zyq22Bs1vcust8R04uzJzQLLZo/iPHoqu8XYhZ3J/2ED110niQX/lPkL3ByerXe0Wfw0PQaUE/YKXjG1nEiSlY/MRgwJAtg/PVbcWWa++PPt9Utme2wg2YC+Whw/76leqKpAadeNoeN3k6bmB2Os5BtEKyWBI5sFH3Aboo3yXLzQprJM+14dRZvknrJdmgYDhwJQk4vMP/pSLAEjBoVZN36R1e2Z74Y8Hscx28UdnyY0tjbskLUAHRoSOQjcsQ/64iySwEt4EuciecpuQSkTq304/hlI/6x3huoya3Ts1f1AjTpKDfYR1FiV4T1t4Tcc8y2ASzyEVWzetQdrBBpBGAPlxuNMYlY/mWq/b6a5oc0NP8FKunLVawEM4XuOi1eXYteePopYkA0EjZksgLE4pIh9o48X9CuubOVMLG9WsyA14L3+WL/1hhLP7BXI6jLCpfHKjVk1jU0M6tPubtpEX2ZC2K5xQmezVkSDPUkcWN0Ijfx/lp23hMdsmoXJzn8BcI6OrN4IiJZiqnn/woqSTq3ARW/0ptIm8C1niI4QjEI4=
