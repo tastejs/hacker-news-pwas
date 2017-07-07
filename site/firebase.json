@@ -1,9 +1,6 @@
 {
-  "functions": {
-    "source": "./site/functions"
-  },
   "hosting": {
-    "public": "./site/_site",
+    "public": "_site",
     "rewrites": [
       {
         "source": "/api/v0/**",
