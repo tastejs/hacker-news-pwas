@@ -6,16 +6,16 @@ library: 'Plain javascript'
 module-bundling: 'Webpack'
 service-worker: 'Application Shell'
 server-side-rendering: 'No'
-api: 'Node-hnapi (unoffical)'
+api: 'hnpwa.com/api'
 hosting: 'Firebase static files hosting'
 authors:
     - name: 'Cristian'
 lighthouse: '91/100'
-interactive-em: '3.7s'
-interactive-faster-3g: '3.2s'
-lighthouse-link: https://www.webpagetest.org/lighthouse.php?test=170704_4S_afeaf2060a2b99a17bbbbf6c995f6a2c&run=1
-wpt-em-link: https://www.webpagetest.org/result/170710_X9_eef7148bf8cf17aec59c3d040b4bc5a1/
-wpt-faster-3g-link: https://www.webpagetest.org/result/170710_GE_ebfec396984f333aba0b6f867ee89a0a/
+interactive-em: '3.3s'
+interactive-faster-3g: '2.6s'
+lighthouse-link: https://www.webpagetest.org/lighthouse.php?test=170711_7H_4460b3b7d4b7c1c4ab377e0f5bfa3fed&run=3
+wpt-em-link: https://www.webpagetest.org/result/170711_YM_e85bdb7d15a1afbfe1d6a68d945152d6/
+wpt-faster-3g-link: https://www.webpagetest.org/result/170711_7H_4460b3b7d4b7c1c4ab377e0f5bfa3fed/
 image: /assets/images/vanillahn-mobile.png
 app-link: https://hnpwa-vanilla.firebaseapp.com/
 github-link: https://github.com/cristianbote/hnpwa-vanilla
