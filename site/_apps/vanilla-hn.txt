@@ -7,15 +7,15 @@ module-bundling: 'Webpack'
 service-worker: 'Application Shell'
 server-side-rendering: 'No'
 api: 'hnpwa.com/api'
-hosting: 'Firebase static files hosting'
+hosting: 'Firebase static files hosting + preload/prefetch link headers'
 authors:
     - name: 'Cristian'
 lighthouse: '91/100'
-interactive-em: '3.3s'
-interactive-faster-3g: '2.6s'
-lighthouse-link: https://www.webpagetest.org/lighthouse.php?test=170711_7H_4460b3b7d4b7c1c4ab377e0f5bfa3fed&run=3
-wpt-em-link: https://www.webpagetest.org/result/170711_YM_e85bdb7d15a1afbfe1d6a68d945152d6/
-wpt-faster-3g-link: https://www.webpagetest.org/result/170711_7H_4460b3b7d4b7c1c4ab377e0f5bfa3fed/
+interactive-em: '3.0s'
+interactive-faster-3g: '2.4s'
+lighthouse-link: https://www.webpagetest.org/lighthouse.php?test=170712_QD_1962982caa117830d68f99b8e218bb67&run=3
+wpt-em-link: https://www.webpagetest.org/result/170712_MJ_9eda2ffea1034eaf6426dfc6c5dec60f/
+wpt-faster-3g-link: https://www.webpagetest.org/result/170712_QD_1962982caa117830d68f99b8e218bb67/
 image: /assets/images/vanillahn-mobile.png
 app-link: https://hnpwa-vanilla.firebaseapp.com/
 github-link: https://github.com/cristianbote/hnpwa-vanilla
