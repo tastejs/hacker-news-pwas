@@ -1,0 +1,26 @@
+---
+weight: 14
+title: 'RE:DOM HN'
+github-title: 'chimon2000/redom-hn'
+libraries: 
+    - name: 'RE:DOM'
+    - name: 'typestyle'
+module-bundling: 'fuse-box'
+service-worker: 'Application Shell'
+perfomance-patterns: 'HTTP/2 with Server Push'
+server-side-rendering: 'None'
+api: 'Node-hnapi (unofficial)'
+hosting: 'Firebase functions over HTTP/2 with Server Push + edge-caching'
+authors: 
+    - name: 'Ryan'
+lighthouse: 91/100
+interactive-em: 4.3s
+interactive-faster-3g: 3.7s
+lighthouse-link: https://www.webpagetest.org/lighthouse.php?test=170713_CX_764ae3b6652ee142ca27759959b203ff&run=2
+wpt-em-link: https://www.webpagetest.org/result/170713_CX_764ae3b6652ee142ca27759959b203ff/
+wpt-faster-3g-link: https://www.webpagetest.org/result/170713_3K_ecc4175625a51a7e47f46dae1f4f3544/
+image: /assets/images/redom-hn-pwa.png
+app-link: https://redom-hn.firebaseapp.com
+github-link: https://github.com/chimon2000/redom-hn
+framework-link: https://redom.js.org
+---
