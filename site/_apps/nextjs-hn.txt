@@ -1,5 +1,5 @@
 ---
-weight: 14
+weight: 18
 title:  'Next.js HN'
 github-title: 'chrisdwheatley/nextjs-hn'
 libraries:
@@ -7,18 +7,18 @@ libraries:
     - name: 'Preact'
 module-bundling: 'Next.js with additional Webpack config'
 service-worker: 'Application & data caching with sw-precache'
-perfomance-patterns: 'In memory LRU cache, DNS prefetch, Preact compat alias in production'
+perfomance-patterns: 'In memory LRU cache, DNS prefetch, preact-compat alias in production'
 server-side-rendering: 'Yes'
 api: 'Node-hnapi (unofficial)'
 hosting: 'Digital Ocean & Cloudflare'
 authors:
     - name: 'Chris'
 lighthouse: '91/100'
-interactive-em: '4.4s'
-interactive-faster-3g: '4.4s'
-lighthouse-link: https://www.webpagetest.org/result/170607_PW_1d454612c736a65ddff058cf16b8842e/
-wpt-em-link: https://www.webpagetest.org/result/170607_PW_1d454612c736a65ddff058cf16b8842e/
-wpt-faster-3g-link: https://www.webpagetest.org/result/170608_YC_J16/
+interactive-em: '5.75s'
+interactive-faster-3g: '4.83s'
+lighthouse-link: https://www.webpagetest.org/lighthouse.php?test=170715_KJ_1f08f67beb3451497c196a02e67dd71d&run=3
+wpt-em-link: https://www.webpagetest.org/result/170715_6V_90471cfb419635b88ed2da5d77fa5f75/
+wpt-faster-3g-link: https://www.webpagetest.org/result/170715_KJ_1f08f67beb3451497c196a02e67dd71d/
 image: /assets/images/nextjs-hn.png
 app-link: https://nextjs-hn.chrisdwheatley.com
 github-link: https://github.com/chrisdwheatley/nextjs-hn
