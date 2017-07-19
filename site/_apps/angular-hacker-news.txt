@@ -1,0 +1,27 @@
+---
+weight: 16
+title: 'Angular Hacker News'
+github-title: 'sebastianm/angular-hacker-news'
+libraries: 
+    - name: 'Angular'
+    - name: 'Angular Router'
+    - name: 'Angular HTTP'
+module-bundling: 'Webpack'
+service-worker: 'Application Shell + sw-precache'
+perfomance-patterns: 'Lazy loaded modules'
+server-side-rendering: 'Angular Universal'
+api: 'Firebase Hacker News API + Node-hnapi (unofficial)'
+hosting: 'Digitalocean'
+authors: 
+    - name: 'Sebastian'
+lighthouse: '91/100'
+interactive-em: '4.3s'
+interactive-faster-3g: '3.2s'
+lighthouse-link: https://www.webpagetest.org/lighthouse.php?test=170711_54_532be7068a1836a1647889ad4ac5c1f2&run=3
+wpt-em-link: https://www.webpagetest.org/result/170711_91_727a71056a80d4dd71e3a2cbd904a6b9/
+wpt-faster-3g-link: https://www.webpagetest.org/result/170711_54_532be7068a1836a1647889ad4ac5c1f2/
+image: /assets/images/angular-hacker-news-mobile.png
+app-link: https://angularhn.sebastian-mueller.net/
+github-link: https://github.com/SebastianM/angular-hacker-news
+framework-link: https://angular.io/
+---
