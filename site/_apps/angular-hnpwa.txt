@@ -1,0 +1,27 @@
+---
+weight: 19
+title: 'Angular Hacker News'
+github-title: 'alfredoperez/ngx-hn'
+libraries: 
+    - name: 'Angular'
+    - name: 'ngu-pwa-tools'
+scaffolding: 'Angular CLI'
+module-bundling: 'Angular CLI'
+service-worker: 'Application shell generated with ng-pwa-tools and service worker from @angular/service-worker'
+perfomance-patterns: 'Lazy loaded modules'
+server-side-rendering: 'None'
+api: 'Node-hnapi (unofficial)'
+hosting: 'Firebase with HTTP/2 Server Push'
+authors: 
+    - name: 'Alfredo'
+lighthouse: '91/100'
+interactive-em: '5.3s'
+interactive-faster-3g: '4.3s'
+lighthouse-link: https://www.webpagetest.org/lighthouse.php?test=170719_P3_7e023cc654cb5cd8362ab11c427c5c0b&run=2
+wpt-em-link: https://www.webpagetest.org/result/170719_6C_516885162aad27b7ea555a185cc8e6e5/
+wpt-faster-3g-link: https://www.webpagetest.org/result/170719_P3_7e023cc654cb5cd8362ab11c427c5c0b/
+image: /assets/images/angular-hn-pwa.png
+app-link: https://ngx-hn.firebaseapp.com
+github-link: https://github.com/alfredoperez/ngx-hn
+framework-link: https://angular.io/
+---
