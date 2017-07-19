@@ -1,0 +1,30 @@
+---
+weight: 
+title: 'React HN PWA (Alex Boev)'
+github-title: 'alexboev/hnpwa'
+library: 'React'
+libraries: 
+    - name: 'React'
+    - name: 'React Router'
+    - name: 'Redux'
+    - name: 'Node'
+    - name: 'Express'
+module-bundling: 'Webpack'
+service-worker: 'Application Shell with caching of static assets'
+perfomance-patterns: 'gzip for all requests, server-side cache for HN api data, client-side cache'
+server-side-rendering: 'No'
+api: 'Hacker News Firebase API + custom server proxy api with in-memory cache'
+hosting: 'Heroku'
+authors: 
+    - name: 'Alex Boev'
+lighthouse: '91/100'
+interactive-em: '3.954s'
+interactive-faster-3g: ' 3.174s'
+lighthouse-link: https://www.webpagetest.org/lighthouse.php?test=170719_V3_4fc373a398a968f264621655464798a1&run=1
+wpt-em-link: https://www.webpagetest.org/result/170719_V3_4fc373a398a968f264621655464798a1/
+wpt-faster-3g-link: https://www.webpagetest.org/result/170719_7J_124584de762fe2cad1fca8e67d5657f7/
+image: /assets/images/react-hnpwa-alexboev.png
+app-link: https://hnpwa.alexboev.com/
+github-link: https://github.com/alexboev/hnpwa
+framework-link: https://facebook.github.io/react/
+---
