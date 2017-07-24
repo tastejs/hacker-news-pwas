@@ -1,6 +1,6 @@
 ---
 weight: 
-title: 'React HN PWA (Alex Boev)'
+title: 'React-Redux HN'
 github-title: 'alexboev/hnpwa'
 library: 'React'
 libraries: 
@@ -18,11 +18,11 @@ hosting: 'Heroku'
 authors: 
     - name: 'Alex Boev'
 lighthouse: '91/100'
-interactive-em: '3.954s'
-interactive-faster-3g: ' 3.174s'
-lighthouse-link: https://www.webpagetest.org/lighthouse.php?test=170719_V3_4fc373a398a968f264621655464798a1&run=1
-wpt-em-link: https://www.webpagetest.org/result/170719_V3_4fc373a398a968f264621655464798a1/
-wpt-faster-3g-link: https://www.webpagetest.org/result/170719_7J_124584de762fe2cad1fca8e67d5657f7/
+interactive-em: '7,73s'
+interactive-faster-3g: '7,69s'
+lighthouse-link: https://www.webpagetest.org/lighthouse.php?test=170724_WN_122edfb447d0a04cc36724dafe39e99d&run=1
+wpt-em-link: https://www.webpagetest.org/result/170724_E8_8a9fa09e551e1bef7812072f8602c634/
+wpt-faster-3g-link: https://www.webpagetest.org/result/170724_KH_365c3d1ec0700c416a208c19062c0e8c/
 image: /assets/images/react-hnpwa-alexboev.png
 app-link: https://hnpwa.alexboev.com/
 github-link: https://github.com/alexboev/hnpwa
