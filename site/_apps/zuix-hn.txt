@@ -14,11 +14,11 @@ hosting: 'Firebase'
 authors:
     - name: 'Gene'
 lighthouse: '91/100'
-interactive-em: '4.9s'
-interactive-faster-3g: '3.9s'
-lighthouse-link: https://www.webpagetest.org/lighthouse.php?test=170715_PW_749f08a967caa216ca8cd749346601cb&run=2
-wpt-em-link: https://www.webpagetest.org/result/170715_16_50fe1017f7daf7f9ca735dbe8726111c/
-wpt-faster-3g-link: https://www.webpagetest.org/result/170715_PW_749f08a967caa216ca8cd749346601cb/
+interactive-em: '6.2s'
+interactive-faster-3g: '4.8s'
+lighthouse-link: https://www.webpagetest.org/lighthouse.php?test=170724_JT_fc286336283f4594b5e9a14ee486d437&run=3
+wpt-em-link: https://www.webpagetest.org/result/170724_F6_c37ad291bb720b8c203da685d8a704b4/
+wpt-faster-3g-link: https://www.webpagetest.org/result/170724_JT_fc286336283f4594b5e9a14ee486d437/
 image: /assets/images/zuixhn-mobile.png
 app-link: https://zuix-hn.firebaseapp.com/
 github-link: https://github.com/g-labs-sw/zuix-hackernews
