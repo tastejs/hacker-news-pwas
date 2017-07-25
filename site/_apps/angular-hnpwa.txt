@@ -15,11 +15,11 @@ hosting: 'Firebase with HTTP/2 Server Push'
 authors: 
     - name: 'Alfredo'
 lighthouse: '91/100'
-interactive-em: '5.3s'
-interactive-faster-3g: '4.3s'
-lighthouse-link: https://www.webpagetest.org/lighthouse.php?test=170719_P3_7e023cc654cb5cd8362ab11c427c5c0b&run=2
-wpt-em-link: https://www.webpagetest.org/result/170719_6C_516885162aad27b7ea555a185cc8e6e5/
-wpt-faster-3g-link: https://www.webpagetest.org/result/170719_P3_7e023cc654cb5cd8362ab11c427c5c0b/
+interactive-em: '5.6s'
+interactive-faster-3g: '4.5s'
+lighthouse-link: https://www.webpagetest.org/lighthouse.php?test=170725_FR_40c055bc81630b2bdfb53ff23b028bf5&run=2
+wpt-em-link: https://www.webpagetest.org/result/170725_PJ_e2b6d77070e7179518a84eb0f7a1bd67/
+wpt-faster-3g-link: https://www.webpagetest.org/lighthouse.php?test=170725_FR_40c055bc81630b2bdfb53ff23b028bf5&run=2
 image: /assets/images/angular-hn-pwa.png
 app-link: https://ngx-hn.firebaseapp.com
 github-link: https://github.com/alfredoperez/ngx-hn
