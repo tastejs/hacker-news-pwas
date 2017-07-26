@@ -13,13 +13,13 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: HN PWA - Hacker News readers as Progressive Web Apps
+title: HNPWA
 description: > # this means to ignore newlines until "baseurl:"
   Hacker News readers as Progressive Web Apps
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://hnpwa.com" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: tastejs
-github_username:  tastejs
+twitter_username: "@tastejs"
+github_username:  "tastejs"
 google_analytics: UA-99127594-1
 collections:
   - apps
@@ -33,9 +33,6 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - vendor
-  - init.go
-  - app.yaml
   - package.json
-  - service-acc.json.gpg
   - sw-precache-config.js
   - node_modules

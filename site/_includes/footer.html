@@ -1,18 +1,31 @@
 <footer class="tc pv4 pv4-ns flex flex-column items-center avenir bt b--black-10">
   <h3 class="f5 f4-ns fw4 dark-gray">Brought to you by</h3>
 
-  <div class="flex flex-column flex-wrap nowrap-ns flex-row-ns justify-between center w-100 w-90-l">
+  <div class="flex flex-column flex-wrap flex-row-ns justify-between center w-100 w-90-l">
 
     {% assign sortedContributors = site.contributors | sort: 'weight' %}
 
     {% for contributor in sortedContributors %}
-      <div class="flex flex-column items-center mv3 w-100 w-50-m w-auto-l">
-        <a class="link" href={{ contributor.link }}>
-          <img src={{ contributor.image }} class="grow-large pa1 ba b--black-10 br-100 h3 w3" alt={{ contributor.name }}>
-        </a>
+      {% assign loopindex = forloop.index | modulo: 2 %}
+      {% if loopindex == 1 %}
+        <div class="flex flex-column items-center mv3 w-100 w-50-m w-auto-l">
+          <div>
+            <a class="link" href={{ contributor.link }}>
+              <img src={{ contributor.image }} class="grow-large pa1 ba b--black-10 br-100 h3 w3" alt={{ contributor.name }}>
+            </a>
 
-        <h4 class="f6 mid-gray fw4 ttu tracked">{{ contributor.name }}</h4>
-      </div>
+            <h4 class="f6 mid-gray fw4 ttu tracked">{{ contributor.name }}</h4>
+          </div>
+      {% else %}
+          <div>
+            <a class="link" href={{ contributor.link }}>
+              <img src={{ contributor.image }} class="grow-large pa1 ba b--black-10 br-100 h3 w3" alt={{ contributor.name }}>
+            </a>
+
+            <h4 class="f6 mid-gray fw4 ttu tracked">{{ contributor.name }}</h4>
+          </div>
+        </div>
+      {% endif %}
     {% endfor %}
 
   </div>

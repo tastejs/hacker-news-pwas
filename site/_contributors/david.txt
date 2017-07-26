@@ -1,0 +1,6 @@
+---
+weight: 18
+name: 'David'
+image: https://github.com/davideast.png
+link: https://github.com/davideast
+---

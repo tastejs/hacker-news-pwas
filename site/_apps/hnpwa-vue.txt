@@ -1,0 +1,27 @@
+---
+weight: 16
+title:  'HNPWA Vue'
+github-title: 'anubhav7495/hnpwa-vue'
+libraries:
+    - name: 'Vue'
+    - name: 'vue-router'
+    - name: 'vue-pwa-boilerplate'
+module-bundling: 'Webpack'
+service-worker: 'Application Shell with SWPrecachePlugin'
+perfomance-patterns: 'preload/prefetch resources, client-side data preload, lazy loaded routes, dns-prefetch'
+server-side-rendering: 'None'
+api: 'Node-hnapi (unofficial)'
+hosting: 'Github Pages'
+authors:
+    - name: 'Anubhav'
+lighthouse: '91/100'
+interactive-em: '4.3s'
+interactive-faster-3g: '3.4s'
+lighthouse-link: https://www.webpagetest.org/lighthouse.php?test=170717_C8_230384878d6c07f66bb59cf11f15ad24&run=3
+wpt-em-link: https://www.webpagetest.org/result/170717_TC_8b6a7c9d33d6687172ff9104a78cbae3/
+wpt-faster-3g-link: https://www.webpagetest.org/result/170717_C8_230384878d6c07f66bb59cf11f15ad24/
+image: /assets/images/hnpwa-vue.png
+app-link: https://anubhav7495.github.io/hnpwa-vue/
+github-link: https://github.com/anubhav7495/hnpwa-vue
+framework-link: https://vuejs.org/
+---
