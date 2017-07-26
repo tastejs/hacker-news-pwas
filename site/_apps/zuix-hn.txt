@@ -1,5 +1,5 @@
 ---
-weight: 10
+weight: 19
 title: 'Zuix HN'
 github-title: 'genielabs/zuix-hn'
 library: 'ZUIX'
