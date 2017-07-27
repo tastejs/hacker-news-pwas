@@ -1,6 +1,6 @@
 ---
 weight: 13
 name: 'Gene'
-image: https://github.com/genielabs.png
-link: https://github.com/genielabs
+image: https://github.com/genemars.png
+link: https://github.com/genemars
 ---
