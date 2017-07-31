@@ -14,11 +14,11 @@ hosting: 'Firebase'
 authors:
     - name: 'Majid'
 lighthouse: '91/100'
-interactive-em: '3.4s'
-interactive-faster-3g: '2.4s'
-lighthouse-link: https://www.webpagetest.org/lighthouse.php?test=170612_BV_5cd2c04584152647e2e556f5af8f5eba&run=3
-wpt-em-link: https://www.webpagetest.org/result/170708_DK_bcd8d8c3da33a5f7badc29417f3b95c7/
-wpt-faster-3g-link: https://www.webpagetest.org/result/170708_34_1ae3fbe0c7f0f90ad0b46282ab2ce5a5/
+interactive-em: '3.6s'
+interactive-faster-3g: '2.8s'
+lighthouse-link: https://www.webpagetest.org/lighthouse.php?test=170731_DC_b92d9dc97fb6acc21996117a817e7621&run=3
+wpt-em-link: https://www.webpagetest.org/result/170731_H3_07fad36e6a920575287dbd0b02bc1288/
+wpt-faster-3g-link: https://www.webpagetest.org/result/170731_DC_b92d9dc97fb6acc21996117a817e7621/
 image: /assets/images/glimmer-hn-pwa.png
 app-link: https://glimmer-hn-pwa.firebaseapp.com/
 github-link: https://github.com/mhadaily/glimmer-hn-pwa
