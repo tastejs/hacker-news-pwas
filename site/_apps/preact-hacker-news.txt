@@ -18,7 +18,7 @@ interactive-em: '5s'
 interactive-faster-3g: '4s'
 lighthouse-link: https://www.webpagetest.org/lighthouse.php?test=170710_YP_cb200c6802242f8ad8b7f24e7c916887&run=1
 wpt-em-link: https://www.webpagetest.org/result/170710_25_208c0e8d6dd5d2f60d01b97a963634f7/
-wpt-faster-3g-link: https://www.webpagetest.org/result/170710_YP_cb200c6802242f8ad8b7f24e7c916887/
+wpt-faster-3g-link: https://www.webpagetest.org/result/170714_ZD_baecb5715968cd54b7059efe6489eefa/
 image: /assets/images/preact-hnpwa.png
 app-link: https://preact-hn.now.sh
 github-link: https://github.com/malbernaz/preact-hn
