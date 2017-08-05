@@ -1,5 +1,5 @@
 ---
-weight: 16
+weight: 21
 title: 'Glimmer HN'
 github-title: 'mhadaily/glimmer-hn-pwa'
 libraries:
