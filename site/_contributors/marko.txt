@@ -1,5 +1,5 @@
 ---
-weight: 17
+weight: 20
 name: 'Marko'
 image: https://github.com/mstijak.png
 link: https://github.com/mstijak

@@ -1,5 +1,5 @@
 ---
-weight: 15
+weight: 22
 title: 'CxJS Hacker News'
 github-title: 'codaxy/cxjs-hackernews'
 libraries: 
@@ -13,7 +13,7 @@ server-side-rendering: 'None'
 api: 'Node-hnapi (unoffical)'
 hosting: 'Netlify'
 authors: 
-    - name: 'Marko Stijak'
+    - name: 'Marko'
 lighthouse: '91/100'
 interactive-em: '4.5s'
 interactive-faster-3g: '3.7s'
