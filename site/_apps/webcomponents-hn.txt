@@ -1,0 +1,22 @@
+---
+weight: 23
+title: 'Vanillia WebComponents'
+github-title: 'dsolimando/hnpwa-mobileelements'
+library: 'No Libray'
+module-bundling: 'No module bundling'
+service-worker: 'Application Shell'
+perfomance-patterns: 'HTTP/2, Gzip static assets'
+server-side-rendering: 'No'
+api: 'Node-hnapi (unofficial)'
+hosting: 'Google Compute Engine'
+authors: 
+    - name: 'Damien'
+lighthouse: '91/100'
+interactive-em: '2.7s'
+interactive-faster-3g: '1.9s'
+wpt-em-link: https://www.webpagetest.org/result/170807_Z2_RX6/1/details/
+wpt-faster-3g-link: https://www.webpagetest.org/result/170807_JR_SJR/1/details 
+image: /assets/images/hn-vanilla-wc.png
+app-link: https://mobileelements.net
+github-link: https://github.com/dsolimando/hnpwa-mobileelements
+---
