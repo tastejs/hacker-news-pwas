@@ -11,18 +11,18 @@ libraries:
     - name: 'Express'
 module-bundling: 'Webpack'
 service-worker: 'Application Shell with caching of static assets'
-perfomance-patterns: 'gzip for all requests, server-side cache for HN api data, client-side cache'
+perfomance-patterns: 'gzip for all requests, server-side cache for HN api data, client-side offline cache'
 server-side-rendering: 'No'
 api: 'Hacker News Firebase API + custom server proxy api with in-memory cache'
 hosting: 'Heroku'
 authors: 
     - name: 'Alex Boev'
 lighthouse: '91/100'
-interactive-em: '7,73s'
-interactive-faster-3g: '7,69s'
-lighthouse-link: https://www.webpagetest.org/lighthouse.php?test=170724_WN_122edfb447d0a04cc36724dafe39e99d&run=1
-wpt-em-link: https://www.webpagetest.org/result/170724_E8_8a9fa09e551e1bef7812072f8602c634/
-wpt-faster-3g-link: https://www.webpagetest.org/result/170724_KH_365c3d1ec0700c416a208c19062c0e8c/
+interactive-em: '4,89s'
+interactive-faster-3g: '3,91s'
+lighthouse-link: https://www.webpagetest.org/lighthouse.php?test=170815_SA_b8fb21c835a307f026c19ff49ef53355&run=3
+wpt-em-link: https://www.webpagetest.org/result/170815_TK_6ff689217bd7dc44e5952a2db7af5a08/
+wpt-faster-3g-link: https://www.webpagetest.org/result/170815_SA_b8fb21c835a307f026c19ff49ef53355/
 image: /assets/images/react-hnpwa-alexboev.png
 app-link: https://hnpwa.alexboev.com/
 github-link: https://github.com/alexboev/hnpwa
