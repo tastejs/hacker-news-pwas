@@ -6,7 +6,7 @@ library: 'No Libray'
 module-bundling: 'No module bundling'
 service-worker: 'Application Shell'
 perfomance-patterns: 'HTTP/2, Gzip static assets'
-server-side-rendering: 'No'
+server-side-rendering: 'yes'
 api: 'Node-hnapi (unofficial)'
 hosting: 'Google Compute Engine'
 authors: 
@@ -19,5 +19,5 @@ wpt-em-link: https://www.webpagetest.org/result/170815_MW_15H4
 wpt-faster-3g-link: https://www.webpagetest.org/result/170816_BZ_NRN
 image: /assets/images/hn-vanilla-wc.png
 app-link: https://mobileelements.net
-github-link: https://github.com/dsolimando/hnpwa-mobileelements
+github-link: https://github.com/dsolimando/hnpwa-mobileelements/tree/pagination
 ---
