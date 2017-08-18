@@ -1,0 +1,6 @@
+---
+weight: 17
+name: 'Majid'
+image: https://github.com/mhadaily.png
+link: https://github.com/mhadaily
+---
