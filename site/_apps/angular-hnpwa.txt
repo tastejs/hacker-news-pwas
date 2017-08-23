@@ -1,5 +1,5 @@
 ---
-weight: 19
+weight: 22
 title: 'Angular Hacker News'
 github-title: 'alfredoperez/ngx-hn'
 libraries: 
