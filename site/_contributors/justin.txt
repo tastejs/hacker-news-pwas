@@ -1,0 +1,6 @@
+---
+weight: 20
+name: 'Justin'
+image: https://github.com/jgw96.png
+link: https://github.com/jgw96
+---

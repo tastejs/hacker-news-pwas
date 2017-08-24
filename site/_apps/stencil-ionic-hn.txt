@@ -1,0 +1,23 @@
+---
+weight: 23
+title: 'Stencil HN'
+github-title: 'ionic-team/ionic-stencil-hn-app'
+libraries:
+      - Stencil
+      _ Ionic/Core
+service-worker: 'Application Shell'
+server-side-rendering: 'No'
+api: 'node-hnapi'
+hosting: 'Firebase'
+authors:
+    - name: 'Justin'
+lighthouse: '91/100'
+interactive-em: '2.75s'
+interactive-faster-3g: '2.0s'
+lighthouse-link: https://www.webpagetest.org/lighthouse.php?test=170824_XP_f940aaa3675c47fb32ed6284c6f38934&run=2
+wpt-em-link: https://www.webpagetest.org/lighthouse.php?test=170824_31_d8b43867baae06562c35baf8ea575c77&run=1
+wpt-faster-3g-link: https://www.webpagetest.org/result/170824_XP_f940aaa3675c47fb32ed6284c6f38934/
+image: /assets/images/stencil-ionic.png
+app-link: https://corehacker-10883.firebaseapp.com/
+github-link: https://github.com/ionic-team/ionic-stencil-hn-app
+---
