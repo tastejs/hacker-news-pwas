@@ -1,0 +1,26 @@
+---
+weight: 19
+title: 'Zuix HN'
+github-title: 'genielabs/zuix-hn'
+library: 'ZUIX'
+libraries:
+    - name: 'ZUIX'
+module-bundling: 'zuix-bundler'
+service-worker: 'Application Shell + Workbox data caching'
+perfomance-patterns: 'Lazy loaded components with caching'
+server-side-rendering: 'None'
+api: 'Hacker News Firebase API'
+hosting: 'Firebase'
+authors:
+    - name: 'Gene'
+lighthouse: '91/100'
+interactive-em: '6.2s'
+interactive-faster-3g: '4.8s'
+lighthouse-link: https://www.webpagetest.org/lighthouse.php?test=170724_JT_fc286336283f4594b5e9a14ee486d437&run=3
+wpt-em-link: https://www.webpagetest.org/result/170724_F6_c37ad291bb720b8c203da685d8a704b4/
+wpt-faster-3g-link: https://www.webpagetest.org/result/170724_JT_fc286336283f4594b5e9a14ee486d437/
+image: /assets/images/zuixhn-mobile.png
+app-link: https://zuix-hn.firebaseapp.com/
+github-link: https://github.com/g-labs-sw/zuix-hackernews
+framework-link: https://genielabs.github.io/zuix/
+---
