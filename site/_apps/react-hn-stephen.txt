@@ -13,7 +13,7 @@ api: 'Node-hnapi (unoffical)'
 hosting: 'Firebase'
 other-details: 'create-react-app'
 authors:
-    - name: 'stephen'
+    - name: 'Stephen'
 lighthouse: '91/100'
 interactive-em: '3.1s'
 interactive-faster-3g: '2.41s'
