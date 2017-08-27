@@ -1,5 +1,5 @@
 ---
-weight: 15
+weight: 20
 name: 'Stephen'
 image: https://avatars3.githubusercontent.com/u/13380370?v=3
 link: https://github.com/stephenkingsley
