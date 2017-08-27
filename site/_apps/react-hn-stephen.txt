@@ -10,7 +10,7 @@ module-bundling: 'Webpack'
 service-worker: 'Application Shell'
 server-side-rendering: 'No'
 api: 'Node-hnapi (unoffical)'
-hosting: 'firebase'
+hosting: 'Firebase'
 other-details: 'create-react-app'
 authors:
     - name: 'stephen'
@@ -20,7 +20,7 @@ interactive-faster-3g: '2.41s'
 lighthouse-link: https://www.webpagetest.org/lighthouse.php?test=170826_0V_8516618e5aaa2650da5aabbc773c8929&run=3
 wpt-em-link: https://www.webpagetest.org/result/170826_1T_9823f5188c7a02b16c87c1bb00826991/
 wpt-faster-3g-link: https://www.webpagetest.org/result/170826_8P_f18463655253ad388a2f129f75095afe/
-image: https://avatars3.githubusercontent.com/u/13380370?v=3
+image: /assets/images/react-hn-stephen.png
 app-link: https://hn-pwa-d8b2e.firebaseapp.com/
 github-link: https://github.com/stephenkingsley/hackerNews-pwa
 framework-link: https://facebook.github.io/react/
