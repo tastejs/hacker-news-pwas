@@ -7,7 +7,7 @@ libraries:
       _ Ionic/Core
 service-worker: 'Application Shell'
 server-side-rendering: 'No'
-api: 'node-hnapi'
+api: 'HNPWA api'
 hosting: 'Firebase'
 authors:
     - name: 'Justin'
