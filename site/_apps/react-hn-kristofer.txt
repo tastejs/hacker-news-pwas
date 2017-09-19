@@ -15,11 +15,11 @@ hosting: 'Webfaction + Cloudflare'
 authors: 
     - name: 'Kristofer'
 lighthouse: '91/100'
-interactive-em: '2.7s'
-interactive-faster-3g: '2.3s'
-lighthouse-link: https://www.webpagetest.org/lighthouse.php?test=170611_34_a7a85aa517b25fd1d6a65ce80598490c&run=3
-wpt-em-link: https://www.webpagetest.org/result/170611_34_a7a85aa517b25fd1d6a65ce80598490c/
-wpt-faster-3g-link: https://www.webpagetest.org/result/170611_C5_cf43e52668b24c7a578f0d7f3444477a/
+interactive-em: '2.68s'
+interactive-faster-3g: '2.25s'
+lighthouse-link: https://www.webpagetest.org/lighthouse.php?test=170919_KT_914eaf8bd26c8743187e1167d669c56e&run=3
+wpt-em-link: https://www.webpagetest.org/result/170919_A1_36750d6e522b0533185b268ddef79114/
+wpt-faster-3g-link: https://www.webpagetest.org/result/170919_KT_914eaf8bd26c8743187e1167d669c56e/
 image: /assets/images/reacthn-kristofer-mobile.png
 app-link: https://react-hn.kristoferbaxter.com/
 github-link: https://github.com/kristoferbaxter/react-hn
