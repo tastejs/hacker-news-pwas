@@ -17,11 +17,11 @@ authors:
     - name: 'Kevin'
     - name: 'Steve'
 lighthouse: 92/100
-interactive-em: 2.2s
+interactive-em: 2.34s
 interactive-faster-3g: 1.8s
-lighthouse-link: https://www.webpagetest.org/lighthouse.php?test=170611_C5_1f1ef94df2e0e8bae5d42fe1955f9bf2&run=3
-wpt-em-link: https://www.webpagetest.org/result/170611_C5_1f1ef94df2e0e8bae5d42fe1955f9bf2/
-wpt-faster-3g-link: https://www.webpagetest.org/result/170611_NP_aee06ac6eaa9452f05adb6f89e50a2ee/
+lighthouse-link: https://www.webpagetest.org/lighthouse.php?test=170919_XJ_de74b35584767efef8fa98087562e749&run=1
+wpt-em-link: https://www.webpagetest.org/result/170919_0Q_d6fdc6e80104db2e359f6c1e74da1ac7/
+wpt-faster-3g-link: https://www.webpagetest.org/result/170919_XJ_de74b35584767efef8fa98087562e749/
 image: /assets/images/polymer-mobile.png
 app-link: https://hn-polymer-2.firebaseapp.com
 github-link: https://github.com/polymer/hn-polymer-2
