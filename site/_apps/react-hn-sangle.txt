@@ -1,0 +1,27 @@
+---
+weight: 24
+title: 'React HN'
+github-title: 'sangle7/pwa-hackernews-s'
+library: 'React'
+libraries:
+    - name: 'React'
+    - name: 'React Router'
+module-bundling: 'Webpack'
+service-worker: 'Application Shell'
+server-side-rendering: 'No'
+api: 'Firebase Hacker News API + Node-hnapi (unofficial)'
+hosting: 'Firebase'
+other-details: 'create-react-app'
+authors:
+    - name: 'Sangle'
+lighthouse: '91/100'
+interactive-em: '3.629s'
+interactive-faster-3g: '3.207s'
+lighthouse-link: https://www.webpagetest.org/lighthouse.php?test=170922_GP_334432749a8560aa92c14e785d8ac581&run=1
+wpt-em-link: https://www.webpagetest.org/result/170922_JE_460060ef1892f6d66b6be54f3744e6de/
+wpt-faster-3g-link: https://www.webpagetest.org/result/170922_TE_4255b7d47282fdb0a44badde18dfd7eb/
+image: /assets/images/react-hn-sangle.png
+app-link: https://hn-pwa-react.firebaseapp.com/
+github-link: https://github.com/sangle7/pwa-hackernews-s
+framework-link: https://facebook.github.io/react/
+---
