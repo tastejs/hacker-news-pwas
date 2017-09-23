@@ -1,0 +1,26 @@
+---
+weight: 24
+title:  'Next.js HN'
+github-title: 'kulshekhar/next-hnpwa'
+libraries:
+    - name: 'Next.js'
+    - name: 'Preact'
+module-bundling: 'Next.js with additional Webpack config'
+service-worker: 'Application & data caching with sw-precache'
+perfomance-patterns: 'In memory LRU cache, preact-compat alias in production, CDN cache'
+server-side-rendering: 'Yes'
+api: 'Official API (Firebase)'
+hosting: 'Firebase'
+authors:
+    - name: 'Kulshekhar'
+lighthouse: '91/100'
+interactive-em: '2.7s'
+interactive-faster-3g: '2.1s'
+lighthouse-link: https://www.webpagetest.org/lighthouse.php?test=170923_0Q_ee3d10dc5b386229a2ad0ec4ea1abf9e&run=2
+wpt-em-link: https://www.webpagetest.org/result/170923_0Q_ee3d10dc5b386229a2ad0ec4ea1abf9e/
+wpt-faster-3g-link: https://www.webpagetest.org/result/170923_N9_62f709b8815b026d8e8706a215366c20/
+image: /assets/images/next-fb-hnpwa.png
+app-link: https://next-fb-hnpwa.firebaseapp.com/
+github-link: https://github.com/kulshekhar/next-hnpwa
+framework-link: https://github.com/zeit/next.js
+---
