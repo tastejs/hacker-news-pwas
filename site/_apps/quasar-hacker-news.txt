@@ -1,0 +1,28 @@
+---
+weight: 5
+title:  'Quasar Hacker News 1.0'
+github-title: 'hnpwa-quasar'
+libraries: 
+	- name: 'Quasar Framework'
+    - name: 'Vue'
+    - name: 'vue-router'
+module-bundling: 'Webpack'
+service-worker: 'Application Shell + data caching with SWPrecachePlugin'
+perfomance-patterns: 'none'
+server-side-rendering: 'no'
+api: 'Hacker News Firebase API'
+hosting: 'Github pages'
+other-details: 'Used the quasar framework for layout and shell'
+authors: 
+    - name: 'Jona Frank'
+lighthouse: '91/100'
+interactive-em: '9.457s'
+interactive-faster-3g: '6.287s'
+lighthouse-link: https://googlechrome.github.io/lighthouse/viewer/?gist=00aed89c357bad82c285cc5f98349212
+wpt-em-link: https://www.webpagetest.org/result/170924_7J_9dc0dfce6e9d0fa7ff13e709d328d57b/
+wpt-faster-3g-link: https://www.webpagetest.org/result/170924_K0_4518e4146eae5cf10f7aed11410812c6/
+image: /assets/images/quasar-mobile.png
+app-link: https://jonafrank13.github.io/hnpwa-quasar/
+github-link: https://github.com/jonafrank13/hnpwa-quasar
+framework-link: http://quasar-framework.org/
+---
