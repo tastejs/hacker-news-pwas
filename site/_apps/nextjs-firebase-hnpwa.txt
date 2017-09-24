@@ -15,10 +15,10 @@ authors:
     - name: 'Kulshekhar'
 lighthouse: '91/100'
 interactive-em: '2.7s'
-interactive-faster-3g: '2.1s'
-lighthouse-link: https://www.webpagetest.org/lighthouse.php?test=170923_0Q_ee3d10dc5b386229a2ad0ec4ea1abf9e&run=2
-wpt-em-link: https://www.webpagetest.org/result/170923_0Q_ee3d10dc5b386229a2ad0ec4ea1abf9e/
-wpt-faster-3g-link: https://www.webpagetest.org/result/170923_N9_62f709b8815b026d8e8706a215366c20/
+interactive-faster-3g: '2.2s'
+lighthouse-link: https://www.webpagetest.org/lighthouse.php?test=170924_SG_e20c408039688ecdcc07205ff6a91299&run=2
+wpt-em-link: https://www.webpagetest.org/result/170924_BQ_08b80e1854f5bfa0c5b36d10a5373b1e/
+wpt-faster-3g-link: https://www.webpagetest.org/result/170924_SG_e20c408039688ecdcc07205ff6a91299/
 image: /assets/images/next-fb-hnpwa.png
 app-link: https://next-fb-hnpwa.firebaseapp.com/
 github-link: https://github.com/kulshekhar/next-hnpwa
