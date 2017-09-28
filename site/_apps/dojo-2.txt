@@ -1,0 +1,24 @@
+---
+weight:
+title: 'Dojo 2'
+github-title: 'agubler/dojo-2-hn'
+library: 'Dojo 2'
+module-bundling: 'Webpack'
+service-worker: 'Application Shell + caching with Workbox and Offline plugin'
+perfomance-patterns: 'Lazy loaded modules and code splitting'
+server-side-rendering: 'None'
+api: 'Node-hnapi (unofficial)'
+hosting: 'Github Pages'
+authors:
+    - name: 'Anthony'
+lighthouse: '91/100'
+interactive-em: '5s'
+interactive-faster-3g: '3.9s'
+lighthouse-link: https://www.webpagetest.org/lighthouse.php?test=170928_M7_f23cff7be214c26bb1ca5a559bfa5200&run=2
+wpt-em-link: https://www.webpagetest.org/result/170928_54_819799e9cf8b69190819bc5bde259607/
+wpt-faster-3g-link: https://www.webpagetest.org/result/170928_M7_f23cff7be214c26bb1ca5a559bfa5200/
+image: /assets/images/dojo-2-hnpwa.png
+app-link: https://agubler.github.io/dojo-2-hn/dist/#top/1
+github-link: https://github.com/agubler/dojo-2-hn
+framework-link: https://dojo.io
+---
