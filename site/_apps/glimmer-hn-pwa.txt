@@ -1,0 +1,26 @@
+---
+weight: 21
+title: 'Glimmer HN'
+github-title: 'mhadaily/glimmer-hn-pwa'
+libraries:
+    - name: 'Glimmer.js'
+scaffolding: 'Ember CLI'
+module-bundling: 'Broccoli'
+service-worker: 'Application Shell + data caching with ESW'
+perfomance-patterns: 'Prefetch/Preload JS + DNS, Critical CSS, HTTP/2 Server Push'
+server-side-rendering: 'None'
+api: 'Node-hnapi (unofficial)'
+hosting: 'Firebase'
+authors:
+    - name: 'Majid'
+lighthouse: '91/100'
+interactive-em: '4.12s'
+interactive-faster-3g: '2.81s'
+lighthouse-link: https://www.webpagetest.org/lighthouse.php?test=170920_JG_f68db76d6ecdfc19c30be596eab755a2&run=2
+wpt-em-link: https://www.webpagetest.org/result/170920_TT_f75f4bf5930c888202f1c40443a9f4ec/
+wpt-faster-3g-link: https://www.webpagetest.org/result/170920_JG_f68db76d6ecdfc19c30be596eab755a2/
+image: /assets/images/glimmer-hn-pwa.png
+app-link: https://glimmer-hn-pwa.firebaseapp.com/
+github-link: https://github.com/mhadaily/glimmer-hn-pwa
+framework-link: https://glimmerjs.org/
+---

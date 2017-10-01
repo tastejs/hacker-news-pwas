@@ -11,12 +11,12 @@ api: 'Hacker News Firebase API'
 hosting: 'Now'
 authors: 
     - name: 'Rich'
-lighthouse: '93/100'
-interactive-em: '3.6s'
-interactive-faster-3g: '2.3s'
-lighthouse-link: https://www.webpagetest.org/lighthouse.php?test=170506_9H_40a4c53f3f07b983e44feb518271d8a7&run=3
-wpt-em-link: https://www.webpagetest.org/result/170506_CY_60f3658fb6ca1c3c8426feccc631bfe8/
-wpt-faster-3g-link: https://www.webpagetest.org/result/170506_9H_40a4c53f3f07b983e44feb518271d8a7/
+lighthouse: '73/100'
+interactive-em: '2.5s'
+interactive-faster-3g: '2.2s'
+lighthouse-link: https://www.webpagetest.org/lighthouse.php?test=170611_K5_aaca06336e5608c4a825246b383dc663&run=2
+wpt-em-link: https://www.webpagetest.org/result/170611_K5_aaca06336e5608c4a825246b383dc663/
+wpt-faster-3g-link: https://www.webpagetest.org/result/170611_BP_6fc0112b1b7a2862e4aedef7c9277416/
 image: /assets/images/sveltehn-mobile.png
 app-link: https://hn.svelte.technology/
 github-link: https://github.com/sveltejs/svelte-hackernews

@@ -1,0 +1,26 @@
+---
+weight: 17
+title: 'HNPWA Firebase'
+github-title: 'davideast/hnpwa-firebase'
+libraries: 
+    - name: 'HTML/CSS'
+scaffolding: 'Firebase CLI'
+module-bundling: 'N/A'
+service-worker: 'Workboxjs'
+perfomance-patterns: 'CDN Cache'
+server-side-rendering: 'Yes'
+api: 'hnpwa.com/api/v0'
+hosting: 'Firebase'
+authors: 
+    - name: 'David'
+lighthouse: '98/100'
+interactive-em: '1.3s'
+interactive-faster-3g: '0.7s'
+lighthouse-link: https://www.webpagetest.org/lighthouse.php?test=170712_FR_5ea158fd9c684d6d8dee49f833093289&run=2
+wpt-em-link: https://www.webpagetest.org/result/170712_FR_5ea158fd9c684d6d8dee49f833093289/
+wpt-faster-3g-link: https://www.webpagetest.org/result/170712_88_101P/
+image: /assets/images/hnpwa-firebase.png
+app-link: https://hnpwa-firebase.firebaseapp.com/
+github-link: https://github.com/davideast/hnpwa-firebase
+framework-link: https://firebase.google.com/
+---

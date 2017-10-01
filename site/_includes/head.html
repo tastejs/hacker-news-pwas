@@ -7,6 +7,29 @@
   <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
   <meta name="theme-color" content="#F4751E">
 
+  <!-- Schema.org markup for Google+ -->
+  <meta itemprop="name" content="{{ site.title }}">
+  <meta itemprop="description" content="{{ site.description }}">
+  <meta itemprop="image" content="{{ site.url }}/assets/images/hnpwa-showcase.png">
+
+  <!-- Twitter Card data -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="{{ site.twitter_username }}">
+  <meta name="twitter:title" content="{{ site.title }}">
+  <meta name="twitter:description" content="{{ site.description }}">
+  <meta name="twitter:creator" content="{{ site.twitter_username }}">
+  <!-- Twitter summary card with large image must be at least 280x150px -->
+  <meta name="twitter:image" content="{{ site.url }}/assets/images/hnpwa-showcase.png">
+  <meta name="twitter:image:alt" content="{{ site.description }}">
+
+  <!-- Open Graph data -->
+  <meta property="og:title" content="{{ site.title }}" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="{{ site.url }}" />
+  <meta property="og:image" content="{{ site.url }}/assets/images/hnpwa-showcase.png"/>
+  <meta property="og:description" content="{{ site.description }}" />
+  <meta property="fb:admins" content="129712729600" />
+
   <link rel="icon" href="{{ "/assets/favicon.ico" | relative_url }}">
   <link rel="stylesheet" href="{{ "/assets/styles/main.css" | relative_url }}">
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">

@@ -1,0 +1,29 @@
+---
+weight: 15
+title:  'HNPWA with Nuxt.js'
+github-title: 'nuxt/hackernews'
+libraries: 
+    - name: 'Vue'
+    - name: 'Nuxt'
+    - name: 'PWA Module'
+module-bundling: 'Webpack'
+service-worker: 'Workbox'
+perfomance-patterns: 'PRPL, Prefetch/Preload JS + DNS + Data, Critical Path CSS, Server Side Caching'
+server-side-rendering: 'Yes'
+api: 'Hacker News Firebase API'
+hosting: 'Now + CloudFlare CDN'
+authors: 
+    - name: 'Pooya'
+    - name: 'Sebastien'
+    - name: 'Alexandre'
+lighthouse: '91/100'
+interactive-em: '3.8s'
+interactive-faster-3g: '3.5s'
+lighthouse-link: https://www.webpagetest.org/lighthouse.php?test=170620_PG_a2a9feaf4ace07a61b2c6c2a171b1c79&run=1
+wpt-em-link: https://www.webpagetest.org/result/170620_B1_0b83d61272c77c16c3f3f1f16fb72d2e/
+wpt-faster-3g-link: https://www.webpagetest.org/result/170620_PG_a2a9feaf4ace07a61b2c6c2a171b1c79/
+image: /assets/images/nuxt-hn.png
+app-link: https://hn.nuxtjs.org
+github-link: https://github.com/nuxt/hackernews
+framework-link: https://nuxtjs.org
+---
