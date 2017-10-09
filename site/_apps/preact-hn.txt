@@ -5,9 +5,8 @@ github-title: 'kristoferbaxter/preact-hn'
 library: 'Preact'
 libraries: 
     - name: 'Preact'
-    - name: 'Preact Router'
 module-bundling: 'Webpack'
-service-worker: 'Application Shell with OfflinePlugin'
+service-worker: 'Application Shell with SW Precache'
 perfomance-patterns: 'HTTP/2 with Server Push, Brotli and Zopfli static assets'
 server-side-rendering: 'Yes'
 api: 'In-memory cached Hacker News Firebase API'
@@ -15,11 +14,11 @@ hosting: 'Webfaction + Cloudflare'
 authors: 
     - name: 'Kristofer'
 lighthouse: '93/100'
-interactive-em: '2.0s'
-interactive-faster-3g: '1.7s'
-lighthouse-link: https://www.webpagetest.org/lighthouse.php?test=170925_MV_97dab60c08ceda89913e2b67276b1bb2&run=3
-wpt-em-link: https://www.webpagetest.org/result/170925_MV_97dab60c08ceda89913e2b67276b1bb2/
-wpt-faster-3g-link: https://www.webpagetest.org/result/170925_WN_2c68cb8c23612ec956501d9baafb5485/
+interactive-em: '1.9s'
+interactive-faster-3g: '1.5s'
+lighthouse-link: https://www.webpagetest.org/lighthouse.php?test=171009_R6_14208c102da44d9b2c10d78825ea128a&run=1
+wpt-em-link: https://www.webpagetest.org/result/171009_R6_14208c102da44d9b2c10d78825ea128a/
+wpt-faster-3g-link: https://www.webpagetest.org/result/171009_KZ_4637d4705732307a8d01e2fc0869bde3/
 image: /assets/images/preacthn-mobile.png
 app-link: https://hn.kristoferbaxter.com/
 github-link: https://github.com/kristoferbaxter/preact-hn
