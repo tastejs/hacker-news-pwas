@@ -1,0 +1,27 @@
+---
+weight: 24
+title: 'Inferno HN'
+github-title: 'aretheregods/hackerinferno'
+libraries:
+    - name: 'Inferno'
+scaffolding: 'Create-Inferno-App'
+module-bundling: 'Webpack'
+service-worker: 'Application Shell + data caching with sw-precache'
+perfomance-patterns: 'PRPL, code-splitting for granular loading'
+server-side-rendering: 'None'
+api: 'HNPWA-API (unofficial)'
+hosting: 'Firebase functions over HTTP/2 with Server Push + edge-caching'
+other-details: 'Route-specific pushing'
+authors:
+    - name: 'Naythan'
+lighthouse: 91/100
+interactive-em: 2.6s
+interactive-faster-3g: 2.04s
+lighthouse-link: https://www.webpagetest.org/lighthouse.php?test=171014_SF_ca4a34a1781826de824ec20244cd8d34&run=2
+wpt-em-link: https://www.webpagetest.org/result/171014_9P_6a3d5a195dc7b31e50e4fa94ef908639/
+wpt-faster-3g-link: https://www.webpagetest.org/result/171014_SF_ca4a34a1781826de824ec20244cd8d34/
+image: /infernologo.png
+app-link: https://infernohackernews.firebaseapp.com
+github-link: https://github.com/aretheregods/hackerinferno
+framework-link: https://infernojs.org
+---
