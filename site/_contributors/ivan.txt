@@ -1,0 +1,6 @@
+---
+weight: 11
+name: 'Ivan Vanderbyl'
+image: https://github.com/ivanvanderbyl.png
+link: https://github.com/ivanvanderbyl
+---
