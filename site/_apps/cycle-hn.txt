@@ -1,0 +1,25 @@
+---
+weight: 24
+title: 'Cycle HN'
+github-title: 'usm4n/cycle-hn'
+libraries:
+      - CycleJS
+      - cycle-onionify
+      - switch-path
+      - cyclejs-utils
+service-worker: 'Application Shell + SWPreCache Webpack Plugin'
+server-side-rendering: 'No'
+api: 'HNPWA api'
+hosting: 'Now'
+authors:
+    - name: 'Usman'
+lighthouse: '91/100'
+interactive-em: '5.28s'
+interactive-faster-3g: '5.08s'
+lighthouse-link: https://www.webpagetest.org/lighthouse.php?test=171022_D4_0a8774786db703b384b9254e6fba3b5e&run=1
+wpt-em-link: https://www.webpagetest.org/result/171022_D4_0a8774786db703b384b9254e6fba3b5e/
+wpt-faster-3g-link: https://www.webpagetest.org/result/171022_KC_9b0cc70f94cbffc933d4dc2a3af8ac40/
+image: /assets/images/cycle-hn.png
+app-link: https://cyclejs-hn.firebaseapp.com
+github-link: https://github.com/usm4n/cycle-hn
+---
