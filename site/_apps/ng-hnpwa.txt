@@ -1,0 +1,30 @@
+---
+weight: 24
+title: 'Angular-HN'
+github-title: 'ashishdce/hn-pwa-angular'
+libraries: 
+    - name: 'Angular'
+    - name: 'ngu-pwa-tools'
+    - name: 'firebase'
+scaffolding: 'Angular CLI'
+module-bundling: 'Angular CLI'
+service-worker: 'Application shell generated with ng-pwa-tools and service worker from @angular/service-worker'
+perfomance-patterns: 'Lazy loaded modules'
+server-side-rendering: 'Yes'
+api: 'Node-hnapi (unofficial)'
+hosting: 'Firebase with HTTP/2 server push'
+authors: 
+    - name: 'Ashish'
+    - name: 'Vinci'
+    - name: 'Nisheed'
+lighthouse: '91/100'
+interactive-em: '6.7s'
+interactive-faster-3g: '3.4s'
+lighthouse-link: https://www.webpagetest.org/lighthouse.php?test=171021_K2_6c7815224af4d75f9170343e5fd87e42&run=1
+wpt-em-link: https://www.webpagetest.org/result/171021_K2_6c7815224af4d75f9170343e5fd87e42/
+wpt-faster-3g-link: https://www.webpagetest.org/result/171021_3S_bb59bd72e5da5bed62b501ef35bc36d1/
+image: /assets/images/hnpwa-angular.png
+app-link: https://angular-hnpwa.firebaseapp.com
+github-link: https://github.com/Ashishdce/hn-pwa-angular
+framework-link: https://angular.io/
+---
