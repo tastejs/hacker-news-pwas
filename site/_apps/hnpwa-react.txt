@@ -1,0 +1,29 @@
+---
+weight: 21
+title: 'HNPWA with React'
+github-title: 'taehwanno/hnpwa-react'
+library: 'React'
+libraries:
+    - name: 'React'
+    - name: 'React Router'
+    - name: 'Redux'
+    - name: 'Immutable.js'
+module-bundling: 'Webpack'
+service-worker: 'Application Shell + data caching and offline google analytics with Workbox'
+perfomance-patterns: 'Server-side data pre-fetching, preload/prefetch resources'
+server-side-rendering: 'Yes'
+api: 'Node-hnapi (unofficial)'
+hosting: 'Firebase'
+authors:
+    - name: 'Taehwan, No'
+lighthouse: '91/100'
+interactive-em: '5.2s'
+interactive-faster-3g: '4.3s'
+lighthouse-link: https://www.webpagetest.org/lighthouse.php?test=171029_69_655c5b28865ee880316d1af49358b1a0&run=1
+wpt-em-link: https://www.webpagetest.org/result/171029_6Y_04df9e72abb38731d412b0eeb7be1317/
+wpt-faster-3g-link: https://www.webpagetest.org/result/171029_69_655c5b28865ee880316d1af49358b1a0/
+image: /assets/images/hnpwa-react.png
+app-link: https://hnpwa-react.firebaseapp.com/
+github-link: https://github.com/taehwanno/hnpwa-react
+framework-link: https://reactjs.org/
+---
