@@ -1,6 +1,6 @@
 ---
 weight: 10
-title: 'HackerNew.io'
+title: 'HackerNews.io'
 github-title: 'ivanvanderbyl/ember-hackernews-pwa'
 libraries:
   - name: 'Ember.js'
