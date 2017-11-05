@@ -1,0 +1,25 @@
+---
+weight: 24 
+title: 'Elm HN PWA'
+github-title: 'skrypte/elm-hn-pwa'
+libraries: "Elm" 
+scaffolding: 'N/A'
+module-bundling: 'N/A'
+service-worker: 'partially workbox.js + application shell + data caching'
+perfomance-patterns: 'preconnect API, inline CSS, minified JS, lazy loading for JSON data'
+server-side-rendering: 'None'
+api: 'hacker-news.firebaseio.com/v0'
+hosting: 'o2switch'
+authors: 
+    - name: 'skingrapher'
+lighthouse: '91/100'
+interactive-em: '4.8s'
+interactive-faster-3g: '3.7s'
+lighthouse-link: https://www.webpagetest.org/lighthouse.php?test=171104_BM_ce030e66965f4ea601c73316b8448f03&run=1
+wpt-em-link: https://www.webpagetest.org/result/171104_BM_ce030e66965f4ea601c73316b8448f03/ 
+wpt-faster-3g-link: https://www.webpagetest.org/result/171104_NK_697bd1b5a53d8b3ef8e0afd8a6579a3e/ 
+image: /assets/images/elm-hn-pwa.png
+app-link: https://hnpwa.skingrapher.com
+github-link: https://github.com/skrypte/elm-hn-pwa
+framework-link: https://elm-lang.org/
+---
