@@ -5,4 +5,4 @@
 /jobs
 /sw.js
 /app.css
-/cc.js
+/app.js
