@@ -1,5 +1,5 @@
 ---
-weight: 9
+weight: 24
 title: 'Ember HNPWA'
 github-title: 'mstewart6/hnpwa-ember'
 libraries:
@@ -13,11 +13,11 @@ hosting: 'Heroku + Amazon S3'
 authors:
     - name: 'Michael'
 lighthouse: '91/100'
-interactive-em: '4.3s'
-interactive-faster-3g: '2.4s'
-lighthouse-link: https://www.webpagetest.org/lighthouse.php?test=170604_DV_0de01a850876f25372f466864404771c&run=1
-wpt-em-link: https://www.webpagetest.org/result/170604_A8_9f4c773036b1fbe008f1777bd6b6100b/
-wpt-faster-3g-link: https://www.webpagetest.org/result/170604_DV_0de01a850876f25372f466864404771c/
+interactive-em: '7.7s'
+interactive-faster-3g: '5.3s'
+lighthouse-link: https://www.webpagetest.org/lighthouse.php?test=171116_1A_bd400cf488e5f2c4fd82f5a0d5cc552c&run=3
+wpt-em-link: https://www.webpagetest.org/result/171116_96_40f517b86363de55c010798883cb8866/
+wpt-faster-3g-link: https://www.webpagetest.org/result/171116_1A_bd400cf488e5f2c4fd82f5a0d5cc552c/
 image: /assets/images/ember-mobile.png
 app-link: https://hnpwa-ember.herokuapp.com/
 github-link: https://github.com/mstewart6/hnpwa-ember
