@@ -1,10 +1,10 @@
 ---
-weight: 7
+weight: 25
 title: 'Viper-news'
 github-title: 'WebReflection/viper-news'
 libraries: 
     - name: 'viperHTML'
-module-bundling: 'Browserify'
+module-bundling: 'Webpack'
 service-worker: 'Application Shell + data caching'
 perfomance-patterns: 'Asynchronous Partial Outputs'
 server-side-rendering: 'Yes'
@@ -13,11 +13,11 @@ hosting: 'Google App Engine'
 authors: 
     - name: 'Andrea'
 lighthouse: '91/100'
-interactive-em: '1.9s'
+interactive-em: '1.78s'
 interactive-faster-3g: '1.5s'
-lighthouse-link: https://www.webpagetest.org/lighthouse.php?test=170613_FW_cef11c2c115a07b997263a2866203934&run=2
-wpt-em-link: https://www.webpagetest.org/result/170613_FW_cef11c2c115a07b997263a2866203934/
-wpt-faster-3g-link: https://www.webpagetest.org/result/170613_68_d3066ab1bec95a18e3f9c13a0789ef14/
+lighthouse-link: https://www.webpagetest.org/lighthouse.php?test=171116_3Q_636bd0fd4f0da9aeeec699d460e63a32&run=1
+wpt-em-link: https://www.webpagetest.org/result/171116_8C_00c37105fe46ea1939831f11622ec445/
+wpt-faster-3g-link: https://www.webpagetest.org/result/171116_3Q_636bd0fd4f0da9aeeec699d460e63a32/
 image: /assets/images/viperhtml-mobile.png
 app-link: https://viperhtml-164315.appspot.com/
 github-link: https://github.com/WebReflection/viper-news

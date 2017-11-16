@@ -1,0 +1,25 @@
+---
+weight: 24
+title: 'Ember HNPWA'
+github-title: 'mstewart6/hnpwa-ember'
+libraries:
+    - name: 'Ember'
+scaffolding: 'Ember CLI'
+module-bundling: 'Broccoli'
+service-worker: 'Application Shell + data caching with sw-precache'
+server-side-rendering: 'Ember Fastboot'
+api: 'Node-hnapi (unofficial)'
+hosting: 'Heroku + Amazon S3'
+authors:
+    - name: 'Michael'
+lighthouse: '91/100'
+interactive-em: '7.7s'
+interactive-faster-3g: '5.3s'
+lighthouse-link: https://www.webpagetest.org/lighthouse.php?test=171116_1A_bd400cf488e5f2c4fd82f5a0d5cc552c&run=3
+wpt-em-link: https://www.webpagetest.org/result/171116_96_40f517b86363de55c010798883cb8866/
+wpt-faster-3g-link: https://www.webpagetest.org/result/171116_1A_bd400cf488e5f2c4fd82f5a0d5cc552c/
+image: /assets/images/ember-mobile.png
+app-link: https://hnpwa-ember.herokuapp.com/
+github-link: https://github.com/mstewart6/hnpwa-ember
+framework-link: https://emberjs.com/
+---
