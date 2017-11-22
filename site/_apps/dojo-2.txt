@@ -5,20 +5,20 @@ github-title: 'agubler/dojo-2-hn'
 library: 'Dojo 2'
 module-bundling: 'Webpack'
 service-worker: 'Application Shell + Service Worker support via Dojo CLI build'
-perfomance-patterns: 'Build time rendering, lazy loaded modules and code splitting'
+perfomance-patterns: 'HTTP/2, Build time rendering, lazy loaded modules and code splitting'
 server-side-rendering: 'None'
 api: 'Node-hnapi (unofficial)'
-hosting: 'Github Pages'
+hosting: 'Firebase'
 authors:
     - name: 'Anthony'
 lighthouse: '91/100'
-interactive-em: '4.3s'
-interactive-faster-3g: '3.5s'
+interactive-em: '3.9s'
+interactive-faster-3g: '3.1s'
 lighthouse-link: https://www.webpagetest.org/lighthouse.php?test=171122_P9_0f78d64c5b7da6172c3f62d986bd459f&run=3
-wpt-em-link: https://www.webpagetest.org/result/171122_P9_0f78d64c5b7da6172c3f62d986bd459f/
-wpt-faster-3g-link: https://www.webpagetest.org/result/171122_D2_04848b5e1338877149d9620248c4843b/
+wpt-em-link: https://www.webpagetest.org/result/171122_NM_a750d7aae8909e21b2a1bb72e926dbfb/
+wpt-faster-3g-link: https://www.webpagetest.org/result/171122_C6_98ee0db93954d0ab0166a22bdaab7d84/
 image: /assets/images/dojo-2-hnpwa.png
-app-link: https://agubler.github.io/dojo-2-hn/dist/#top/1
+app-link: https://dojo-2-hnpwa-d668d.firebaseapp.com/
 github-link: https://github.com/agubler/dojo-2-hn
 framework-link: https://dojo.io
 ---
