@@ -5,18 +5,18 @@ github-title: 'agubler/dojo-2-hn'
 library: 'Dojo 2'
 module-bundling: 'Webpack'
 service-worker: 'Application Shell + Service Worker support via Dojo CLI build'
-perfomance-patterns: 'Lazy loaded modules and code splitting'
+perfomance-patterns: 'Build time rendering, lazy loaded modules and code splitting'
 server-side-rendering: 'None'
 api: 'Node-hnapi (unofficial)'
 hosting: 'Github Pages'
 authors:
     - name: 'Anthony'
 lighthouse: '91/100'
-interactive-em: '5s'
-interactive-faster-3g: '3.9s'
-lighthouse-link: https://www.webpagetest.org/lighthouse.php?test=170929_2E_82f7ebdfea75c3028d486c9ab6e2ccc8&run=3
-wpt-em-link: https://www.webpagetest.org/result/170929_HZ_4395b9b25ea9adae2d3e45be54ae699b/
-wpt-faster-3g-link: https://www.webpagetest.org/result/170929_2E_82f7ebdfea75c3028d486c9ab6e2ccc8/
+interactive-em: '4.3s'
+interactive-faster-3g: '3.5s'
+lighthouse-link: https://www.webpagetest.org/lighthouse.php?test=171122_P9_0f78d64c5b7da6172c3f62d986bd459f&run=3
+wpt-em-link: https://www.webpagetest.org/result/171122_P9_0f78d64c5b7da6172c3f62d986bd459f/
+wpt-faster-3g-link: https://www.webpagetest.org/result/171122_D2_04848b5e1338877149d9620248c4843b/
 image: /assets/images/dojo-2-hnpwa.png
 app-link: https://agubler.github.io/dojo-2-hn/dist/#top/1
 github-link: https://github.com/agubler/dojo-2-hn
