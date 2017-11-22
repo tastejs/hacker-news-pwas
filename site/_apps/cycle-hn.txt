@@ -10,7 +10,7 @@ libraries:
 service-worker: 'Application Shell + SWPreCache Webpack Plugin'
 server-side-rendering: 'No'
 api: 'HNPWA api'
-hosting: 'Now'
+hosting: 'Firebase'
 authors:
     - name: 'Usman'
 lighthouse: '91/100'
