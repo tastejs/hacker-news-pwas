@@ -134,7 +134,10 @@
       <div class="fl-l dn db-l">
         <div class="flex h-100 items-center">
           <a class="link" href={{ app.app-link }}>
-            <img class="grow w5" src={{ app.image | relative_url }} alt="{{ app.title }} HN PWA running on a mobile phone">
+             <div class="phone-outline grow">
+              <div class="phone-outline-power"></div>
+              <img class="w5" src={{ app.image | relative_url }} alt="{{ app.title }} HN PWA running on a mobile phone">
+            </div>
           </a>
         </div>
       </div>
