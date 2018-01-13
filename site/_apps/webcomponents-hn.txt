@@ -1,0 +1,23 @@
+---
+weight: 29
+title: 'Vanillia WebComponents'
+github-title: 'dsolimando/hnpwa-mobileelements'
+library: 'No Libray'
+module-bundling: 'No module bundling'
+service-worker: 'Application Shell'
+perfomance-patterns: 'HTTP/2, Gzip static assets', CDN
+server-side-rendering: 'yes'
+api: 'Node-hnapi (unofficial)'
+hosting: 'Google Compute Engine'
+authors: 
+    - name: 'Damien'
+lighthouse: '91/100'
+interactive-em: '2.3s'
+interactive-faster-3g: '1.3s'
+lighthouse-link: https://www.webpagetest.org/lighthouse.php?test=171125_1Y_6ce8db5468e664a2ba0362a045ca2e40&run=3 
+wpt-em-link: https://www.webpagetest.org/result/170816_S5_19V8
+wpt-faster-3g-link: https://www.webpagetest.org/result/171125_1Y_6ce8db5468e664a2ba0362a045ca2e40/
+image: /assets/images/hn-vanilla-wc.png
+app-link: https://dm3bm9rb0n9kc.cloudfront.net/
+github-link: https://github.com/dsolimando/hnpwa-mobileelements/tree/pagination
+---
