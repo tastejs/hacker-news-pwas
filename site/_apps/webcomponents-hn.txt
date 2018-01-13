@@ -1,5 +1,5 @@
 ---
-weight: 23
+weight: 29
 title: 'Vanillia WebComponents'
 github-title: 'dsolimando/hnpwa-mobileelements'
 library: 'No Libray'
