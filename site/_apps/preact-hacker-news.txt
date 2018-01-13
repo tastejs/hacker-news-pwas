@@ -1,0 +1,26 @@
+---
+weight: 30
+title: 'Preact Hacker News'
+github-title: 'malbernaz/preact-hn'
+library: 'Preact'
+libraries:
+    - name: 'Preact'
+module-bundling: 'Webpack'
+service-worker: 'Application Shell with custom worker-loader'
+perfomance-patterns: 'HTTP/2, route based code splitting, resources preload, server-side data pre-fetch'
+server-side-rendering: 'Yes'
+api: 'Hacker News Firebase API on the server communicating with the client via socket'
+hosting: 'now.sh'
+authors:
+    - name: 'malbernaz'
+lighthouse: '91/100'
+interactive-em: '4.8s'
+interactive-faster-3g: '3.4s'
+lighthouse-link: https://www.webpagetest.org/lighthouse.php?test=170818_9W_cd328ee0370e86c069c7bd0a70db5e34&run=2
+wpt-em-link: https://www.webpagetest.org/result/170818_R4_717b39b3ee0d52ba738f0830742c82b4/
+wpt-faster-3g-link: https://www.webpagetest.org/result/170818_9W_cd328ee0370e86c069c7bd0a70db5e34/
+image: /assets/images/preact-hnpwa.png
+app-link: https://preact-hn.now.sh
+github-link: https://github.com/malbernaz/preact-hn
+framework-link: https://preactjs.com
+---
