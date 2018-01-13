@@ -1,5 +1,5 @@
 ---
-weight:
+weight: 29
 name: 'Anthony'
 image: https://github.com/agubler.png
 link: https://github.com/agubler
