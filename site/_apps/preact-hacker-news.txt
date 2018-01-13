@@ -1,5 +1,5 @@
 ---
-weight: 22
+weight: 30
 title: 'Preact Hacker News'
 github-title: 'malbernaz/preact-hn'
 library: 'Preact'
