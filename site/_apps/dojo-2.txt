@@ -1,5 +1,5 @@
 ---
-weight:
+weight: 28
 title: 'Dojo 2'
 github-title: 'agubler/dojo-2-hn'
 library: 'Dojo 2'
