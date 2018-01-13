@@ -5,7 +5,7 @@ github-title: 'dsolimando/hnpwa-mobileelements'
 library: 'No Libray'
 module-bundling: 'No module bundling'
 service-worker: 'Application Shell'
-perfomance-patterns: 'HTTP/2, Gzip static assets', CDN
+perfomance-patterns: 'HTTP/2, Gzip static assets, CDN'
 server-side-rendering: 'yes'
 api: 'Node-hnapi (unofficial)'
 hosting: 'Google Compute Engine'
