@@ -14,8 +14,8 @@ hosting: 'Firebase'
 authors: 
     - name: 'Teno'
 lighthouse: '91/100'
-interactive-em: '3,3s'
-interactive-faster-3g: '2,4s'
+interactive-em: '3.3s'
+interactive-faster-3g: '2.4s'
 lighthouse-link: https://www.webpagetest.org/lighthouse.php?test=180123_ZC_f6d860c8a63a42ff405aa32ad38d99c6&run=2
 wpt-em-link: https://www.webpagetest.org/result/180123_HE_8ec4ffc329ea532f9101e469c9fe6c20/
 wpt-faster-3g-link: https://www.webpagetest.org/result/180123_ZC_f6d860c8a63a42ff405aa32ad38d99c6/
