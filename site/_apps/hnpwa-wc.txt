@@ -14,11 +14,11 @@ hosting: 'Firebase'
 authors: 
     - name: 'Teno'
 lighthouse: '91/100'
-interactive-em: '3.3s'
+interactive-em: '3.1s'
 interactive-faster-3g: '2.4s'
-lighthouse-link: https://www.webpagetest.org/lighthouse.php?test=180123_ZC_f6d860c8a63a42ff405aa32ad38d99c6&run=2
-wpt-em-link: https://www.webpagetest.org/result/180123_HE_8ec4ffc329ea532f9101e469c9fe6c20/
-wpt-faster-3g-link: https://www.webpagetest.org/result/180123_ZC_f6d860c8a63a42ff405aa32ad38d99c6/
+lighthouse-link: https://www.webpagetest.org/lighthouse.php?test=180123_C9_4cdc377b1b55b4ba0c70191500e1d3c0&run=1
+wpt-em-link: https://www.webpagetest.org/result/180123_C9_4cdc377b1b55b4ba0c70191500e1d3c0/
+wpt-faster-3g-link: https://www.webpagetest.org/result/180123_8D_b017a8842726332ec1a82cd9b88a32cf/
 image: /assets/images/hnpwa-wc.png
 app-link: https://hnpwa-wc.firebaseapp.com
 github-link: https://github.com/tenosiswono/hnpwa-wc
