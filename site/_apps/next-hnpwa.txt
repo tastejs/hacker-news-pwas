@@ -4,7 +4,6 @@ title:  'HNPWA with Next.js'
 github-title: 'codebusking/next-hnpwa-guide-kit'
 libraries: 
     - name: 'Next.js'
-    - name: 'Preact'
     - name: 'firebase-hackernews'
 module-bundling: 'Webpack'
 service-worker: 'Application Shell + data caching with Workbox'

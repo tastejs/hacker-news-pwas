@@ -1,27 +1,27 @@
 ---
-weight: 26
+weight: 28
 title: 'Inferno HN'
 github-title: 'aretheregods/hackerinferno'
-libraries:
+libraries: 
     - name: 'Inferno'
 scaffolding: 'create-inferno-app'
 module-bundling: 'Webpack'
 service-worker: 'Application Shell + data caching with sw-precache'
 perfomance-patterns: 'PRPL, code-splitting for granular loading'
 server-side-rendering: 'None'
-api: 'HNPWA-API (unofficial)'
-hosting: 'Firebase functions over HTTP/2 with Server Push + edge-caching'
+api: 'node_hnapi'
+hosting: 'Firebase'
 other-details: 'Route-specific pushing'
-authors:
+authors: 
     - name: 'Naythan'
-lighthouse: 91/100
-interactive-em: 2.68s
-interactive-faster-3g: 2.07s
-lighthouse-link: https://www.webpagetest.org/lighthouse.php?test=171116_5H_a3f5ee3c7bcdb500f5322df555910f31&run=1
-wpt-em-link: https://www.webpagetest.org/result/171116_BX_cf8d9c5da7d4e8d6d1654e8e7457ecdc/
-wpt-faster-3g-link: https://www.webpagetest.org/result/171116_5H_a3f5ee3c7bcdb500f5322df555910f31/
+lighthouse: '91/100'
+interactive-em: '2.7s'
+interactive-faster-3g: '2.17s'
+lighthouse-link: https://www.webpagetest.org/lighthouse.php?test=180119_PQ_af0a8e774030765c339c4eae3b1296a9&run=3 
+wpt-em-link: https://www.webpagetest.org/result/180116_GM_c366e069195609ce4bbf6f58dd77f1cd/
+wpt-faster-3g-link:https://www.webpagetest.org/result/180119_PQ_af0a8e774030765c339c4eae3b1296a9/ 
 image: /infernologo.png
-app-link: https://infernohackernews.firebaseapp.com
+app-link: https://infernohackernews.firebaseapp.com/
 github-link: https://github.com/aretheregods/hackerinferno
-framework-link: https://infernojs.org
+framework-link: https://infernojs.org/
 ---
