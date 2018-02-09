@@ -1,0 +1,30 @@
+---
+weight: 31
+title: 'MobX TS HN'
+github-title: 'eugenkiss/hnclient'
+library: 'React'
+libraries: 
+    - name: 'React/Inferno'
+    - name: 'MobX'
+    - name: 'TypeScript'
+    - name: 'Router5'
+    - name: 'emotion'
+module-bundling: 'Webpack'
+service-worker: 'SWPrecache'
+perfomance-patterns: 'Critical CSS, request caching'
+server-side-rendering: 'None'
+api: 'hnpwa.com/api/v0'
+hosting: 'Firebase'
+authors:
+    - name: 'Eugen'
+lighthouse: '90/100'
+interactive-em: '7.3s'
+interactive-faster-3g: '3.9s'
+lighthouse-link: https://www.webpagetest.org/lighthouse.php?test=180208_JJ_01f07a06adb2f1d7b7b68adc8902fe4f&run=3
+wpt-em-link: https://www.webpagetest.org/result/180208_MC_589f0257c719d7a20c39d19818d6b42f/
+wpt-faster-3g-link: https://www.webpagetest.org/result/180208_JJ_01f07a06adb2f1d7b7b68adc8902fe4f/
+image: /assets/images/mobx-ts-hn.png
+app-link: https://hn.eugenkiss.com
+github-link: https://github.com/eugenkiss/hnclient
+framework-link: https://mobx.js.org
+---
