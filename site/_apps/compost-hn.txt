@@ -1,0 +1,23 @@
+---
+weight: 31
+title: 'Vanilla Web Components with Compost mixins'
+github-title: 'lamplightdev/compost-hn'
+library: 'Compost mixins'
+module-bundling: 'Rollup'
+service-worker: 'Shell + data caching with Workbox'
+perfomance-patterns: 'Local caching of API results, CDN cache'
+server-side-rendering: 'no'
+api: 'Node-hnapi (unofficial)'
+hosting: 'Netlify'
+authors:
+    - name: 'Chris H'
+lighthouse: '91/100'
+interactive-em: '2.3s'
+interactive-faster-3g: '1.3s'
+lighthouse-link: https://www.webpagetest.org/lighthouse.php?test=171125_1Y_6ce8db5468e664a2ba0362a045ca2e40&run=3
+wpt-em-link: https://www.webpagetest.org/result/170816_S5_19V8
+wpt-faster-3g-link: https://www.webpagetest.org/result/171125_1Y_6ce8db5468e664a2ba0362a045ca2e40/
+image: /assets/images/compost-hn.png
+app-link: https://compost-hn.netlify.com/
+github-link: https://github.com/lamplightdev/compost-hn
+---
