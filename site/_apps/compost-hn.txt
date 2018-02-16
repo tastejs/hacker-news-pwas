@@ -8,16 +8,16 @@ service-worker: 'Shell + data caching with Workbox'
 perfomance-patterns: 'Local caching of API results, CDN cache'
 server-side-rendering: 'no'
 api: 'Node-hnapi (unofficial)'
-hosting: 'Netlify'
+hosting: 'Firebase'
 authors:
     - name: 'Chris H'
 lighthouse: '91/100'
-interactive-em: '2.3s'
-interactive-faster-3g: '1.3s'
-lighthouse-link: https://www.webpagetest.org/lighthouse.php?test=171125_1Y_6ce8db5468e664a2ba0362a045ca2e40&run=3
-wpt-em-link: https://www.webpagetest.org/result/170816_S5_19V8
-wpt-faster-3g-link: https://www.webpagetest.org/result/171125_1Y_6ce8db5468e664a2ba0362a045ca2e40/
+interactive-em: '2.5s'
+interactive-faster-3g: '1.9s'
+lighthouse-link: https://www.webpagetest.org/lighthouse.php?test=180216_SE_b0c71ae733eee5322121f7aaa5df06d3&run=3
+wpt-em-link: https://www.webpagetest.org/result/180216_W0_64c0a765b4efde038eea690cd2fc6b32/
+wpt-faster-3g-link: https://www.webpagetest.org/result/180216_SE_b0c71ae733eee5322121f7aaa5df06d3/
 image: /assets/images/compost-hn.png
-app-link: https://compost-hn.netlify.com/
+app-link: https://compost-35844.firebaseapp.com
 github-link: https://github.com/lamplightdev/compost-hn
 ---
