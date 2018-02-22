@@ -1,0 +1,31 @@
+---
+weight: 29
+title: 'React HN - full page SSR'
+github-title: 'JounQin/react-hackernews'
+library: 'React'
+libraries: 
+    - name: 'React'
+    - name: 'React Router'
+    - name: 'Redux'
+    - name: 'React Async Component'
+    - name: 'React Server Renderer'
+module-bundling: 'Webpack'
+service-worker: 'Application Shell + data caching with SWPrecachePlugin'
+perfomance-patterns: 'Server-side data pre-fetching, preload/prefetch resources'
+server-side-rendering: 'Yes'
+api: 'Hacker News Firebase API'
+hosting: 'Now'
+other-details: 'Asynchronously loaded routes, Inlined CSS used by rendered components'
+authors:
+    - name: 'JounQin'
+lighthouse: '91/100'
+interactive-em: '5.7s'
+interactive-faster-3g: '4.0s'
+lighthouse-link: https://www.webpagetest.org/lighthouse.php?test=180101_2Y_84719548884ee4c268a559a36f513930&run=2
+wpt-em-link: https://www.webpagetest.org/result/180101_2Y_84719548884ee4c268a559a36f513930/
+wpt-faster-3g-link: https://www.webpagetest.org/result/180222_DS_76c25157d98ae31d66d4de6fd4e52224/
+image: /assets/images/react-hn-ssr.png
+app-link: https://react-hn.now.sh/
+github-link: https://github.com/JounQin/react-hackernews
+framework-link: https://facebook.github.io/react/
+---
