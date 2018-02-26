@@ -4,7 +4,7 @@ export async function deploy() {
   try {
     return await client.deploy({
       project: 'hnpwa-coffee',
-      token: '1/M_Kklp6W2GrmMw8BuIKj6WwqsXGnhMhobUFXo1vJyjw',
+      token: process.env.TOKEN,
       cwd: process.cwd()
     });
   } catch (e) {

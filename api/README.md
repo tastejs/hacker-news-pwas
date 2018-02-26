@@ -9,6 +9,7 @@ The Official Hacker News API uses categories of new content: Top Stories, Ask, J
 1. Ask davideast for deploy permissions.
 1. Install dependencies inside the `api` folder.
 1. Install the [Google Cloud SDK](https://cloud.google.com/sdk/). 
+1. Initialize Google Cloud SDK to HNPWA project.
 1. Run `yarn build` (or `npm run build`).
 1. Run `yarn deploy`.
 1. Check the [GCP dashboard for errors](console.cloud.google.com/errors).
