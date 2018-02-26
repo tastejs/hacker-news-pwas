@@ -6,7 +6,7 @@
     "express": "^4.15.3",
     "firebase-admin": "~4.2.1",
     "firebase-functions": "^0.5.7",
-    "hnpwa-api": "0.0.9"
+    "hnpwa-api": "^0.1.5"
   },
   "private": true
 }

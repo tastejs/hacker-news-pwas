@@ -4,7 +4,8 @@ import { deploy } from './deploy';
 import { publisher } from 'hnpwa-api';
 const ErrorReporting = require('@google-cloud/error-reporting');
 const errors = ErrorReporting();
-const errorEvent = errors.event();
+
+const env = require('../env.json');
 
 const runner = publisher({
   interval: '*/20 * * * *',
@@ -13,7 +14,11 @@ const runner = publisher({
   log: console.log
 }, async function afterWrite() {
   try {
-    await deploy();
+    const token = env.TOKEN;
+    if(typeof token === undefined || typeof token === null) { 
+      throw new Error('No token provided for Firebase Hosting deployment');
+    }
+    await deploy(token!);
     console.log('Deployed to Firebase Hosting!');
   } catch (e) {
     errors.report(e);

@@ -1,10 +1,10 @@
-var client = require('firebase-tools');
+const client = require('firebase-tools');
 
-export async function deploy() {
+export async function deploy(token: string) {
   try {
     return await client.deploy({
       project: 'hnpwa-coffee',
-      token: process.env.TOKEN,
+      token,
       cwd: process.cwd()
     });
   } catch (e) {

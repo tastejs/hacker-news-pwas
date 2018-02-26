@@ -5,7 +5,7 @@
   "description": "The publish server for api.hnpwa.com",
   "main": "dist/index.js",
   "scripts": {
-    "build": "tsc",
+    "build": "rm -rf dist && tsc && cp env.json dist/env.json",
     "start": "node dist/index",
     "deploy": "gcloud app deploy --version yolo",
     "deploy:firebase": "firebase deploy --only functions,hosting",
@@ -20,7 +20,7 @@
     "@types/fs-extra": "^5.0.0",
     "firebase-tools": "^3.17.4",
     "fs-extra": "^5.0.0",
-    "hnpwa-api": "^0.1.3",
+    "hnpwa-api": "^0.1.5",
     "typescript": "^2.7.2"
   }
 }
