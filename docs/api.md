@@ -92,7 +92,7 @@ export interface Item {
 
 Users are retrieved by username.
 
-[https://api.hnpwa.com/v0/user/davideast.json](https://api.hnpwa.com/api/v0/user/davideast.json)
+[https://api.hnpwa.com/v0/user/davideast.json](https://api.hnpwa.com/v0/user/davideast.json)
 
 ### Schema
 
