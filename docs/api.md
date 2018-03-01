@@ -2,7 +2,7 @@
 
 **A fast, CDN delivered, aggregated Hacker News API**
 
-https://hnpwa.com/api/v0/news.json
+https://api.hnpwa.com/api/v0/news/1.json
 
 ## Why?
 
@@ -21,11 +21,11 @@ There are five item feeds.
 
 | Name | URL |
 | --- | --- |
-| News| https://hnpwa.com/api/v0/news.json |
-| Newest | https://hnpwa.com/api/v0/newest.json |
-| Ask | https://hnpwa.com/api/v0/ask.json |
-| Show | https://hnpwa.com/api/v0/show.json |
-| Jobs | https://hnpwa.com/api/v0/jobs.json |
+| News| https://api.hnpwa.com/api/v0/news/1.json |
+| Newest | https://api.hnpwa.com/api/v0/newest/1.json |
+| Ask | https://api.hnpwa.com/api/v0/ask/1.json |
+| Show | https://api.hnpwa.com/api/v0/show/1.json |
+| Jobs | https://api.hnpwa.com/api/v0/jobs/1.json |
 
 ### Schema
 
@@ -48,9 +48,9 @@ export interface FeedItem {
 
 ### Paging 
 
-Item feeds can be paged with the `?page=` query parameter. Each page starts at 1 and each feed has a different ending page.
+Item feeds can be paged by accessing the next index in the page. Each page starts at 1 and each feed has a different ending page.
 
-[https://hnpwa.com/api/v0/news.json?page=2](https://hnpwa.com/api/v0/news.json?page=2)
+[https://api.hnpwa.com/api/v0/news.json/2.json](https://api.hnpwa.com/api/v0/news.json/2.json)
   
 | Name | Max Pages |
 | --- | --- |
@@ -64,7 +64,7 @@ Item feeds can be paged with the `?page=` query parameter. Each page starts at 1
 
 Feeds provide the top level view of an item, but other details like comment threads are avaiable at the individual item level.
 
-[https://hnpwa.com/api/v0/item/13831370.json](https://hnpwa.com/api/v0/item/13831370.json)
+[https://api.hnpwa.com/api/v0/item/13831370.json](https://api.hnpwa.com/api/v0/item/13831370.json)
 
 ### Schema 
 
@@ -92,7 +92,7 @@ export interface Item {
 
 Users are retrieved by username.
 
-[https://hnpwa.com/api/v0/user/davideast.json](https://hnpwa.com/api/v0/user/davideast.json)
+[https://api.hnpwa.com/api/v0/user/davideast.json](https://api.hnpwa.com/api/v0/user/davideast.json)
 
 ### Schema
 
