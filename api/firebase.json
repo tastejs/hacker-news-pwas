@@ -3,6 +3,10 @@
     "public": "dist/public",
     "rewrites": [
       {
+        "source": "/v0**",
+        "function": "api0"
+      },
+      {
         "source": "/v0/**",
         "function": "api0"
       }

@@ -1,0 +1,6 @@
+{
+  "projects": {
+    "prod": "hnpwa-coffee",
+    "staging": "hnpwa-api"
+  }
+}

@@ -2277,9 +2277,9 @@ hawk@~6.0.2:
     hoek "4.x.x"
     sntp "2.x.x"
 
-hnpwa-api@^0.1.5:
-  version "0.1.5"
-  resolved "https://registry.yarnpkg.com/hnpwa-api/-/hnpwa-api-0.1.5.tgz#cd4b2b3608aaaba5bd88a731a1bfa114862890a0"
+hnpwa-api@^0.1.9:
+  version "0.1.9"
+  resolved "https://registry.yarnpkg.com/hnpwa-api/-/hnpwa-api-0.1.9.tgz#4929f114c1e00bee1bb5f129a4425a966adf3040"
   dependencies:
     "@types/compression" "0.0.33"
     "@types/cors" "^2.8.1"
