@@ -1,0 +1,28 @@
+---
+weight: 31
+title: 'AngularDart HNPWA'
+github-title: 'dart-lang/angular'
+libraries:
+    - name: 'AngularDart'
+    - name: 'AngularDart Router'
+module-bundling: 'Dart2JS'
+service-worker: 'Worker generated from package:pwa'
+perfomance-patterns: 'Lazy loaded modules'
+server-side-rendering: 'None'
+api: 'Node-hnapi (unofficial)'
+hosting: 'Firebase'
+authors:
+    - name: 'Matan'
+    - name: 'Leon'
+    - name: 'Kevmoo'
+lighthouse: '100/100'
+interactive-em: '4.5s'
+interactive-faster-3g: '2.2s'
+lighthouse-link: https://www.webpagetest.org/lighthouse.php?test=180320_C0_9179a6b385e9745a1dfa438c9fbc2cf6&run=1
+wpt-em-link: https://www.webpagetest.org/result/180320_RD_ca2d0d7492ad4b28444445caea1ee2c1/
+wpt-faster-3g-link: https://www.webpagetest.org/result/180320_C0_9179a6b385e9745a1dfa438c9fbc2cf6/
+image: /assets/images/angular-dart-hnpwa.png
+app-link: https://dart-hn.firebaseapp.com/
+github-link: https://github.com/dart-lang/angular/tree/master/examples/hacker_news_pwa
+framework-link: https://webdev.dartlang.org/angular
+---
