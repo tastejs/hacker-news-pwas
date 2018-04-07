@@ -73,3 +73,48 @@ $primary-orange: #F4751E;
     }
   }
 }
+
+.phone-outline {
+  padding: 3.5rem .5rem 3rem;
+  background-color: #111;
+  border-radius: 2rem;
+  position: relative;
+
+  &:after {
+    content: "";
+    position: absolute;
+    height: .25rem;
+    width: 33%;
+    top: 1.75rem;
+    background-color: #222;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: .125rem;
+  }
+
+  &:before {
+    content: "";
+    position: absolute;
+    height: .5rem;
+    width: .5rem;
+    top: 1.65rem;
+    background-color: #222;
+    left: 20%;
+    transform: translateX(-50%);
+    border-radius: .25rem;
+  }
+
+  img {
+    border-radius: 2px;
+  }
+}
+
+.phone-outline-power {
+  position: absolute;
+  right: -.1rem;
+  top: 20%;
+  width: .3rem;
+  height: 3rem;
+  background-color: #000;
+  border-radius: .15rem;
+}
