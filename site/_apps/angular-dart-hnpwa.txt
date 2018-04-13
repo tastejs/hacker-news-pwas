@@ -16,11 +16,11 @@ authors:
     - name: 'Leon'
     - name: 'Kevmoo'
 lighthouse: '100/100'
-interactive-em: '4.5s'
-interactive-faster-3g: '2.2s'
-lighthouse-link: https://www.webpagetest.org/lighthouse.php?test=180320_C0_9179a6b385e9745a1dfa438c9fbc2cf6&run=1
-wpt-em-link: https://www.webpagetest.org/result/180320_RD_ca2d0d7492ad4b28444445caea1ee2c1/
-wpt-faster-3g-link: https://www.webpagetest.org/result/180320_C0_9179a6b385e9745a1dfa438c9fbc2cf6/
+interactive-em: '4.1s'
+interactive-faster-3g: '2.1s'
+lighthouse-link: https://www.webpagetest.org/lighthouse.php?test=180413_E9_539052ab0cb071da2e0363156ac9bc7e&run=1
+wpt-em-link: https://www.webpagetest.org/result/180413_PM_8219e620f184dc9a94441274d8dead71/
+wpt-faster-3g-link: https://www.webpagetest.org/result/180413_E9_539052ab0cb071da2e0363156ac9bc7e/
 image: /assets/images/angular-dart-hnpwa.png
 app-link: https://dart-hn.firebaseapp.com/
 github-link: https://github.com/dart-lang/angular/tree/master/examples/hacker_news_pwa
