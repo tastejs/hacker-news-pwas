@@ -22,7 +22,7 @@ lighthouse-link: https://www.webpagetest.org/lighthouse.php?test=180413_E9_53905
 wpt-em-link: https://www.webpagetest.org/result/180413_PM_8219e620f184dc9a94441274d8dead71/
 wpt-faster-3g-link: https://www.webpagetest.org/result/180413_E9_539052ab0cb071da2e0363156ac9bc7e/
 image: /assets/images/angular-dart-hnpwa.png
-app-link: https://dart-hn.firebaseapp.com/
+app-link: https://hnpwa.dartlang.org/
 github-link: https://github.com/dart-lang/angular/tree/master/examples/hacker_news_pwa
 framework-link: https://webdev.dartlang.org/angular
 ---
