@@ -1,6 +1,6 @@
 ---
 weight: 32
-title:  'Quasar Hackernews'
+title:  'HNPWA with Quasar Framework'
 github-title: 'quasarframework/quasar-hackernews'
 libraries: 
     - name: 'Quasar Framework'
