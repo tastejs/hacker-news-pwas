@@ -62,7 +62,7 @@ Item feeds can be paged by accessing the next index in the page. Each page start
 
 ## Individual items
 
-Feeds provide the top level view of an item, but other details like comment threads are avaiable at the individual item level.
+Feeds provide the top level view of an item, but other details like comment threads are available at the individual item level.
 
 [https://api.hnpwa.com/v0/item/13831370.json](https://api.hnpwa.com/v0/item/13831370.json)
 
@@ -108,7 +108,7 @@ export interface User {
 
 ## Local Development
 
-The HNPWA API uses the [hnpwa-api](https://github.com/davideast/hnpwa-api/) module and ran on [Cloud Functions](https://firebase.google.com/docs/functions/) and [Firebase Hosting](https://firebase.google.com/docs/hosting/functions).
+The HNPWA API uses the [hnpwa-api](https://github.com/davideast/hnpwa-api/) module and runs on [Cloud Functions](https://firebase.google.com/docs/functions/) and [Firebase Hosting](https://firebase.google.com/docs/hosting/functions).
 If you want to run the API while offline you can globally install the module to serve offline.
 
 ```bash
