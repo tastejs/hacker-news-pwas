@@ -1,0 +1,29 @@
+---
+weight: 32
+title:  'Quasar Hackernews'
+github-title: 'quasarframework/quasar-hackernews'
+libraries: 
+    - name: 'Quasar Framework'
+    - name: 'Vue'
+    - name: 'vue-router'
+    - name: 'Vuex'
+module-bundling: 'Webpack'
+service-worker: 'Application Shell + data caching with SWPrecachePlugin'
+perfomance-patterns: 'Server-side data pre-fetching, preload/prefetch resources'
+server-side-rendering: 'Yes'
+api: 'Hacker News Firebase API'
+hosting: 'Now'
+other-details: 'Inlined CSS used by rendered components'
+authors: 
+    - name: 'Razvan Stoenescu'
+lighthouse: '100/100'
+interactive-em: '6.74s'
+interactive-faster-3g: '4.98s'
+lighthouse-link: https://www.webpagetest.org/lighthouse.php?test=180620_3C_ef5147c9274def97b62b489e21508009&run=1
+wpt-em-link: https://www.webpagetest.org/result/180620_BD_bbdc26da3d05249f2ebbc356395728bc/
+wpt-faster-3g-link: https://www.webpagetest.org/result/180620_3C_ef5147c9274def97b62b489e21508009/
+image: /assets/images/quasar-hn.png
+app-link: https://quasar-hackernews.now.sh/
+github-link: https://github.com/quasarframework/quasar-hackernews
+framework-link: https://quasar-framework.org/
+---
