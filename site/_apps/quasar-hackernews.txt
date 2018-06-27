@@ -17,11 +17,11 @@ other-details: 'Inlined CSS used by rendered components'
 authors: 
     - name: 'Razvan Stoenescu'
 lighthouse: '100/100'
-interactive-em: '6.74s'
-interactive-faster-3g: '4.98s'
-lighthouse-link: https://www.webpagetest.org/lighthouse.php?test=180620_3C_ef5147c9274def97b62b489e21508009&run=1
-wpt-em-link: https://www.webpagetest.org/result/180620_BD_bbdc26da3d05249f2ebbc356395728bc/
-wpt-faster-3g-link: https://www.webpagetest.org/result/180620_3C_ef5147c9274def97b62b489e21508009/
+interactive-em: '6.84s'
+interactive-faster-3g: '5.07s'
+lighthouse-link: https://www.webpagetest.org/lighthouse.php?test=180627_47_1be589c537caa5cdf9debfe7476b9b6c&run=1
+wpt-em-link: https://www.webpagetest.org/result/180627_FH_e52159d46786140db0507950e04e7160/
+wpt-faster-3g-link: https://www.webpagetest.org/result/180627_47_1be589c537caa5cdf9debfe7476b9b6c/
 image: /assets/images/quasar-hn.png
 app-link: https://quasar-hackernews.now.sh/
 github-link: https://github.com/quasarframework/quasar-hackernews
