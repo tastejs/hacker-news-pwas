@@ -1,5 +1,5 @@
 ---
-weight: 22
+weight: 34
 title: 'CxJS Hacker News'
 github-title: 'codaxy/cxjs-hackernews'
 libraries: 
