@@ -1,5 +1,5 @@
 ---
-weight: 27
+weight: 35
 title: 'Cycle HN'
 github-title: 'usm4n/cycle-hn'
 libraries:
@@ -7,7 +7,7 @@ libraries:
       - cycle-onionify
       - switch-path
       - cyclejs-utils
-service-worker: 'Application Shell + SWPreCache Webpack Plugin'
+service-worker: 'Application Shell + SWPrecache Webpack Plugin'
 server-side-rendering: 'No'
 api: 'HNPWA api'
 hosting: 'Firebase'
