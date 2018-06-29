@@ -1,0 +1,29 @@
+---
+weight: 32
+title: 'HNPWA with Quasar Framework'
+github-title: 'quasarframework/quasar-hackernews'
+libraries: 
+    - name: 'Quasar Framework'
+    - name: 'Vue'
+    - name: 'vue-router'
+    - name: 'Vuex'
+module-bundling: 'Webpack'
+service-worker: 'Application Shell + data caching with SWPrecachePlugin'
+perfomance-patterns: 'Server-side data pre-fetching, preload/prefetch resources'
+server-side-rendering: 'Yes'
+api: 'Hacker News Firebase API'
+hosting: 'Now'
+other-details: 'Inlined CSS used by rendered components'
+authors: 
+    - name: 'Razvan Stoenescu'
+lighthouse: '100/100'
+interactive-em: '6.84s'
+interactive-faster-3g: '5.07s'
+lighthouse-link: https://www.webpagetest.org/lighthouse.php?test=180627_47_1be589c537caa5cdf9debfe7476b9b6c&run=1
+wpt-em-link: https://www.webpagetest.org/result/180627_FH_e52159d46786140db0507950e04e7160/
+wpt-faster-3g-link: https://www.webpagetest.org/result/180627_47_1be589c537caa5cdf9debfe7476b9b6c/
+image: /assets/images/quasar-hn.png
+app-link: https://quasar-hackernews.now.sh/
+github-link: https://github.com/quasarframework/quasar-hackernews
+framework-link: https://quasar-framework.org/
+---
