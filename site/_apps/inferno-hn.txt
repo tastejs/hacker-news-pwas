@@ -1,5 +1,5 @@
 ---
-weight: 28
+weight: 33
 title: 'Inferno HN'
 github-title: 'aretheregods/hackerinferno'
 libraries: 
