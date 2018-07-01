@@ -1,0 +1,26 @@
+---
+weight: 69
+title:  'HNPWA Webcomponents'
+github-title: 'tenosiswono/hnpwa-wc'
+libraries: 
+    - name: 'Webcomponentsjs'
+    - name: 'Redux'
+module-bundling: 'Webpack'
+service-worker: 'Application Shell with Workbox'
+perfomance-patterns: 'Server push, preload'
+server-side-rendering: 'No'
+api: 'hnpwa.com/api'
+hosting: 'Firebase'
+authors: 
+    - name: 'Teno'
+lighthouse: '91/100'
+interactive-em: '3.1s'
+interactive-faster-3g: '2.4s'
+lighthouse-link: https://www.webpagetest.org/lighthouse.php?test=180123_C9_4cdc377b1b55b4ba0c70191500e1d3c0&run=1
+wpt-em-link: https://www.webpagetest.org/result/180123_C9_4cdc377b1b55b4ba0c70191500e1d3c0/
+wpt-faster-3g-link: https://www.webpagetest.org/result/180123_8D_b017a8842726332ec1a82cd9b88a32cf/
+image: /assets/images/hnpwa-wc.png
+app-link: https://hnpwa-wc.firebaseapp.com
+github-link: https://github.com/tenosiswono/hnpwa-wc
+framework-link: https://github.com/webcomponents/webcomponentsjs
+---
