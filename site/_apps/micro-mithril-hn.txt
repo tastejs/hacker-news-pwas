@@ -1,0 +1,27 @@
+---
+weight: 16
+title: 'HNPWA with Mithril'
+github-title: 'Masquerade-Circus/mithril-hackernews-pwa'
+libraries:
+    - name: 'Micro'
+    - name: 'Mithril'
+    - name: 'Pure Material'
+module-bundling: 'webpack'
+service-worker: 'Application Shell'
+server-side-rendering: 'None'
+api: 'Hacker News Firebase API via firebase-hackernews'
+hosting: 'Now'
+other-details: 'Task runner Gulp. CSS Preprocessor Stylus.'
+authors:
+    - name: 'Christian'
+lighthouse: 91/100
+interactive-em: 3.2s
+interactive-faster-3g: 2.8s
+lighthouse-link: https://www.webpagetest.org/lighthouse.php?test=170624_ZH_0b9af45fdea0eadfb7f9f4fb58b01c2e&run=2
+wpt-em-link: https://www.webpagetest.org/result/170624_ZH_0b9af45fdea0eadfb7f9f4fb58b01c2e/
+wpt-faster-3g-link: https://www.webpagetest.org/result/170624_SX_cd5f375948bada53eb4530bf3ea7038c/
+image: /assets/images/micro-mithril-hn.png
+app-link: https://micro-mithril-hn.now.sh
+github-link: https://github.com/Masquerade-Circus/mithril-hackernews-pwa
+framework-link: https://mithril.js.org
+---
