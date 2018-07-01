@@ -1,0 +1,25 @@
+---
+weight: 16
+title: 'Mithril hnsm'
+github-title: 'russitto/hnsm'
+libraries: 
+    - name: 'Spectre.css'
+    - name: 'Mithril'
+module-bundling: 'rollup'
+perfomance-patterns: 'HTTP/2 with Server Push'
+server-side-rendering: 'None'
+api: 'Node-hnapi (unofficial) https://api.hackerwebapp.com/'
+hosting: 'Firebase over HTTP/2 with Server Push'
+authors: 
+    - name: 'russitto'
+lighthouse: 91/100
+interactive-em: 5.0s
+interactive-faster-3g: 3.9s
+lighthouse-link: https://www.webpagetest.org/lighthouse.php?test=170630_4C_8e3c394210b97c2d951981cdccd17190&run=2
+wpt-em-link: https://www.webpagetest.org/result/170630_4C_8e3c394210b97c2d951981cdccd17190/
+wpt-faster-3g-link: https://www.webpagetest.org/result/170630_5M_9e9bb0806be45195173c5617d8971b18/
+image: /assets/images/mithril-hnsm.png
+app-link: https://hnsm-66e89.firebaseapp.com/
+github-link: https://github.com/russitto/hnsm
+framework-link: https://mithril.js.org/
+---
