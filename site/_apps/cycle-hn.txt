@@ -3,10 +3,10 @@ weight: 35
 title: 'Cycle HN'
 github-title: 'usm4n/cycle-hn'
 libraries:
-      - CycleJS
-      - cycle-onionify
-      - switch-path
-      - cyclejs-utils
+    - name: 'CycleJS'
+    - name: 'cycle-onionify'
+    - name: 'switch-path'
+    - name: 'cyclejs-utils'
 service-worker: 'Application Shell + SWPrecache Webpack Plugin'
 server-side-rendering: 'No'
 api: 'HNPWA api'
