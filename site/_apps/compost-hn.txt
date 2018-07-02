@@ -7,7 +7,7 @@ module-bundling: 'Rollup'
 service-worker: 'Shell + data caching with Workbox'
 perfomance-patterns: 'Local caching of API results, CDN cache'
 server-side-rendering: 'no'
-api: 'Node-hnapi (unofficial)'
+api: 'HNPWA API'
 hosting: 'Firebase'
 authors:
     - name: 'Chris H'
