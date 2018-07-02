@@ -11,12 +11,12 @@ api: 'HNPWA API'
 hosting: 'Firebase'
 authors:
     - name: 'Chris H'
-lighthouse: '91/100'
-interactive-em: '2.5s'
-interactive-faster-3g: '1.9s'
-lighthouse-link: https://www.webpagetest.org/lighthouse.php?test=180216_SE_b0c71ae733eee5322121f7aaa5df06d3&run=3
-wpt-em-link: https://www.webpagetest.org/result/180216_W0_64c0a765b4efde038eea690cd2fc6b32/
-wpt-faster-3g-link: https://www.webpagetest.org/result/180216_SE_b0c71ae733eee5322121f7aaa5df06d3/
+lighthouse: '100/100'
+interactive-em: '2.9s'
+interactive-faster-3g: '2.1s'
+lighthouse-link: https://www.webpagetest.org/lighthouse.php?test=180702_W9_bafc7423cffbbc3d44109b729e18d079&run=2
+wpt-em-link: https://www.webpagetest.org/result/180702_DA_56e0a6c671fefa00a43b1ad36d9591a2/
+wpt-faster-3g-link: https://www.webpagetest.org/result/180702_W9_bafc7423cffbbc3d44109b729e18d079/
 image: /assets/images/compost-hn.png
 app-link: https://compost-35844.firebaseapp.com
 github-link: https://github.com/lamplightdev/compost-hn
