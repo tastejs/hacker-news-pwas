@@ -1,0 +1,23 @@
+---
+weight: 31
+title: 'Vanilla Web Components with Compost mixins'
+github-title: 'lamplightdev/compost-hn'
+library: 'Compost mixins'
+module-bundling: 'Rollup'
+service-worker: 'Shell + data caching with Workbox'
+perfomance-patterns: 'Local caching of API results, CDN cache'
+server-side-rendering: 'no'
+api: 'HNPWA API'
+hosting: 'Firebase'
+authors:
+    - name: 'Chris H'
+lighthouse: '100/100'
+interactive-em: '2.9s'
+interactive-faster-3g: '2.1s'
+lighthouse-link: https://www.webpagetest.org/lighthouse.php?test=180702_W9_bafc7423cffbbc3d44109b729e18d079&run=2
+wpt-em-link: https://www.webpagetest.org/result/180702_DA_56e0a6c671fefa00a43b1ad36d9591a2/
+wpt-faster-3g-link: https://www.webpagetest.org/result/180702_W9_bafc7423cffbbc3d44109b729e18d079/
+image: /assets/images/compost-hn.png
+app-link: https://compost-35844.firebaseapp.com
+github-link: https://github.com/lamplightdev/compost-hn
+---

@@ -1,0 +1,6 @@
+---
+weight: 31
+name: 'Chris H'
+image: https://github.com/lamplightdev.png
+link: https://github.com/lamplightdev
+---
