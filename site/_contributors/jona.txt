@@ -1,0 +1,6 @@
+---
+weight: 5
+name: 'Jona Frank'
+image: https://avatars2.githubusercontent.com/u/16633513
+link: https://github.com/jonafrank13/
+---
