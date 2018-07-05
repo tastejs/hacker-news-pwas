@@ -1,0 +1,26 @@
+---
+weight: 99
+title: 'AppRun HN'
+github-title: 'yysun/apprun-hn'
+libraries:
+    - name: 'AppRun'
+scaffolding: 'AppRun CLI'
+module-bundling: 'Webpack'
+service-worker: 'Workboxjs'
+perfomance-patterns: 'Application Shell + data caching with sw-precache'
+server-side-rendering: 'No'
+api: 'Official API (Firebase)'
+hosting: 'GitHub'
+authors:
+    - name: 'yysun'
+lighthouse: '92/100'
+interactive-em: '4.7s'
+interactive-faster-3g: '4.0s'
+lighthouse-link: https://www.webpagetest.org/lighthouse.php?test=180705_M2_18125a251cfe19a1b9d4aa173d32d2e0&run=2
+wpt-em-link: https://www.webpagetest.org/result/180705_FR_cf50ec3bd4c0e17802a9bae0cae6ff2e/
+wpt-faster-3g-link: https://www.webpagetest.org/result/180705_M2_18125a251cfe19a1b9d4aa173d32d2e0/
+image: /assets/images/apprun-hn.png
+app-link: https://yysun.github.io/apprun-hn
+github-link: https://github.com/yysun/apprun-hn
+framework-link: https://github.com/yysun/apprun
+---
