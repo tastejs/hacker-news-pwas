@@ -119,7 +119,7 @@
               {% for author in app.authors %}
                 {% assign contributor = site.contributors | where: 'name', {{author.name}} | first %}
                 <a class="link" href={{ contributor.link }}>
-                  <img src={{ contributor.image }} class="grow-large ba b--black-10 br-100 h2 w2 {% if forloop.first == false %}ml2{% endif %}" alt={{ contributor.name }}>
+                  <img data-src={{ contributor.image }}  class="lazyload grow-large ba b--black-10 br-100 h2 w2 {% if forloop.first == false %}ml2{% endif %}" alt={{ contributor.name }}>
                 </a>
               {% endfor %}
             {% endif %}
@@ -133,12 +133,15 @@
       </div>
       <div class="fl-l dn db-l">
         <div class="flex h-100 items-center">
-          <a class="link" href={{ app.app-link }}>
-             <div class="phone-outline grow">
-              <div class="phone-outline-power"></div>
-              <img class="w5" src={{ app.image | relative_url }} alt="{{ app.title }} HN PWA running on a mobile phone">
+          <div class="device nexus5">
+            <div class="top-bar"></div>
+            <div class="sleep"></div>
+            <div class="volume"></div>
+            <div class="camera"></div>
+            <div class="screen">
+              <img data-src={{ app.image | relative_url }} alt="{{ app.title }} HN PWA running on a mobile phone" class="lazyload">
             </div>
-          </a>
+        </div>
         </div>
       </div>
     </div>

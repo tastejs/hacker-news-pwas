@@ -11,7 +11,7 @@
         <div class="flex flex-column items-center w-100 w-50-m w-20-l">
           <div class="mv4">
             <a class="link" href={{ contributor.link }}>
-              <img src={{ contributor.image }} class="grow-large pa1 ba b--black-10 br-100 h3 w3" alt={{ contributor.name }}>
+              <img data-src={{ contributor.image }} class="lazyload grow-large pa1 ba b--black-10 br-100 h3 w3" alt={{ contributor.name }}>
             </a>
 
             <h4 class="f6 mid-gray fw4 ttu tracked">{{ contributor.name }}</h4>
@@ -19,7 +19,7 @@
       {% else %}
           <div class="mv4">
             <a class="link" href={{ contributor.link }}>
-              <img src={{ contributor.image }} class="grow-large pa1 ba b--black-10 br-100 h3 w3" alt={{ contributor.name }}>
+              <img data-src={{ contributor.image }} class="lazyload grow-large pa1 ba b--black-10 br-100 h3 w3" alt={{ contributor.name }}>
             </a>
 
             <h4 class="f6 mid-gray fw4 ttu tracked">{{ contributor.name }}</h4>
