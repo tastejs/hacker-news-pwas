@@ -131,7 +131,7 @@ $primary-orange: #F4751E;
   position: relative;
   height: 100%;
   z-index: 3;
-  background: #000;
+  background: #e6e6e6;
   overflow: hidden;
   display: block;
   border-radius: 1px;
@@ -249,4 +249,96 @@ $primary-orange: #F4751E;
   left: -100px;
   z-index: 3;
   border-radius: 100%
+}
+
+img.app-image:before { 
+  content: " ";
+  display: block;
+  position: absolute;
+  top: -50px;
+  left: 0;
+  height: calc(100% + 10px);
+  width: 100%;
+  background-color: rgb(230, 230, 230);
+  border-radius: 5px;
+}
+
+img.app-image:after { 
+  content: attr(alt);
+  font-size: 16px;
+  font-weight: 500;
+  position: absolute;
+  top: 45%;
+  left: 0;
+  text-align: center;
+  margin: 0 30px;
+}
+
+.app-loader-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.app-img-container {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.app-img-loader:not(:required) {
+  -moz-animation: app-img-loader 1000ms infinite linear;
+  -webkit-animation: app-img-loader 1000ms infinite linear;
+  animation: app-img-loader 1000ms infinite linear;
+  -moz-border-radius: 2.4em;
+  -webkit-border-radius: 2.4em;
+  border-radius: 2.4em;
+  border: 0.4em solid #000;
+  border-left-color: transparent;
+  color: transparent;
+  display: inline-block;
+  font-size: 10px;
+  line-height: 1.2;
+  width: 3em;
+  height: 3em;
+  text-indent: 100%;
+}
+
+@-moz-keyframes app-img-loader {
+  0% {
+    -moz-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -moz-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes app-img-loader {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes app-img-loader {
+  0% {
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
 }

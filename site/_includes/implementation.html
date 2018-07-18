@@ -139,7 +139,14 @@
             <div class="volume"></div>
             <div class="camera"></div>
             <div class="screen">
-              <img data-src={{ app.image | relative_url }} alt="{{ app.title }} HN PWA running on a mobile phone" class="lazyload">
+              <div class="app-img-container">
+                <div class="app-loader-container">
+                  <div class="app-img-loader"></div>
+                </div>
+              </div>
+              <div class="app-img-container">
+                <img data-src={{ app.image | relative_url }} alt="{{ app.title }} HN PWA running on a mobile phone" class="app-image lazyload">
+              </div>
             </div>
         </div>
         </div>
