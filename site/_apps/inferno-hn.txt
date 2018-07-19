@@ -19,8 +19,8 @@ interactive-em: '2.7s'
 interactive-faster-3g: '2.17s'
 lighthouse-link: https://www.webpagetest.org/lighthouse.php?test=180119_PQ_af0a8e774030765c339c4eae3b1296a9&run=3 
 wpt-em-link: https://www.webpagetest.org/result/180116_GM_c366e069195609ce4bbf6f58dd77f1cd/
-wpt-faster-3g-link:https://www.webpagetest.org/result/180119_PQ_af0a8e774030765c339c4eae3b1296a9/ 
-image: /infernologo.png
+wpt-faster-3g-link: https://www.webpagetest.org/result/180119_PQ_af0a8e774030765c339c4eae3b1296a9/ 
+image: /assets/images/inferno-hn.png
 app-link: https://infernohackernews.firebaseapp.com/
 github-link: https://github.com/aretheregods/hackerinferno
 framework-link: https://infernojs.org/

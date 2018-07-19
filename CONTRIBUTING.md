@@ -16,7 +16,7 @@ If you would like to file a PR to update the site's design, please file an [issu
 6. To test the Service Worker locally you can run `npm run dev-sw` instead.
 7. If you're adding a summary of your Hacker News implementation:
     * Create a new entry under `_apps` with your application name
-    * Fill out the list of attributes following the format of any of the other apps in the same directory (you'll need to include an image of your application in a mobile device as well)
+    * Fill out the list of attributes following the format of any of the other apps in the same directory. You'll need to include an image of your application as well. To fit the phone outline appropriately, please take a screenshot of your application emulated within a Nexus 5X using Chrome DevTools. This [tutorial](https://developers.google.com/web/tools/chrome-devtools/device-mode/) shows how to toggle Device Mode for the browser. 
     * Add yourself to the `_contributors` directory and similarly fill out all the attributes there (make sure the `authors` attribute underneath your app in `_apps` has the same exact name attribute as here)
 8. Create a pull request from your branch on your fork to `master` on this repo
 9. Have your branch get merged in! :star2:
