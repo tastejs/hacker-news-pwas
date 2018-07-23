@@ -1,0 +1,6 @@
+---
+weight: 34
+name: 'Alex Nozdriukhin'
+image: https://github.com/alexnoz.png
+link: https://github.com/alexnoz
+---

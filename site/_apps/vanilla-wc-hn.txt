@@ -1,0 +1,22 @@
+---
+weight: 33
+title:  'Vanilla Web Components HN'
+github-title: 'alexnoz/vanilla-wc-hnpwa'
+module-bundling: 'Webpack'
+service-worker: 'Application Shell + runtime caching with SWPrecachePlugin'
+perfomance-patterns: '2 bundles (ES2015+ and transpiled), route-level code splitting, preload/prefetch resources, CSS inlining'
+server-side-rendering: 'No'
+api: 'api.hnpwa.com/v0/'
+hosting: 'Firebase'
+authors:
+    - name: 'Alex Nozdriukhin'
+lighthouse: '100/100'
+interactive-em: '2.6s'
+interactive-faster-3g: '1.6s'
+lighthouse-link: https://www.webpagetest.org/lighthouse.php?test=180718_SK_9d0e0e8c4a174ddc770fc210fe809e62&run=2
+wpt-em-link: https://www.webpagetest.org/result/180718_G6_d4db68fcd9834b2fc080fe268dbc9717/
+wpt-faster-3g-link: https://www.webpagetest.org/result/180718_SK_9d0e0e8c4a174ddc770fc210fe809e62/
+image: /assets/images/vanilla-wc-hn.png
+app-link: https://vanilla-wc-hnpwa.firebaseapp.com
+github-link: https://github.com/alexnoz/vanilla-wc-hnpwa
+---
