@@ -1,0 +1,28 @@
+---
+weight: 36
+title: 'PWA Starter Kit HN'
+github-title: 'Polymer/pwa-starter-kit-hn'
+libraries: 
+    - name: 'LitElement'
+    - name: 'Redux'
+scaffolding: 'PWA Starter Kit'
+module-bundling: 'polymer-build with JS modules (AMD fallback)'
+service-worker: 'Application Shell + data caching with sw-precache'
+perfomance-patterns: 'PRPL, code-splitting for granular loading'
+server-side-rendering: 'None'
+api: 'Node-hnapi (unofficial)'
+hosting: 'Google App Engine'
+other-details: 'Route-specific HTTP/2 server push'
+authors: 
+    - name: 'Keanu'
+lighthouse: 100/100
+interactive-em: 2.14s
+interactive-faster-3g: 2.12s
+lighthouse-link: https://www.webpagetest.org/lighthouse.php?test=180725_WY_629a9c47602a77d93114d23463cd5ffc&run=2
+wpt-em-link: https://www.webpagetest.org/result/180725_WY_629a9c47602a77d93114d23463cd5ffc/
+wpt-faster-3g-link: https://www.webpagetest.org/result/180725_W6_e3a719f2ed1b9f678343b8c22efeb4ea/
+image: /assets/images/pwa-starter-kit-hn.png
+app-link: https://pwa-starter-kit-hn.appspot.com/
+github-link: https://github.com/Polymer/pwa-starter-kit-hn
+framework-link: https://github.com/Polymer/pwa-starter-kit
+---
