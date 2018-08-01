@@ -16,11 +16,11 @@ other-details: 'Route-specific HTTP/2 server push'
 authors: 
     - name: 'Keanu'
 lighthouse: 100/100
-interactive-em: 2.14s
-interactive-faster-3g: 2.12s
-lighthouse-link: https://www.webpagetest.org/lighthouse.php?test=180725_WY_629a9c47602a77d93114d23463cd5ffc&run=2
-wpt-em-link: https://www.webpagetest.org/result/180725_WY_629a9c47602a77d93114d23463cd5ffc/
-wpt-faster-3g-link: https://www.webpagetest.org/result/180725_W6_e3a719f2ed1b9f678343b8c22efeb4ea/
+interactive-em: 1.49s
+interactive-faster-3g: 1.44s
+lighthouse-link: https://www.webpagetest.org/lighthouse.php?test=180801_V2_af55fefc3bf7a2ca6617a97643b1b4f4&run=1
+wpt-em-link: https://www.webpagetest.org/result/180801_V2_af55fefc3bf7a2ca6617a97643b1b4f4/
+wpt-faster-3g-link: https://www.webpagetest.org/result/180801_3X_2cd82c422e486b8a46f96bc99197073c/
 image: /assets/images/pwa-starter-kit-hn.png
 app-link: https://pwa-starter-kit-hn.appspot.com/
 github-link: https://github.com/Polymer/pwa-starter-kit-hn
