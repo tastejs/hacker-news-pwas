@@ -2,22 +2,22 @@
 weight: 26
 title: 'Elm HN'
 github-title: 'rl-king/elm-hnpwa'
-libraries: 
-    - name: 'Elm 0.18'
-module-bundling: 'Elm / Webpack'
+libraries:
+    - name: 'Elm 0.19'
+module-bundling: 'Elm'
 service-worker: 'Data caching with SWPrecachePlugin'
 perfomance-patterns: 'Cache requested resources in session'
 server-side-rendering: 'None'
-api: 'hnpwa.com/api/v0'
+api: 'api.hnpwa.com/v0'
 hosting: 'Firebase'
-authors: 
+authors:
     - name: 'Ruben Lie'
-lighthouse: 91/100
-interactive-em: 4.3s
-interactive-faster-3g: 3.5s
-lighthouse-link: http://www.webpagetest.org/lighthouse.php?test=171203_PT_a2cc35918bdde73b3274395c81399c2f&run=1
-wpt-em-link: http://www.webpagetest.org/result/171203_25_7beff531515aba0fe2091ff7944b055f/
-wpt-faster-3g-link: http://www.webpagetest.org/result/171203_PT_a2cc35918bdde73b3274395c81399c2f/
+lighthouse: 100/100
+interactive-em: 3.5s
+interactive-faster-3g: 3s
+lighthouse-link: https://www.webpagetest.org/lighthouse.php?test=180822_RX_4aed4242befc099f493683b7b2294514&run=3
+wpt-em-link: https://www.webpagetest.org/result/180822_E6_9d2e28de77d9a5ae9f437f718059a7d4/
+wpt-faster-3g-link: https://www.webpagetest.org/result/180822_RX_4aed4242befc099f493683b7b2294514/
 image: /assets/images/elm-mobile.png
 app-link: https://elm-hnpwa.firebaseapp.com
 github-link: https://github.com/rl-king/elm-hnpwa
