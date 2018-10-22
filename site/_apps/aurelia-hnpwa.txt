@@ -1,0 +1,26 @@
+---
+weight: 31
+title:  'Aurelia HNPWA'
+github-title: 'justindra/aurelia-hnpwa'
+libraries: 
+    - name: 'Aurelia'
+    - name: 'Workbox SW'
+module-bundling: 'Webpack'
+service-worker: 'Application Shell + route and request caching with Workbox SW'
+perfomance-patterns: ''
+server-side-rendering: 'No'
+api: 'HNPWA API'
+hosting: 'Now'
+authors: 
+    - name: 'Justin R'
+lighthouse: '100/100'
+interactive-em: '4.6s'
+interactive-faster-3g: '3.9s'
+lighthouse-link: https://www.webpagetest.org/result/181022_7J_7ed779e43fb9d3c74ec419bb7affe5ed/
+wpt-em-link: https://www.webpagetest.org/result/181022_7J_7ed779e43fb9d3c74ec419bb7affe5ed/
+wpt-faster-3g-link: https://www.webpagetest.org/result/181022_9X_a8e58b34aedd81fadaef48fd5daf4a39/
+image: /assets/images/aurelia-hnpwa.png
+app-link: https://aurelia-hnpwa.justindra.com/
+github-link: https://github.com/justindra/aurelia-hnpwa
+framework-link: https://aurelia.io/
+---
