@@ -14,11 +14,11 @@ hosting: 'Now'
 authors: 
     - name: 'Justin R'
 lighthouse: '100/100'
-interactive-em: '4.6s'
-interactive-faster-3g: '3.9s'
-lighthouse-link: https://www.webpagetest.org/result/181022_7J_7ed779e43fb9d3c74ec419bb7affe5ed/
-wpt-em-link: https://www.webpagetest.org/result/181022_7J_7ed779e43fb9d3c74ec419bb7affe5ed/
-wpt-faster-3g-link: https://www.webpagetest.org/result/181022_9X_a8e58b34aedd81fadaef48fd5daf4a39/
+interactive-em: '4.7s'
+interactive-faster-3g: '2.5s'
+lighthouse-link: https://www.webpagetest.org/lighthouse.php?test=181022_BA_54eceea1cdb18efaf85c12837e38235a&run=1
+wpt-em-link: https://www.webpagetest.org/result/181022_BA_54eceea1cdb18efaf85c12837e38235a/
+wpt-faster-3g-link: https://www.webpagetest.org/result/181022_H8_7db2abbba00082edb58a55e86b182632/
 image: /assets/images/aurelia-hnpwa.png
 app-link: https://aurelia-hnpwa.justindra.com/
 github-link: https://github.com/justindra/aurelia-hnpwa
