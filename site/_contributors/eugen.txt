@@ -1,0 +1,6 @@
+---
+weight: 30
+name: 'Eugen'
+image: https://github.com/eugenkiss.png
+link: https://github.com/eugenkiss
+---

@@ -1,0 +1,26 @@
+---
+weight: 31
+title: 'React Native Web'
+github-title: 'johanholmerin/rnw-hn'
+library: 'React Native'
+libraries:
+    - name: 'React Native'
+module-bundling: 'Webpack'
+service-worker: 'Application Shell with SW Precache'
+perfomance-patterns: 'HTTP/2, preconnect'
+server-side-rendering: 'No'
+api: 'hnpwa.com/api'
+hosting: 'Firebase'
+authors:
+    - name: 'Johan'
+lighthouse: '100/100'
+interactive-em: '5.36s'
+interactive-faster-3g: '4.18s'
+lighthouse-link: https://www.webpagetest.org/lighthouse.php?test=180403_ZP_9c22071ae912336f1338347e27a70d42&run=2
+wpt-em-link: https://www.webpagetest.org/result/180403_EX_feab3a99055d6404191add00e77f4a96/
+wpt-faster-3g-link: https://www.webpagetest.org/result/180403_ZP_9c22071ae912336f1338347e27a70d42/
+image: /assets/images/rnw-hn.png
+app-link: https://rnw-hn.firebaseapp.com/
+github-link: https://github.com/johanholmerin/rnw-hn
+framework-link: https://facebook.github.io/react-native/
+---

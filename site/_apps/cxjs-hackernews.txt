@@ -1,0 +1,27 @@
+---
+weight: 34
+title: 'CxJS Hacker News'
+github-title: 'codaxy/cxjs-hackernews'
+libraries: 
+    - name: 'CxJS'
+    - name: 'Preact'
+scaffolding: 'Cx CLI'
+module-bundling: 'Webpack'
+service-worker: 'Application Shell + runtime data caching with sw-precache (sw-precache-webpack-plugin)'
+perfomance-patterns: 'Code-splitting, CSS and JS inlining'
+server-side-rendering: 'None'
+api: 'Node-hnapi (unoffical)'
+hosting: 'Netlify'
+authors: 
+    - name: 'Marko'
+lighthouse: '91/100'
+interactive-em: '4.5s'
+interactive-faster-3g: '3.7s'
+lighthouse-link: https://www.webpagetest.org/lighthouse.php?test=170724_9N_d79b5c0abdf81a731b9d8d767508c2a1&run=2
+wpt-em-link: https://www.webpagetest.org/result/170724_X7_4839a02a6189db13446f21200993008e/
+wpt-faster-3g-link: https://www.webpagetest.org/result/170724_9N_d79b5c0abdf81a731b9d8d767508c2a1/
+image: /assets/images/cxjs-hackernews.png
+app-link: https://hn.cxjs.io/
+github-link: https://github.com/codaxy/cxjs-hackernews
+framework-link: https://cxjs.io/
+---

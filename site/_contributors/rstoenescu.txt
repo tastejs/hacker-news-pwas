@@ -1,0 +1,6 @@
+---
+weight: 33
+name: 'Razvan Stoenescu'
+image: https://github.com/rstoenescu.png
+link: https://github.com/rstoenescu
+---

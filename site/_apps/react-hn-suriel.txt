@@ -1,0 +1,28 @@
+---
+weight: 33
+title: 'React HN'
+github-title: 'surielmx/reacthnpwa'
+library: 'React'
+libraries: 
+    - name: 'React'
+    - name: 'React Router'
+module-bundling: 'Webpack'
+service-worker: 'Application Shell'
+perfomance-patterns: 'HTTP/2, route based code splitting'
+server-side-rendering: 'No'
+api: 'api.hnpwa.com/v0'
+hosting: 'Firebase'
+other-details: 'Asynchronously loaded routes'
+authors: 
+    - name: 'Suriel'
+lighthouse: '91/100'
+interactive-em: '4.6s'
+interactive-faster-3g: '3.2s'
+lighthouse-link: https://www.webpagetest.org/lighthouse.php?test=180502_3Z_98e8d3054059210ddaa78f835bcac68a&run=3
+wpt-em-link: https://www.webpagetest.org/result/180502_PF_e804f8fd48e450f54a7ffad0d4e15b0a/
+wpt-faster-3g-link: https://www.webpagetest.org/result/180502_W2_3d8192b37f093d8b5056de24f768cc6b/
+image: /assets/images/react-hn-suriel.png
+app-link: https://reacthnsuriel.firebaseapp.com/
+github-link: https://github.com/surielmx/reacthnpwa
+framework-link: https://facebook.github.io/react/
+---
