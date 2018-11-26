@@ -4,6 +4,7 @@ export async function deploy(token: string) {
   try {
     return await client.deploy({
       project: 'hnpwa-coffee',
+      only: 'hosting',
       token,
       cwd: process.cwd()
     });
