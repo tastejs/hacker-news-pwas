@@ -18,7 +18,7 @@ const runner = publisher({
     if(typeof token === undefined || typeof token === null) { 
       throw new Error('No token provided for Firebase Hosting deployment');
     }
-    await deploy(token!);
+    await deploy(token);
     console.log('Deployed to Firebase Hosting!');
   } catch (e) {
     errors.report(e);
