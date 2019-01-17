@@ -4,3 +4,5 @@ api/dist
 api/env.json
 api/.firebase
 /.idea
+/hacker-news-pwas.iml
+hacker-news-pwas.iml

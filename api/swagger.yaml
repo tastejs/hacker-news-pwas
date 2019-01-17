@@ -1,0 +1,220 @@
+swagger: '2.0'
+basePath: /v0
+host: api.hnpwa.com
+schemes:
+  - https
+info:
+  contact:
+    name: Jim Northrup
+    email: jim@vsiwest.com
+  description: use this to generate from swagger tools
+  termsOfService: tbd
+  version: '0'
+consumes:
+  - application/json
+produces:
+  - application/json
+paths:
+  '/news/{page}.json':
+    get:
+      parameters:
+        - in: query
+          name: page
+          required: true
+          type: integer
+          minimum: 1
+          maximum: 10
+      responses:
+        '200':
+          $ref: '#/definitions/feedItem'
+  '/newest/{page}.json':
+    get:
+      parameters:
+        - in: query
+          name: page
+          required: true
+          type: integer
+          minimum: 1
+          maximum: 12
+      responses:
+        '200':
+          $ref: '#/definitions/feedItem'
+  '/ask/{page}.json':
+    get:
+      parameters:
+        - in: query
+          name: page
+          required: true
+          type: integer
+          minimum: 1
+          maximum: 2
+      responses:
+        '200':
+          description: tbd
+          $ref: '#/definitions/feedItem'
+  '/show/{page}.json':
+    get:
+      parameters:
+        - in: query
+          name: page
+          required: true
+          type: integer
+          minimum: 1
+          maximum: 1
+      responses:
+        '200':
+          $ref: '#/definitions/feedItems'
+  '/item/{id}.json':
+    get:
+      parameters:
+        - in: query
+          name: id
+          required: true
+          type: integer
+          minimum: 1
+      responses:
+        '200':
+          $ref: '#/definitions/item'
+  '/user/{id}.json':
+    get:
+      parameters:
+        - in: query
+          name: id
+          required: true
+          type: string
+      responses:
+        '200':
+          $ref: '#/definitions/user'
+definitions:
+  /user:
+    type: object
+    required:
+      - created_time
+      - created
+      - id
+      - karma
+    properties:
+      created_time:
+        type: integer
+        default: 0
+      created:
+        type: string
+        default: ''
+        pattern: ^(.*)$
+      id:
+        type: string
+        default: ''
+        pattern: ^(.*)$
+      karma:
+        type: integer
+        default: 0
+  /item:
+    type: object
+    required:
+      - id
+      - title
+      - points
+      - user
+      - time
+      - time_ago
+      - type
+      - content
+      - comments
+      - comments_count
+      - url
+      - domain
+    properties:
+      id:
+        type: integer
+        default: 0
+      title:
+        type: string
+        default: ''
+        pattern: ^(.*)$
+      points:
+        type: integer
+        default: 0
+      user:
+        type: string
+        default: ''
+        pattern: ^(.*)$
+      time:
+        type: integer
+        default: 0
+      time_ago:
+        type: string
+        default: ''
+        pattern: ^(.*)$
+      type:
+        type: string
+        default: ''
+        pattern: ^(.*)$
+      content:
+        type: string
+        default: ''
+        pattern: ^(.*)$
+      comments:
+        $ref: '#/definitions/item'
+      comments_count:
+        type: integer
+        default: 0
+      url:
+        type: string
+        default: ''
+        pattern: ^(.*)$
+      domain:
+        type: string
+        default: ''
+        pattern: ^(.*)$
+  /feedItems:
+    type: array
+    items:
+      type: object
+      required:
+        - id
+        - title
+        - points
+        - user
+        - time
+        - time_ago
+        - comments_count
+        - type
+        - url
+        - domain
+      properties:
+        id:
+          type: integer
+          default: 0
+        title:
+          type: string
+          default: ''
+          pattern: ^(.*)$
+        points:
+          type: integer
+          default: 0
+        user:
+          type: string
+          default: ''
+          pattern: ^(.*)$
+        time:
+          type: integer
+          default: 0
+        time_ago:
+          type: string
+          default: ''
+          pattern: ^(.*)$
+        comments_count:
+          type: integer
+          default: 0
+        type:
+          type: string
+          default: ''
+          pattern: ^(.*)$
+        url:
+          type: string
+          default: ''
+          pattern: ^(.*)$
+        domain:
+          type: string
+          default: ''
+          pattern: ^(.*)$
