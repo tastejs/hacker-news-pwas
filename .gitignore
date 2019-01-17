@@ -3,3 +3,4 @@ node_modules
 api/dist
 api/env.json
 api/.firebase
+/.idea
