@@ -1,0 +1,6 @@
+---
+weight: 49
+name: 'Tirth'
+image: https://github.com/tirthbodawala.png
+link: https://github.com/tirthbodawala
+---

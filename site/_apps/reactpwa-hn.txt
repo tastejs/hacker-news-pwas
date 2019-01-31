@@ -1,0 +1,29 @@
+---
+weight: 44
+title: 'ReactPWA HN'
+github-title: 'Atyantik/hn-reactpwa'
+libraries: 
+    - name: 'PawJS'
+    - name: 'React'
+    - name: 'React Router'
+    - name: 'firebase-hackernews'
+module-bundling: 'PawJS with Webpack'
+service-worker: 'Application Shell + data caching with sw-precache'
+perfomance-patterns: 'HTTP/2, preconnect, code-splitting for granular loading, CDN Cache, Lazy loaded modules'
+server-side-rendering: 'Yes'
+api: 'Hacker News Firebase API'
+hosting: 'Digital Ocean with Cloudflare'
+other-details: 'Route-specific pushing'
+authors: 
+    - name: 'Tirth'
+lighthouse: 100/100
+interactive-em: 4.8s
+interactive-faster-3g: 3.8s
+lighthouse-link: https://www.webpagetest.org/result/190131_GA_10297c6c661c197739b6904939e6383c/
+wpt-em-link: https://www.webpagetest.org/result/190131_GA_10297c6c661c197739b6904939e6383c/
+wpt-faster-3g-link: https://www.webpagetest.org/result/190131_YF_a7af06af6e2489579b298677bfb45700/
+image: /assets/images/reactpwa-hn.png
+app-link: https://hn.reactpwa.com
+github-link: https://github.com/Atyantik/hn-reactpwa
+framework-link: https://www.reactpwa.com
+---
