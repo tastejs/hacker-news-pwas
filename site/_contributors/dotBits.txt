@@ -1,0 +1,6 @@
+---
+weight: 100
+name: 'Cristian Ronzio'
+image: https://github.com/dotBits.png
+link: https://github.com/dotBits
+---
