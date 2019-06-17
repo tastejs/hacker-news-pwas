@@ -1,0 +1,31 @@
+---
+weight: 13
+title: 'Fusion HN'
+github-title: 'jh3y/fusion-hn'
+libraries:
+    - name: 'Fusion JS'
+    - name: 'React'
+    - name: 'React Router'
+    - name: 'GraphQL'
+    - name: 'Apollo'
+    - name: 'Uber Base Web'
+    - name: 'Styletron'
+scaffolding: 'Fusion JS CLI'
+module-bundling: 'Fusion JS (Webpack + Babel under the hood)'
+service-worker: 'Fusion JS Service Worker plugin'
+server-side-rendering: 'Yes'
+api: hnpwa.com/api/v0
+hosting: 'Heroku'
+authors:
+    - name: 'jh3y'
+lighthouse: '93/100'
+interactive-em: '3.5s'
+interactive-faster-3g: '3.5s'
+lighthouse-link: https://www.webpagetest.org/lighthouse.php?test=190617_TS_90973ca8d7a8b1044a45c584c7682002&run=3
+wpt-em-link: https://www.webpagetest.org/result/190617_M0_a692f752eefbdfff4217fc6a47c40fbf/
+wpt-faster-3g-link: https://www.webpagetest.org/result/190617_TS_90973ca8d7a8b1044a45c584c7682002/
+image: /assets/images/fusion-hn.png
+app-link: https://fusion-hn.herokuapp.com/
+github-link: https://github.com/jh3y/fusion-hn
+framework-link: https://fusionjs.com/
+---
