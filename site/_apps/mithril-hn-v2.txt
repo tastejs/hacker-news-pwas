@@ -1,0 +1,23 @@
+---
+weight: 20
+title: 'Mithril HN V2'
+github-title: 'boazblake/mithril-hn-pwa'
+libraries:
+    - name: 'Mithril'
+module-bundling: 'webpack'
+service-worker: 'Application Shell'
+perfomance-patterns: 'HTTP/2 with Server Push'
+server-side-rendering: 'None'
+api: 'https://api.hnpwa.com/'
+hosting: 'github'
+authors:
+    - name: 'Boaz Blake'
+lighthouse: 94/100
+interactive-em: 2.3s
+lighthouse-link: http://webpagetest.org/lighthouse.php?test=190815_02_8b189e35d0f79f561a223831c1681549&run=2
+wpt-em-link: http://webpagetest.org/result/190815_02_8b189e35d0f79f561a223831c1681549/
+image: /assets/images/mithril-v2-hnpwa.png
+app-link: https://boazblake.github.io/mithril-hn-pwa/#!/news
+github-link: https://github.com/boazblake/mithril-hn-pwa
+framework-link: https://mithril.js.org
+---
