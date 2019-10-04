@@ -18,7 +18,7 @@
     "@google-cloud/error-reporting": "^0.2.2",
     "@google-cloud/trace-agent": "^2.4.1",
     "@types/fs-extra": "^5.0.0",
-    "firebase-tools": "^6.0.1",
+    "firebase-tools": "^7.0.0",
     "fs-extra": "^5.0.0",
     "hnpwa-api": "^0.2.0",
     "typescript": "^2.7.2"
