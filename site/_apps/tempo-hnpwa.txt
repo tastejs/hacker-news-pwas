@@ -1,0 +1,25 @@
+---
+weight: 26
+title: 'Tempo HN'
+github-title: 'fponticelli/tempo'
+libraries:
+    - name: 'Tempo 0.8'
+module-bundling: 'Parcel'
+service-worker: 'Assets caching with Workbox'
+perfomance-patterns: 'Cache requested resources in session'
+server-side-rendering: 'None'
+api: 'api.hnpwa.com/v0'
+hosting: 'Github Pages'
+authors:
+    - name: 'Franco Ponticelli'
+lighthouse: 99/100
+interactive-em: 2.0s
+interactive-faster-3g: 2.0s
+lighthouse-link: https://www.webpagetest.org/result/191130_R6_9c93ddc0295b010db5986aca6293db5c/
+wpt-em-link: https://www.webpagetest.org/result/180822_E6_9d2e28de77d9a5ae9f437f718059a7d4/
+wpt-faster-3g-link: https://www.webpagetest.org/result/191130_2D_47f027477e718b90d9b4dfcf2c57f655/
+image: /assets/images/tempo-hnpwa.png
+app-link: https://fponticelli.github.io/tempo/docs/demo/hnpwa/
+github-link: https://github.com/fponticelli/tempo
+framework-link: https://fponticelli.github.io/tempo/
+---
