@@ -22,7 +22,7 @@ lighthouse-link: https://www.webpagetest.org/lighthouse.php?test=170919_Q2_65569
 wpt-em-link: https://www.webpagetest.org/result/170919_ME_f239125bd17ccfed31eb2f81ef860567/
 wpt-faster-3g-link: https://www.webpagetest.org/result/170919_Q2_655690ac651cba872483ecc93ac6efe9/
 image: /assets/images/vuehn-mobile.png
-app-link: https://vue-hn.now.sh/
+app-link: https://vue-hn.herokuapp.com/
 github-link: https://github.com/vuejs/vue-hackernews-2.0
 framework-link: https://vuejs.org/
 ---
