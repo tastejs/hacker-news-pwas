@@ -1,9 +1,5 @@
-require('@google-cloud/trace-agent').start();
-
 import { deploy } from './deploy';
 import { publisher } from 'hnpwa-api';
-const ErrorReporting = require('@google-cloud/error-reporting');
-const errors = ErrorReporting();
 
 const env = require('../env.json');
 
@@ -21,7 +17,7 @@ const runner = publisher({
     await deploy(token);
     console.log('Deployed to Firebase Hosting!');
   } catch (e) {
-    errors.report(e);
+    console.error(e);
   }
 });
 
