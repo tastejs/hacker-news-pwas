@@ -22,5 +22,8 @@
         ]
       }
     ]
+  },
+  "functions": {
+    "runtime": "nodejs10"
   }
 }

@@ -8,8 +8,8 @@
     "build": "rm -rf dist && tsc && cp env.json dist/env.json",
     "start": "node dist/index",
     "deploy": "gcloud app deploy --version yolo",
-    "deploy:firebase": "firebase deploy --only functions,hosting",
-    "copy:firebase": "cp firebase-config.json dist/firebase.json && cp .firebaserc dist/.firebaserc"
+    "deploy:firebase": "firebase deploy --only functions",
+    "copy:firebase": "cp firebase.json dist/firebase.json && cp .firebaserc dist/.firebaserc"
   },
   "keywords": [],
   "author": "",
@@ -18,9 +18,9 @@
     "@google-cloud/error-reporting": "^0.2.2",
     "@google-cloud/trace-agent": "^2.4.1",
     "@types/fs-extra": "^5.0.0",
-    "firebase-tools": "^7.0.0",
+    "firebase-tools": "^8.11.0",
     "fs-extra": "^5.0.0",
-    "hnpwa-api": "^0.2.0",
-    "typescript": "^2.7.2"
+    "hnpwa-api": "^0.2.3",
+    "typescript": "^3.7.2"
   }
 }

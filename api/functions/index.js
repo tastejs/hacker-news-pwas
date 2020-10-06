@@ -5,5 +5,9 @@ exports.api0 = hnapi.trigger({
    routerPath: '/v0',
    cdnCacheExpiry: 1200,
    browserCacheExpiry: 300,
-   staleWhileRevalidate: 86400
+   staleWhileRevalidate: 86400,
+   runWith: {
+      memory: '1GB',
+      timeoutSeconds: 30
+   }
 });
