@@ -50,7 +50,7 @@ export interface FeedItem {
 
 Item feeds can be paged by accessing the next index in the page. Each page starts at 1 and each feed has a different ending page.
 
-[https://api.hnpwa.com/v0/news.json/2.json](https://api.hnpwa.com/v0/news.json/2.json)
+[https://api.hnpwa.com/v0/news/2.json](https://api.hnpwa.com/v0/news/2.json)
   
 | Name | Max Pages |
 | --- | --- |
