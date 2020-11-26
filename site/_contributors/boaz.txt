@@ -1,0 +1,6 @@
+---
+weight: 20
+name: 'Boaz Blake'
+image: https://github.com/boazblake.png
+link: https://github.com/boazblake
+---
