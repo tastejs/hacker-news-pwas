@@ -3,10 +3,10 @@ weight: 26
 title: 'Elm HN'
 github-title: 'rl-king/elm-hnpwa'
 libraries:
-    - name: 'Elm 0.19'
+    - name: 'Elm 0.19.1'
 module-bundling: 'Elm'
 service-worker: 'Data caching with SWPrecachePlugin'
-perfomance-patterns: 'Cache requested resources in session'
+perfomance-patterns: 'Cache requested resources'
 server-side-rendering: 'None'
 api: 'api.hnpwa.com/v0'
 hosting: 'Firebase'
