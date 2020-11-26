@@ -1,0 +1,25 @@
+---
+weight: 42
+title: 'Osagai HNPWA'
+github-title: 'HenriqueLimas/osagai-hn'
+library: 'Osagai'
+libraries: 
+    - name: 'Osagai'
+module-bundling: 'Webpack'
+service-worker: 'Application Shell + data caching with Workbox'
+server-side-rendering: 'No'
+api: 'HNPWA API'
+hosting: 'Firebase'
+authors: 
+    - name: 'Henrique'
+lighthouse: '100/100'
+interactive-em: '2.9s'
+interactive-faster-3g: '2.3s'
+lighthouse-link: https://www.webpagetest.org/lighthouse.php?test=181208_MW_378ecc97a55f874301257558656dade5&run=3
+wpt-em-link: https://www.webpagetest.org/result/181208_5A_d2eb0975ebe9982cdd21a67f9a9f4364/
+wpt-faster-3g-link: https://www.webpagetest.org/result/181208_MW_378ecc97a55f874301257558656dade5/
+image: /assets/images/osagai-hn.png
+app-link: https://osagai-hn.firebaseapp.com
+github-link: https://github.com/HenriqueLimas/osagai-hn
+framework-link: https://github.com/HenriqueLimas/osagai
+---
