@@ -1,0 +1,26 @@
+---
+weight: 100
+title:  'Nuxt & AMP Hacker News PWA'
+github-title: 'musement/amp-vue-hackernews'
+libraries: 
+    - name: 'AMP'
+    - name: 'Nuxt'
+    - name: 'Vue'
+module-bundling: 'Webpack'
+service-worker: 'Workbox'
+server-side-rendering: 'Yes'
+api: 'Hacker News Firebase API'
+hosting: 'Heroku'
+authors: 
+    - name: 'Cristian Ronzio'
+lighthouse: '95/100'
+interactive-em: '3.2s'
+interactive-faster-3g: '2.5s'
+lighthouse-link: https://www.webpagetest.org/result/190411_ZF_2e9d6ddf3569aae7110f1cb66e90f0af/
+wpt-em-link: https://www.webpagetest.org/result/190411_RG_4acbd2784413bc87fd0bda0b6dbf9a9e/
+wpt-faster-3g-link: https://www.webpagetest.org/result/190411_4K_f4332144bf8a825a54283e9fdc6f1600/
+image: /assets/images/amp-nuxt-vue.png
+app-link: https://hn-amp.herokuapp.com
+github-link: https://github.com/musement/amp-vue-hackernews
+framework-link: https://amp.dev
+---
