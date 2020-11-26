@@ -1,9 +1,10 @@
 ---
 weight: 4
-title:  'Svelte Hacker News'
-github-title: 'sveltejs/svelte-hackernews'
+title:  'Hacker News clone built with Svelte and Sapper'
+github-title: 'sveltejs/hn.svelte.dev'
 libraries: 
     - name: 'Svelte'
+    - name: 'Sapper'
 module-bundling: 'Rollup'
 service-worker: 'Application Shell + data caching'
 server-side-rendering: 'Yes'
@@ -11,14 +12,14 @@ api: 'Hacker News Firebase API'
 hosting: 'Now'
 authors: 
     - name: 'Rich'
-lighthouse: '73/100'
-interactive-em: '2.5s'
+lighthouse: '93/100'
+interactive-em: '3.3s'
 interactive-faster-3g: '2.2s'
-lighthouse-link: https://www.webpagetest.org/lighthouse.php?test=170611_K5_aaca06336e5608c4a825246b383dc663&run=2
-wpt-em-link: https://www.webpagetest.org/result/170611_K5_aaca06336e5608c4a825246b383dc663/
-wpt-faster-3g-link: https://www.webpagetest.org/result/170611_BP_6fc0112b1b7a2862e4aedef7c9277416/
+lighthouse-link: https://www.webpagetest.org/result/191007_ZV_7f956849a127059f245f44c0f5e7b746/
+wpt-em-link: https://www.webpagetest.org/result/191007_9Y_adf704b3a539037a759edb528fccf153/
+wpt-faster-3g-link: https://www.webpagetest.org/result/191007_DW_8c247f57050ce94005e6af68d112b3ea/
 image: /assets/images/sveltehn-mobile.png
-app-link: https://hn.svelte.technology/
-github-link: https://github.com/sveltejs/svelte-hackernews
-framework-link: https://svelte.technology/
+app-link: https://hn.svelte.dev
+github-link: https://github.com/sveltejs/hn.svelte.dev
+framework-link: https://svelte.dev
 ---
