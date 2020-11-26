@@ -1,0 +1,30 @@
+---
+weight: 36
+title: 'SassyNews'
+github-title: 'warisRao/sassyNews'
+library: 'React'
+libraries: 
+    - name: 'React'
+    - name: 'Graphql'
+    - name: 'Apollo'
+module-bundling: 'Webpack'
+service-worker: 'Application Shell + data caching with Workbox'
+perfomance-patterns: 'PRPL, route-based chunking'
+server-side-rendering: 'Yes'
+api: 'Hacker News Firebase API'
+hosting: 'Amazon Web Services'
+other-details: 'Asynchronously loaded routes'
+authors: 
+    - name: 'Waris'
+    - name: 'Apoorv'
+lighthouse: '97/100'
+interactive-em: '5.2s'
+interactive-faster-3g: '4.0s'
+lighthouse-link: https://www.webpagetest.org/result/181027_YK_0dd28ce8f6aa0012ec3ea158e2eada25/
+wpt-em-link: https://www.webpagetest.org/result/181027_G3_cc8321f5d5fcc82825c8c55acf9b9181/
+wpt-faster-3g-link: https://www.webpagetest.org/result/181027_G3_cc8321f5d5fcc82825c8c55acf9b9181/
+image: /assets/images/sassynews.png
+app-link: https://feed.sassydevs.com/
+github-link: https://github.com/WarisRao/sassyNews
+framework-link: https://reactjs.org/
+---
