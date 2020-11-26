@@ -1,0 +1,27 @@
+---
+weight: 44
+title: 'Polymer 3 HNPWA (PWA-Starter-Kit)'
+github-title: 'HeratPatel/hnpwa'
+libraries: 
+    - name: 'Polymer'
+scaffolding: 'Polymer CLI & PWA-Starter-Kit'
+module-bundling: 'Polymer-build static'
+service-worker: 'sw-precache'
+perfomance-patterns: 'Application Shell + data caching with sw-precache'
+server-side-rendering: 'None'
+api: 'Node-hnapi (unofficial)'
+hosting: 'Firebase Hosting'
+other-details: 'Route-specific pushing'
+authors: 
+    - name: 'Herat'
+lighthouse: 100/100
+interactive-em: 3.14s
+interactive-faster-3g: 2.8s
+lighthouse-link: https://www.webpagetest.org/result/181013_NE_1832741fe708c9cbd397b93a75146e43/
+wpt-em-link: https://www.webpagetest.org/result/181013_GD_94ce6e6e544cb6e1104fc3dc382c6327/
+wpt-faster-3g-link: https://www.webpagetest.org/result/181013_GD_94ce6e6e544cb6e1104fc3dc382c6327/
+image: /assets/images/polymer3-hnpwa.png
+app-link: https://hnpwa-fcf6b.firebaseapp.com/
+github-link: https://github.com/HeratPatel/hnpwa
+framework-link: https://github.com/Polymer/pwa-starter-kit
+---
